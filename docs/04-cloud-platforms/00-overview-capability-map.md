@@ -94,9 +94,13 @@ These are starting-point heuristics, not rules. Always validate against the cust
 - They need **Snowflake Data Clean Rooms** for cross-organization RWD collaboration without data movement.
 - Dynamic data masking on PHI columns is a key governance requirement.
 
+### Don't forget on-premises
+
+The five columns above are all cloud. In HLS, the system of record (EHR, PACS, genomics HPC) is frequently **on-premises**, and most real architectures are **hybrid** — on-prem for what must stay local, cloud for elastic analytics and AI. Treat on-prem and hybrid as first-class options, not a fallback. See [On-premises & hybrid for HLS](./06-on-prem-hybrid.md).
+
 ### Multi-platform (most real-world scenarios)
 
-Most enterprise HLS systems use **more than one platform**: an EHR integration on Azure Health Data Services feeding a Databricks lakehouse for OMOP analytics, with Snowflake for the data-sharing layer. The SA's job is to understand where each platform wins and design the integration points cleanly.
+Most enterprise HLS systems use **more than one platform** — and often span on-prem too: an on-prem EHR feeding (via Azure Health Data Services or Cloud Healthcare API) a Databricks lakehouse for OMOP analytics, with Snowflake for the data-sharing layer. The SA's job is to understand where each platform wins and design the integration points cleanly.
 
 ## What to ask a customer before recommending
 

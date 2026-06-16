@@ -40,6 +40,7 @@
 - [Azure for HLS](docs/04-cloud-platforms/03-azure.md)
 - [Databricks for HLS](docs/04-cloud-platforms/04-databricks.md)
 - [Snowflake for HLS](docs/04-cloud-platforms/05-snowflake.md)
+- [On-premises & hybrid for HLS](docs/04-cloud-platforms/06-on-prem-hybrid.md)
 
 ## Part 5 — Data platforms & RWD/RWE
 

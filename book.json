@@ -1,0 +1,16 @@
+{
+  "title": "Health & Life Science Solution Architect",
+  "description": "A course and reference-architecture handbook for engineers transitioning into a health & biotech Solution Architect role.",
+  "author": "anothernoise",
+  "language": "en",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": ["mermaid"],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  }
+}

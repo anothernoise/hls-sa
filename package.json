@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "honkit": "^6.0.2",
-    "honkit-plugin-mermaid": "^0.1.4",
+    "honkit-plugin-mermaid": "file:tools/honkit-plugin-mermaid",
     "rimraf": "^5.0.5"
   },
   "engines": {

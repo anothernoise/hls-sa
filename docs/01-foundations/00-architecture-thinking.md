@@ -77,7 +77,7 @@ A digital-health startup wants a patient-facing API over PHI.
 2. **Make the NFRs measurable.** "Fast" is not a requirement; "p95 < 500 ms" is.
 3. **Name the dominant quality attribute.** Most systems have one or two that win ties.
 4. **Generate at least two options.** A design with no considered alternative is a guess.
-5. **Record the decision and its trade-off.** Future-you needs the *why*, not just the *what*.
+5. **Record the decision and its trade-off.** Future-you needs the *why*, not just the *what*. The tool for this is an ADR — covered in the next chapter: [C4 diagrams & ADRs](./02-c4-and-adrs.md).
 
 ## Diagram
 

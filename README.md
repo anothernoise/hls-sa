@@ -33,9 +33,12 @@ straight to Parts 2, 3, and 7 — the domain layers.
 ## How to use this book
 
 - Read **Module 0** and **Part 1** in order; they set up the vocabulary used everywhere else.
-- After that, parts are largely independent — jump to what you need.
-- Do the **labs**. Each links to a companion repo (a "spoke") you can clone and deploy.
+- **Parts 2 and 3** (clinical data + compliance) are foundational — most chapters in Parts 4–9 assume you've read them.
+- After Part 3, parts are largely independent — jump to what you need.
+- Do the **labs**. Each links to a companion repo (a "spoke") you can clone and deploy. Budget ~1–3 hours per lab.
 - End with the **capstone** in Part 10: design a multi-cloud HLS platform from a brief.
+- Unfamiliar acronym? Check the [Glossary](docs/appendix/glossary.md).
+- Want to improve a chapter? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Prerequisites
 

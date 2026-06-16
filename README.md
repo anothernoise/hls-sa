@@ -1,5 +1,7 @@
 # Health & Life Science Solution Architect
 
+**Read the book:** https://anothernoise.github.io/hls-sa/
+
 > A course and reference-architecture handbook for engineers and data professionals
 > moving into a **Solution Architect (SA)** role in healthcare, biotech, pharma, and medtech.
 

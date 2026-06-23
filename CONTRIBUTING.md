@@ -1,15 +1,20 @@
 # Contributing
 
-Thanks for helping improve the **Health & Life Science Solution Architect** handbook.
+The **Health & Life Science Solution Bootcamp** is proprietary (see [LICENSE](LICENSE)).
+Contributions are by invitation, and corrections are welcome.
+
+> **Before contributing**, please reach out — the materials are all-rights-reserved, so
+> contributions are accepted under a contributor agreement. Contact: Dmitry Shirokov ·
+> dmansh@gmail.com · [github.com/anothernoise](https://github.com/anothernoise).
 
 ## Ways to contribute
 
-- **Fix or expand a chapter.** Most chapters are outlines marked `> **Status:** outline`.
-  Filling one in following the chapter template is the most valuable contribution.
-- **Add a lab.** Labs live in companion ("spoke") repos. Open an issue to propose one
-  before building, so we can agree on scope and which Part it belongs to.
-- **Corrections.** Regulations and cloud services change; PRs that fix stale facts are
-  very welcome — cite a source.
+- **Corrections.** Regulations, cloud services, and standards change; fixes to stale facts
+  are very welcome — cite a primary source.
+- **Fix or expand a chapter.** Some chapters are outlines marked `> **Status:** outline`.
+  Filling one in following the chapter template is high-value.
+- **Add a lab.** Labs live in companion ("spoke") repos (public starter + private solution).
+  Reach out to propose one before building, so we can agree on scope and which Part it fits.
 
 ## Chapter template
 
@@ -39,8 +44,12 @@ Run `npm run build` before opening a PR to confirm the book builds cleanly.
 - Write for an engineer who is smart but new to the domain. Define jargon on first use.
 - Prefer **primary sources** (FDA, ONC, HL7, cloud vendor docs) over secondary blogs.
 - Diagrams: Mermaid, kept simple. A diagram that needs a legend is too complex.
-- Keep claims about regulations accurate and dated; this is a handbook people may rely on.
+- Keep claims about regulations accurate and dated; this is a bootcamp people may rely on.
+- New term? Add it to the root `GLOSSARY.md` (`## Term` + one-line definition) — Honkit
+  auto-links every defined term throughout the book.
 
 ## License
 
-By contributing you agree your content is licensed under [CC-BY-4.0](LICENSE).
+The materials are proprietary — all rights reserved (see [LICENSE](LICENSE)). By
+contributing, you assign your contribution to the author under the project's contributor
+terms. Ask before contributing.

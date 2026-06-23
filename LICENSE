@@ -1,27 +1,38 @@
-Attribution 4.0 International (CC BY 4.0)
+Copyright (c) 2026 Dmitry Shirokov (github.com/anothernoise). All rights reserved.
 
-This work — the text and diagrams of the "Health & Life Science Solution Architect"
-handbook — is licensed under the Creative Commons Attribution 4.0 International License.
+Health & Life Science Solution Bootcamp — course materials, text, diagrams,
+curriculum, labs, and accompanying repositories (the "Materials").
 
-You are free to:
+PROPRIETARY — PERMISSION REQUIRED
 
-  - Share — copy and redistribute the material in any medium or format.
-  - Adapt — remix, transform, and build upon the material for any purpose, even
-    commercially.
+The Materials are made available for personal, individual study and evaluation
+only. You may view the published book and read the Materials for your own
+learning.
 
-Under the following terms:
+You may NOT, without the prior written permission of the copyright holder:
 
-  - Attribution — You must give appropriate credit, provide a link to the license,
-    and indicate if changes were made. You may do so in any reasonable manner, but
-    not in any way that suggests the licensor endorses you or your use.
+  - copy, reproduce, republish, mirror, or redistribute the Materials, in whole
+    or in part, in any medium;
+  - modify, adapt, translate, or create derivative works from the Materials;
+  - use the Materials, in whole or in part, to teach, train, deliver, or sell a
+    course, bootcamp, workshop, or other paid or unpaid program;
+  - use the Materials for any commercial purpose;
+  - use the Materials as training data for machine-learning or AI systems.
 
-  - No additional restrictions — You may not apply legal terms or technological
-    measures that legally restrict others from doing anything the license permits.
+If you would like to use the Materials for any of the above — including teaching,
+internal training, commercial use, or redistribution — please ask first.
 
-This is a human-readable summary of (and not a substitute for) the license. The full
-legal code is available at:
+  Contact: Dmitry Shirokov
+  Email:   dmansh@gmail.com
+  GitHub:  https://github.com/anothernoise
 
-  https://creativecommons.org/licenses/by/4.0/legalcode
+Permission, where granted, will be in writing and may carry conditions
+(such as attribution). Absent written permission, all rights are reserved.
 
-Code samples contained in companion ("spoke") repositories are licensed separately;
-see the LICENSE file in each repository.
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. THE AUTHOR IS NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY
+ARISING FROM THE USE OF THE MATERIALS.
+
+Code samples in companion ("spoke") repositories may carry their own license
+files; where a repository specifies a different license, that license governs
+that repository's code.

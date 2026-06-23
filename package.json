@@ -2,8 +2,8 @@
   "name": "hls-sa",
   "version": "0.1.0",
   "private": true,
-  "description": "Health & Life Science Solution Architect — a course and reference-architecture handbook.",
-  "license": "CC-BY-4.0",
+  "description": "Health & Life Science Solution Bootcamp — a course and reference-architecture bootcamp.",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "serve": "honkit serve",
     "build": "honkit build",

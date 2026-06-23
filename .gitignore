@@ -1,5 +1,6 @@
 node_modules/
 _book/
+.claude/
 .DS_Store
 *.log
 npm-debug.log*

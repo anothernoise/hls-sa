@@ -7,6 +7,7 @@
 - [How to use this book](docs/00-orientation/00-how-to-use.md)
 - [The HLS industry map](docs/00-orientation/01-hls-industry-map.md)
 - [The SA operating model](docs/00-orientation/02-sa-operating-model.md)
+- [Bootcamp format & labs](docs/00-orientation/03-bootcamp-format.md)
 
 ## Part 1 — Foundations of the SA role
 
@@ -31,6 +32,7 @@
 - [GxP & 21 CFR Part 11](docs/03-compliance/02-gxp-part11.md)
 - [GDPR & data residency](docs/03-compliance/03-gdpr-residency.md)
 - [De-identification & consent](docs/03-compliance/04-deidentification-consent.md)
+- [Regional compliance: US, Canada & Europe](docs/03-compliance/05-regional-compliance.md)
 
 ## Part 4 — Cloud platforms for HLS
 
@@ -41,6 +43,7 @@
 - [Databricks for HLS](docs/04-cloud-platforms/04-databricks.md)
 - [Snowflake for HLS](docs/04-cloud-platforms/05-snowflake.md)
 - [On-premises & hybrid for HLS](docs/04-cloud-platforms/06-on-prem-hybrid.md)
+- [NVIDIA for HLS](docs/04-cloud-platforms/07-nvidia.md)
 
 ## Part 5 — Data platforms & RWD/RWE
 
@@ -88,5 +91,7 @@
 
 ## Appendix
 
-- [Glossary](docs/appendix/glossary.md)
 - [Contributing](CONTRIBUTING.md)
+
+<!-- GLOSSARY.md (book root) is auto-detected by Honkit: it generates the
+     Glossary page and auto-links every defined term throughout the book. -->

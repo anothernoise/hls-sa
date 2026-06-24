@@ -51,7 +51,22 @@ flowchart LR
 - **Solution repos are private.** Complete reference implementations, instructor materials, grading rubrics, and assessment keys live in private repositories, granted to enrolled participants. Keeping the "major part" hidden preserves the learning value of doing the work.
 - **Synthetic data only.** Every lab uses synthetic data (e.g. Synthea). Never put real PHI in a lab repo — that is the first rule of [Part 3](../03-compliance/00-hipaa.md).
 
-The public starter repos are listed in the [README](../../README.md). To request access to the private solution repos — for a cohort, for teaching, or for any reuse — see the licensing note there.
+### The lab catalog
+
+| Lab | Domain | Starter repo (public) | Module |
+| --- | --- | --- | --- |
+| FHIR interoperability | HL7v2/FHIR + SMART | `hls-fhir-interop` | Part 2 |
+| RWD lakehouse (OMOP) | Data platform / RWE | `hls-lakehouse-rwd` | Part 5 |
+| PBM claims engine on AWS | Pharmacy claims adjudication (in-memory rules engine) | `hls-pbm-claims-aws` | Parts 5 / 8 |
+| Clinical RAG on GCP | AI / RAG | `RAGonGCP` | Part 6 |
+| Agentic AI on AWS | AI / agents | `aws-health-agents` | Part 6 |
+| Medical-imaging AI | Imaging AI (DICOM + MONAI) | `hls-imaging-ai` | Part 6 |
+| Genomics pipeline | Genomics (nf-core) | `RNASEQ` | Part 7 |
+
+The catalog grows over time; links are in the [README](../../README.md). Each public starter
+repo has a matching **private** solution repo (full build, rubric, answer keys) granted to
+enrolled participants. To request access — for a cohort, for teaching, or for any reuse — see
+the licensing note in the README.
 
 ## Assessment
 

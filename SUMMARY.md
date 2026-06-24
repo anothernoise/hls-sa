@@ -24,6 +24,9 @@
 - [Clinical terminologies](docs/02-interoperability/03-terminologies.md)
 - [OMOP Common Data Model](docs/02-interoperability/04-omop-cdm.md)
 - [SMART on FHIR](docs/02-interoperability/05-smart-on-fhir.md)
+- [FHIR profiles & regulation: US & Canada](docs/02-interoperability/06-fhir-profiles-us-ca.md)
+- [SQL-on-FHIR](docs/02-interoperability/07-sql-on-fhir.md)
+- [AI with FHIR](docs/02-interoperability/08-ai-with-fhir.md)
 
 ## Part 3 — Compliance, security & privacy
 

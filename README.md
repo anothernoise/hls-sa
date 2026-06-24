@@ -60,7 +60,9 @@ Labs follow a two-repo model:
 | RWD lakehouse (OMOP) | [`hls-lakehouse-rwd`](https://github.com/anothernoise/hls-lakehouse-rwd) | Part 5 |
 | Clinical RAG on GCP | [`RAGonGCP`](https://github.com/anothernoise/RAGonGCP) | Part 6 |
 | Agentic AI on AWS | [`aws-health-agents`](https://github.com/anothernoise/aws-health-agents) | Part 6 |
+| Medical-imaging AI (MONAI) | [`hls-imaging-ai`](https://github.com/anothernoise/hls-imaging-ai) | Part 6 |
 | Genomics pipeline (nf-core) | [`RNASEQ`](https://github.com/anothernoise/RNASEQ) | Part 7 |
+| PBM claims engine on AWS | [`hls-pbm-claims-aws`](https://github.com/anothernoise/hls-pbm-claims-aws) | Part 5 / 8 |
 
 > Solution repos and instructor materials are private. To request access (for a cohort,
 > for teaching, or for any reuse of the materials), see **Licensing & access** below.

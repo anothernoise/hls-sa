@@ -215,3 +215,33 @@ NVIDIA's supported software runtime for deploying its AI/HLS stack consistently 
 
 ## Quebec Law 25
 Quebec's modernized private-sector privacy law, introducing GDPR-like obligations (consent, breach reporting, privacy impact assessments).
+
+## Tokenization
+Replacing a patient's direct identifiers with an irreversible, consistent token so records about the same person can be linked across organisations without exposing PII — the engine behind RWD/RWE linkage.
+
+## RAG
+Retrieval-Augmented Generation — grounding an LLM by retrieving relevant passages from a trusted corpus and putting them in the prompt, so answers are sourced and citable.
+
+## MLOps
+The practice of reproducible model training, versioned artifacts, controlled deployment, and continuous monitoring (drift) for production ML.
+
+## GMLP
+Good Machine Learning Practice — FDA/Health Canada/MHRA guiding principles for developing safe, effective AI/ML medical devices; maps onto disciplined MLOps.
+
+## PCCP
+Predetermined Change Control Plan — an FDA-reviewed plan (final guidance Dec 2024) that pre-specifies permitted changes to an AI/ML device so they can ship without a new submission.
+
+## 510(k)
+The FDA premarket pathway for a device that is substantially equivalent to a legally-marketed predicate; the route most AI/ML devices take.
+
+## De Novo
+The FDA pathway for a novel low-to-moderate-risk device with no predicate; creates a new device classification.
+
+## PMA
+Premarket Approval — the FDA's most rigorous pathway, for high-risk (Class III) devices, requiring clinical evidence of safety and effectiveness.
+
+## MDSAP
+Medical Device Single Audit Program — one quality-system audit (ISO 13485) recognized by Canada, the US, Australia, Brazil, and Japan; required for Health Canada Class II–IV device licences.
+
+## medallion
+The bronze (raw) → silver (conformed) → gold (analytics-ready) layering pattern for refining data in a lakehouse.

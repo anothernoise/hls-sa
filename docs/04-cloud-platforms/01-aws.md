@@ -49,6 +49,17 @@ flowchart LR
 
 The pattern: managed services ingest each modality, all roads lead to **S3 as the lake**, and analytics/AI build on top. CloudTrail provides the HIPAA-required audit trail across services.
 
+## Compute, batch & HPC
+
+HLS has heavy batch and HPC workloads (genomics, imaging AI, large ETL) that need elastic, cost-controlled compute beyond the managed services:
+
+- **AWS Batch** — managed batch scheduling over EC2/Fargate; the workhorse for genomics secondary analysis and large ETL. Use **Spot** instances for fault-tolerant steps to cut cost dramatically, with on-demand fallback for the critical path.
+- **HealthOmics workflows vs AWS Batch** — HealthOmics runs Nextflow/WDL/CWL with built-in storage and **provenance**; choose it when you want managed genomics with audit trails. Choose **Batch** (often via a Nextflow executor) when you need maximum control or already operate your own pipeline tooling. See [Sequencing pipelines](../07-genomics/00-sequencing-pipelines.md) and [HealthOmics](../07-genomics/01-healthomics.md).
+- **EC2 GPU + AWS ParallelCluster** — GPU instances for imaging AI / [Parabricks](./07-nvidia.md), and ParallelCluster for HPC-style (Slurm) workloads that mirror an on-prem cluster — useful in [hybrid](./06-on-prem-hybrid.md) bursting.
+- **EKS / Fargate** — Kubernetes or serverless containers for the converter/services tier; **Lambda** for lightweight event handlers (e.g. the HL7v2 converter).
+
+Keep batch compute co-located with S3 to avoid egress on terabyte-scale genomic/imaging data, and right-size with Spot where the workload tolerates interruption — the dominant cost levers (see [TCO](../01-foundations/03-tradeoffs-tco.md)).
+
 ## HIPAA shared responsibility on AWS
 
 AWS signs a BAA covering the infrastructure and the HIPAA-eligible managed services. **You** remain responsible for configuration (see [HIPAA](../03-compliance/00-hipaa.md)):

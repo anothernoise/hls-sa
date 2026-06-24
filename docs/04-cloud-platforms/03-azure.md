@@ -55,6 +55,10 @@ flowchart LR
 
 The pattern: **Azure Health Data Services** is the transactional clinical layer; **Microsoft Fabric / OneLake** is the analytics lakehouse; **Azure OpenAI** adds generative AI. The MedTech service makes Azure distinctive for **connected-device** and remote-monitoring scenarios.
 
+## Compute & batch
+
+For genomics, imaging AI, and large ETL: **Azure Batch** schedules large batch/HPC jobs (with Spot VMs), and **Azure CycleCloud** orchestrates Slurm-style HPC clusters — useful for [hybrid](./06-on-prem-hybrid.md) bursting from an on-prem cluster. **AKS** runs containerized pipelines and services; **Azure ML** handles GPU training and [MLOps](../06-ai-ml/04-mlops-governance.md); **ADLS Gen2** is the lake substrate feeding OneLake. Co-locate compute with storage and prefer Spot for fault-tolerant steps to manage cost.
+
 ## HIPAA / governance posture on Azure
 
 - **Entra ID** (formerly Azure AD) for identity, MFA, conditional access — usually already the org's identity provider.

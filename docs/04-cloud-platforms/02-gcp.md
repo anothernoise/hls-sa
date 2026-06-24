@@ -45,6 +45,10 @@ The pattern: **Cloud Healthcare API is the front door** for all clinical data; i
 
 GCP is especially well-suited to retrieval-augmented generation over clinical and biomedical corpora: BigQuery (or Vertex AI Vector Search) holds the embeddings, Gemini/MedLM generates, and Vertex AI Search for Healthcare provides patient-record-aware retrieval. This is exactly the pattern in the [`RAGonGCP`](https://github.com/anothernoise/RAGonGCP) lab. See also [RAG over clinical corpora](../06-ai-ml/02-rag-clinical.md).
 
+## Compute & batch
+
+For genomics, imaging AI, and large ETL: **Google Cloud Batch** schedules batch jobs (with Spot VMs for cost), and is a common Nextflow executor for [sequencing pipelines](../07-genomics/00-sequencing-pipelines.md). **GKE** runs containerized services and pipelines; **Vertex AI custom training** handles GPU model training; **Cloud Storage** is the lake substrate. As elsewhere, co-locate compute with storage and use Spot/preemptible for fault-tolerant steps to control cost.
+
 ## HIPAA posture on GCP
 
 - **VPC Service Controls** — create a security perimeter around your healthcare data services so data cannot be exfiltrated to projects outside the perimeter. A distinctive GCP control worth using for PHI.

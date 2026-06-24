@@ -23,7 +23,16 @@ require([
             const div = $(e);
             if (div.find('svg').length > 0) return;
             const html = div.html();
-            const def = html.replace(/&gt;/g, '>').replace(/&lt;/g, '<')
+            // jQuery .html() re-serializes the div's text, HTML-escaping <, >, and &.
+            // We must restore ALL of them — including &amp; — or diagrams that use the
+            // mermaid `&` multi-node syntax (A & B --> C) receive "&amp;" and throw
+            // "Syntax error in graph". Unescape &amp; LAST to avoid double-decoding.
+            const def = html
+                .replace(/&gt;/g, '>')
+                .replace(/&lt;/g, '<')
+                .replace(/&quot;/g, '"')
+                .replace(/&#39;/g, "'")
+                .replace(/&amp;/g, '&')
             div.html(render(def));
         });
     })

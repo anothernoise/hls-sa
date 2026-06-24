@@ -79,3 +79,4 @@ For genomics, imaging AI, and large ETL: **Google Cloud Batch** schedules batch 
 - [MedLM on Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/medlm/overview)
 - [MedGemma](https://github.com/google-health/medgemma)
 - [GCP HIPAA compliance](https://cloud.google.com/security/compliance/hipaa)
+- [Google Cloud Healthcare & Life Sciences solutions (reference architectures)](https://cloud.google.com/solutions/healthcare-life-sciences)

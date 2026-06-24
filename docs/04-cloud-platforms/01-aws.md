@@ -94,3 +94,4 @@ Codify all of this as IaC (Terraform or CDK) so the controls are uniform and pro
 - [AWS HealthLake](https://aws.amazon.com/healthlake/)
 - [AWS HealthOmics](https://aws.amazon.com/omics/)
 - [AWS HIPAA-eligible services reference](https://aws.amazon.com/compliance/hipaa-eligible-services-reference/)
+- [AWS Architecture Center — Healthcare & Life Sciences (reference architectures)](https://aws.amazon.com/architecture/healthcare/)

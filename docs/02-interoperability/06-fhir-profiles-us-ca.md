@@ -29,6 +29,7 @@ The US has pushed FHIR through **federal regulation**, which makes conformance l
 - **CMS Interoperability & Patient Access** rules require payers to expose FHIR APIs (Patient Access, Provider Directory), and the **Prior Authorization** rule adds FHIR APIs to streamline prior auth.
 - **21st Century Cures Act** prohibits **information blocking** — restricting access to electronic health information is unlawful.
 - **TEFCA** provides nationwide exchange via Qualified Health Information Networks, increasingly FHIR-based.
+- **CMS-0057** (Interoperability & Prior Authorization Final Rule, 2024) expands payer FHIR APIs and mandates an electronic prior-authorization API — see [Document & claims standards](./09-cda-x12-claims.md).
 
 The result: strong forcing functions, broad availability of FHIR endpoints, and clear conformance targets (US Core + USCDI version).
 

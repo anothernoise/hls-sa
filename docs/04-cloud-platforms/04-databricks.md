@@ -88,3 +88,4 @@ A common enterprise pattern: a managed FHIR service (HealthLake / AHDS / Cloud H
 - [dbignite FHIR interoperability accelerator](https://www.databricks.com/solutions/accelerators/fhir)
 - [Glow — genomics on Spark](https://projectglow.io/)
 - [Unity Catalog](https://www.databricks.com/product/unity-catalog)
+- [Databricks Solution Accelerators (HLS reference implementations)](https://www.databricks.com/solutions/accelerators)

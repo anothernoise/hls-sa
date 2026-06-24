@@ -90,3 +90,4 @@ There is no dedicated Azure spoke repo yet. The [`hls-fhir-interop`](https://git
 - [Healthcare data solutions in Microsoft Fabric](https://learn.microsoft.com/en-us/industry/healthcare/healthcare-data-solutions/overview)
 - [Text Analytics for Health](https://learn.microsoft.com/en-us/azure/ai-services/language-service/text-analytics-for-health/overview)
 - [Azure HIPAA/HITRUST compliance](https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-hipaa-us)
+- [Azure Architecture Center — Health industry (reference architectures)](https://learn.microsoft.com/en-us/azure/architecture/industries/health)

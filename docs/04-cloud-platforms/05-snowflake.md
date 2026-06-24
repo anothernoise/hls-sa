@@ -82,3 +82,4 @@ Many enterprises run **both**: Databricks for engineering and ML, Snowflake for 
 - [Snowflake Horizon Catalog](https://www.snowflake.com/en/product/features/horizon/)
 - [Snowflake Data Clean Rooms](https://www.snowflake.com/en/data-cloud/workloads/data-collaboration/)
 - [Snowflake Cortex AI](https://www.snowflake.com/en/product/features/cortex/)
+- [Snowflake HLS solutions & Quickstarts (reference architectures)](https://quickstarts.snowflake.com/)

@@ -104,6 +104,23 @@ Key IGs for the US market:
 
 When you implement a FHIR API, always validate your resources against the relevant IG — not just against base FHIR. A Patient resource missing `identifier` (required by US Core) will fail interoperability testing.
 
+## Profiles, extensions & the "everything is optional" problem
+
+The reason IGs exist is base FHIR's defining weakness for interoperability: **almost every element is optional and repeatable.** Two systems can both be "valid FHIR" and still not exchange usefully. Profiling and extensions are how you turn flexible FHIR into a real contract.
+
+- **Profile** — a `StructureDefinition` that *constrains* a resource: makes elements required, fixes cardinality, binds a code element to a specific value set, or marks elements **must-support** (a consumer must be able to process them). US Core and CA Baseline are sets of profiles. Profiles only narrow base FHIR — they cannot loosen it.
+- **Extension** — the *standard* way to add data FHIR doesn't model natively. Rather than inventing fields, you attach an `extension` with a canonical URL that defines its meaning and type. (US Core race/ethnicity are extensions.) Extensions keep additions interoperable instead of proprietary.
+- **Profiling pitfalls:** over-constraining (so real-world data won't validate), under-constraining (so consumers still can't rely on anything), and "extension soup" (custom extensions nobody else understands). Reuse registered extensions before creating your own.
+
+```mermaid
+flowchart LR
+  Base["Base FHIR (mostly optional)"] -->|profile constrains| Prof["Profiled resource<br/>(required, bound, must-support)"]
+  Base -->|extension adds| Ext["Extension (canonical URL)"]
+  Prof --> Val["Validate against the IG<br/>(profiles + extensions)"]
+```
+
+**SA implication:** "supports FHIR" is meaningless without naming the **profiles** (and version). Conformance is to an IG's profiles, validated with tooling (e.g. the FHIR validator, Inferno), not to base FHIR. See [FHIR profiles & regulation: US & Canada](./06-fhir-profiles-us-ca.md).
+
 ## Regulatory mandate
 
 FHIR is no longer optional in the US:

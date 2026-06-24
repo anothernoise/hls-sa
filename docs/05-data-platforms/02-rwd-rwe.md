@@ -49,6 +49,38 @@ flowchart LR
 
 Tokenization complements, not replaces, the methods in [De-identification & consent](../03-compliance/04-deidentification-consent.md): you still manage re-identification risk on the linked dataset, and consent must permit the linkage.
 
+### Tools, best practices & scaling
+
+**Tools / ecosystem.** The market is dominated by specialist vendors — **Datavant** (the
+de-facto network), **HealthVerity**, and others — plus payer/EHR-native tokenization.
+A token vendor provides: the tokenization software that runs *inside* each data holder, a
+matching/linkage service, and often a marketplace of pre-tokenized datasets (claims,
+labs, mortality). Some organisations run **in-house** tokenization for internal linkage.
+
+**Best practices:**
+
+- **Tokenize at the source, never centralize PII.** The software runs where the PII already
+  lives; only tokens (plus de-identified payload) leave. A central PII pile defeats the point.
+- **Use multiple token types.** Different identifier combinations (e.g. name+DOB+SSN vs
+  name+DOB+gender+ZIP) raise match rates and provide fallback when one identifier is missing —
+  while a "double-blind"/site-specific token step limits cross-dataset re-identification.
+- **Govern the *linked* result.** Linkage increases re-identification risk; run an Expert
+  Determination on the joined dataset and apply [governance](./03-governance-contracts.md)
+  (masking, access control, audit) — tokenization is not a HIPAA exemption.
+- **Confirm consent/legal basis** covers secondary linkage before you do it.
+- **Measure match quality.** Track match rate and false-match risk; a bad link is worse than
+  no link in an RWE study.
+
+**Scaling:**
+
+- Tokenization is **embarrassingly parallel** — token generation is a per-record hash-style
+  transform; run it as a batch job (e.g. Spark on the [lakehouse](./00-lakehouse-vs-warehouse.md))
+  over millions of records.
+- The expensive part is **matching/linkage** at population scale; push it to the warehouse/
+  lakehouse engine (token-keyed joins) or the vendor's linkage service rather than bespoke code.
+- Make linkage **incremental** — re-tokenizing the whole cohort when a new source arrives
+  does not scale; design for additive joins (the same N+1 discipline as variant stores).
+
 ## Is RWE good enough for regulators?
 
 RWD is messy — missing data, confounding, inconsistent capture. Regulators accept RWE when the data and methods are credible:

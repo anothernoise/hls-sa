@@ -62,6 +62,7 @@ flowchart LR
 | Agentic AI on AWS | AI / agents | `aws-health-agents` | Part 6 |
 | Medical-imaging AI | Imaging AI (DICOM + MONAI) | `hls-imaging-ai` | Part 6 |
 | Genomics pipeline | Genomics (nf-core) | `RNASEQ` | Part 7 |
+| Variant store on AWS | Genomic variant store (HealthOmics / Iceberg / TileDB) | `hls-variant-store-aws` | Part 7 |
 
 The catalog grows over time; links are in the [README](../../README.md). Each public starter
 repo has a matching **private** solution repo (full build, rubric, answer keys) granted to

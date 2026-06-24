@@ -79,6 +79,20 @@ A digital-health startup wants a patient-facing API over PHI.
 4. **Generate at least two options.** A design with no considered alternative is a guess.
 5. **Record the decision and its trade-off.** Future-you needs the *why*, not just the *what*. The tool for this is an ADR — covered in the next chapter: [C4 diagrams & ADRs](./02-c4-and-adrs.md).
 
+## Frameworks & methods (use them, don't worship them)
+
+You don't have to invent the practice of architecture — mature frameworks give you vocabulary, checklists, and templates. Borrow what helps; skip the ceremony that doesn't.
+
+| Framework / method | What it gives you | Use it for |
+| --- | --- | --- |
+| **TOGAF** | An enterprise-architecture method (ADM) and a way to organize business/data/application/technology architectures and governance | Large orgs with formal EA governance; aligning a solution to an enterprise landscape |
+| **C4 model** | A simple, layered way to *diagram* a system (Context→Container→Component→Code) | Every design — your default diagramming approach ([C4 & ADRs](./02-c4-and-adrs.md)) |
+| **ADRs / MADR** | A lightweight record of *why* a decision was made | Capturing significant, hard-to-reverse decisions |
+| **arc42** | A pragmatic template for architecture *documentation* (incl. quality requirements) | Structuring a design document without TOGAF's weight |
+| **Cloud Well-Architected** | Pillar-based *review* checklists (security, reliability, cost…) | Reviewing a candidate design ([Well-Architected](./01-well-architected.md)) |
+
+Rule of thumb for an SA: **TOGAF/arc42 for the enterprise and documentation altitude, C4 for diagrams, ADRs for decisions, Well-Architected for review.** A two-person startup needs ADRs and a C4 sketch, not a full TOGAF ADM cycle; a hospital's enterprise architecture team may require TOGAF artifacts. Match the ceremony to the stakes — over-applying a heavyweight framework is its own failure mode.
+
 ## Diagram
 
 ```mermaid

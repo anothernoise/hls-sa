@@ -81,6 +81,37 @@ OMOP is just a relational schema, so it runs anywhere — but at RWD scale (mill
 
 See [OMOP on the cloud](../05-data-platforms/01-omop-on-cloud.md) and the [`hls-lakehouse-rwd`](https://github.com/anothernoise/hls-lakehouse-rwd) lab for the lakehouse build.
 
+## FHIR → OMOP
+
+Most modern source data arrives as [FHIR](./01-fhir.md), so **FHIR → OMOP** is now the most common OMOP ETL. The two models serve different jobs — FHIR is for *exchange* (resource-per-record, mostly optional fields), OMOP is for *analysis* (person-centric, standard-concept-coded) — so mapping is a real transformation, not a rename.
+
+```mermaid
+flowchart LR
+  FHIR["FHIR resources"] --> Map["Resource → CDM table mapping"]
+  Map --> Concept["Codes → OMOP standard concepts"]
+  Concept --> CDM["OMOP CDM"]
+```
+
+Typical resource-to-table mappings:
+
+| FHIR resource | OMOP table |
+| --- | --- |
+| `Patient` | `person` |
+| `Encounter` | `visit_occurrence` |
+| `Condition` | `condition_occurrence` |
+| `MedicationRequest` / `MedicationStatement` | `drug_exposure` |
+| `Observation` (lab/vital) | `measurement` |
+| `Observation` (other) | `observation` |
+| `Procedure` | `procedure_occurrence` |
+
+Practical guidance:
+
+- **Codes still need mapping.** A FHIR `Condition` coded in ICD-10-CM must be mapped to the OMOP **standard** SNOMED concept via the vocabulary tables — FHIR conformance does not give you OMOP standard concepts for free.
+- **Flatten first.** Export with [Bulk Data](./01-fhir.md) and flatten via [SQL-on-FHIR](./07-sql-on-fhir.md) ViewDefinitions, then map the tidy tables into the CDM — far simpler than parsing nested FHIR in the ETL.
+- **Derive what OMOP needs.** OMOP requires `observation_period`; FHIR has no direct equivalent, so derive it from encounter/claim spans.
+- **Reuse community work.** OHDSI maintains FHIR-to-OMOP conventions and tooling — start there rather than inventing mappings.
+- **Track unmapped data** as always (see [terminologies](./03-terminologies.md)).
+
 ## The OHDSI analytics ecosystem
 
 Standardizing to OMOP unlocks a mature open-source toolset — the real payoff:

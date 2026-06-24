@@ -296,3 +296,27 @@ US federal regulation giving stricter confidentiality protection to substance-us
 
 ## 510(k)
 The FDA premarket pathway for a device substantially equivalent to a legally-marketed predicate; the route most AI/ML devices take. Ref: [FDA — 510(k)](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k).
+
+## Apache Iceberg
+An open table format that brings ACID transactions, schema/partition evolution, and time travel to data-lake files on object storage — well suited to large, append-heavy datasets like variant stores. Ref: [iceberg.apache.org](https://iceberg.apache.org/).
+
+## C-CDA
+Consolidated Clinical Document Architecture — an HL7 standard for structured clinical *documents* in XML (e.g. the Continuity of Care Document); widely used for transitions of care and HIE exchange, alongside FHIR. Ref: [HL7 C-CDA](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=492).
+
+## CMS-0057
+The CMS Interoperability and Prior Authorization Final Rule (2024) — requires impacted payers to expand FHIR APIs (Patient/Provider/Payer-to-Payer access) and implement an electronic prior-authorization API, with major requirements phasing in around 2027. Ref: [CMS-0057-F](https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f).
+
+## FHIR extension
+The standard FHIR mechanism for adding data the base spec doesn't model — an `extension` with a canonical URL defining its meaning and type — so additions stay interoperable rather than proprietary. Ref: [FHIR extensibility](https://hl7.org/fhir/extensibility.html).
+
+## FHIR profile
+A `StructureDefinition` that constrains a FHIR resource for a use case (required elements, fixed cardinality, bound value sets, must-support); profiles can only narrow base FHIR, not loosen it. Ref: [FHIR profiling](https://hl7.org/fhir/profiling.html).
+
+## S3 Tables
+An AWS service providing fully managed Apache Iceberg tables in Amazon S3, with automatic compaction and table maintenance — Iceberg semantics without the operational overhead. Ref: [Amazon S3 Tables](https://aws.amazon.com/s3/features/tables/).
+
+## TileDB
+A storage engine based on sparse/dense multi-dimensional arrays; TileDB-VCF is purpose-built for genomic variant data with efficient cohort queries and incremental ingest. Ref: [TileDB-VCF](https://docs.tiledb.com/main/genomics).
+
+## X12
+The ASC X12 EDI standard for US healthcare administrative/financial transactions named by HIPAA — including 837 (claim), 835 (remittance), 270/271 (eligibility), 276/277 (claim status), and 278 (prior authorization). Ref: [x12.org](https://x12.org/).

@@ -27,6 +27,7 @@
 - [FHIR profiles & regulation: US & Canada](docs/02-interoperability/06-fhir-profiles-us-ca.md)
 - [SQL-on-FHIR](docs/02-interoperability/07-sql-on-fhir.md)
 - [AI with FHIR](docs/02-interoperability/08-ai-with-fhir.md)
+- [Document & claims standards: C-CDA, X12 & prior auth](docs/02-interoperability/09-cda-x12-claims.md)
 
 ## Part 3 — Compliance, security & privacy
 
@@ -69,6 +70,7 @@
 - [Sequencing pipelines](docs/07-genomics/00-sequencing-pipelines.md)
 - [AWS HealthOmics](docs/07-genomics/01-healthomics.md)
 - [Variant stores & scale](docs/07-genomics/02-variant-stores.md)
+- [Variant store on AWS: design & implementation](docs/07-genomics/03-variant-store-aws.md)
 
 ## Part 8 — Integration & application patterns
 

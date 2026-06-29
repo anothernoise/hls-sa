@@ -1,5 +1,7 @@
 # Document & claims standards: C-CDA, X12 & prior auth
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Learning objectives
 
 After this chapter you will be able to:
@@ -70,8 +72,9 @@ payers (Medicare Advantage, Medicaid, CHIP, ACA marketplace plans) must:
 
 - Expand the **Patient Access API** and add a **Provider Access API** and **Payer-to-Payer API** (all FHIR).
 - Implement a **Prior Authorization API** (the "PARDD" / Da Vinci-based APIs) to make prior
-  auth electronic and faster, and report prior-auth metrics. Major API requirements phase in
-  around **2027**.
+  auth electronic and faster, and report prior-auth metrics. The operational prior-auth
+  provisions begin in **2026**, and the FHIR API requirements (Provider Access, Payer-to-Payer,
+  Prior Authorization) have compliance dates generally from **Jan 1, 2027**. All APIs use **FHIR R4**.
 
 This is the regulatory bridge from EDI to FHIR: prior auth (X12 278 today) gets a FHIR API
 path, and payers must expose far more data via FHIR. See [FHIR profiles & regulation](./06-fhir-profiles-us-ca.md)

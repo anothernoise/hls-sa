@@ -1,5 +1,7 @@
 # FHIR interoperability platform
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Problem & context
 
 A mid-size health system receives clinical events from its EHR as HL7v2 and needs to (a) expose them to modern apps over FHIR R4 and (b) feed an analytics platform — without mishandling PHI. This is the most common provider-facing SA brief.

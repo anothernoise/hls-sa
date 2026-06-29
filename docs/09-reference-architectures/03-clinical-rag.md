@@ -1,5 +1,7 @@
 # Clinical RAG
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Problem & context
 
 Clinicians and staff need fast, trustworthy answers grounded in the institution's own documents — guidelines, policies, protocols, and (with authorization) patient records — without the hallucination risk of a bare LLM and without sending PHI to an un-covered service.

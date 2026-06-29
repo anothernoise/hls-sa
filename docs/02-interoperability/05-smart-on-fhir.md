@@ -1,5 +1,7 @@
 # SMART on FHIR
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Learning objectives
 
 After this chapter you will be able to:

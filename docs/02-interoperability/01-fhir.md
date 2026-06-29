@@ -1,5 +1,7 @@
 # FHIR R4
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Learning objectives
 
 After this chapter you will be able to:
@@ -17,6 +19,8 @@ FHIR's design principles make it accessible to any developer with REST experienc
 - The API is standard REST: GET, POST, PUT, DELETE, PATCH.
 - Resources link to each other by reference (like hyperlinks in a document).
 - Search uses URL query parameters: `GET /Observation?subject=Patient/123&code=8302-2`.
+
+> **Which version?** Build on **R4** — it is the deployed standard everywhere and the version every US/EU mandate targets (US Core, CMS-0057, EHDS IGs all use R4). **R5** (2023) saw limited adoption; **R6** is targeting a first normative release around **2027**. For any project today, default to R4 and treat R6 as a future migration, not a starting point.
 
 ## The FHIR resource model
 

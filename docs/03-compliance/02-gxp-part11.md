@@ -1,5 +1,7 @@
 # GxP & 21 CFR Part 11
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Learning objectives
 
 After this chapter you will be able to:

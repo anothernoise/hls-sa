@@ -1,5 +1,7 @@
 # MLOps & model governance
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Learning objectives
 
 After this chapter you will be able to:
@@ -45,6 +47,17 @@ Governance is the control layer over the lifecycle — who approved what, on wha
 ## Connecting to regulation
 
 For clinical AI that is a [medical device](./05-fda-samd.md), MLOps *is* part of the regulatory story. FDA's **Good Machine Learning Practice (GMLP)** principles map directly onto MLOps: data quality and representativeness, reproducible training, rigorous validation, monitoring of deployed performance, and managed change. A platform that already does disciplined MLOps is most of the way to producing the evidence a submission needs (see also [GxP & validation](../03-compliance/02-gxp-part11.md) for the analogous discipline in regulated software).
+
+## ONC HTI-1: AI transparency for clinical decision support
+
+Not all clinical AI is an FDA device, but if it ships **inside certified health IT** (e.g. an EHR), it is now caught by **ONC's HTI-1 final rule** (finalized Dec 2023; certified-health-IT compliance from **Jan 1, 2025**). HTI-1 is the first US regulation squarely targeting AI *transparency* in healthcare, and it changes what your AI platform must expose:
+
+- **Predictive DSI.** HTI-1 replaces the old Clinical Decision Support criterion with **Decision Support Interventions** — split into *evidence-based* DSI (classic rules/alerts) and **Predictive DSI** (models that produce a prediction/classification/recommendation). Predictive DSI carries the new obligations.
+- **FAVES.** Developers must enable users to judge whether a DSI is **F**air, **A**ppropriate, **V**alid, **E**ffective, and **S**afe.
+- **Source attributes ("nutrition label").** For each Predictive DSI, ~31 **source attributes** must be disclosed — what data it was trained on, intended use, output, performance and validation, fairness/bias measures, and how it should (and shouldn't) be used.
+- **Intervention risk management (IRM).** Developers must document and apply risk-management practices and **data-governance** procedures across the model's lifecycle (accuracy, validity, reliability, safety, fairness).
+
+For an SA this means your [MLOps](#the-lifecycle) artifacts *are* the compliance evidence: the registry metadata, intended-use statement, subgroup-performance results, and data lineage you already keep map almost one-to-one onto HTI-1 source attributes. Design to emit them. (A follow-on **HTI-2** rulemaking, proposed in 2024, extends interoperability/API and information-sharing requirements; track it if you build for certified health IT.) See also the US landscape in [FHIR profiles & regulation](../02-interoperability/06-fhir-profiles-us-ca.md).
 
 ## Design guidance
 

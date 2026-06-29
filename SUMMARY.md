@@ -96,6 +96,8 @@
 
 ## Appendix
 
+- [Maintenance & freshness](docs/appendix/maintenance.md)
+- [Changelog](CHANGELOG.md)
 - [Contributing](CONTRIBUTING.md)
 
 <!-- GLOSSARY.md (book root) is auto-detected by Honkit: it generates the

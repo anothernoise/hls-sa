@@ -58,7 +58,16 @@ Drug Utilization Review — the safety checks a PBM applies during pharmacy clai
 The FDA premarket pathway for a novel low-to-moderate-risk device that has no predicate; it creates a new device classification. Ref: [FDA — De Novo](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/de-novo-classification-request).
 
 ## EHDS
-European Health Data Space — an EU regulation (in force 2025, phased application) creating a common framework for primary use (patient access/portability) and secondary use (research, policy) of health data, using FHIR-based exchange. Ref: [EHDS](https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en).
+European Health Data Space — an EU regulation (entered into force March 2025; implementing acts due ~2027; first primary-use categories ~2029) creating a common framework for primary use (patient access/portability) and secondary use (research, policy) of health data, using FHIR-based exchange. Ref: [EHDS](https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en).
+
+## FAVES
+The ONC HTI-1 principle that decision-support/AI tools in certified health IT should be Fair, Appropriate, Valid, Effective, and Safe — with "source attributes" disclosed so users can judge this. Ref: [ONC HTI-1](https://www.healthit.gov/topic/laws-regulation-and-policy/health-data-technology-and-interoperability-certification-program).
+
+## HTI-1
+ONC's Health Data, Technology, and Interoperability "Algorithm Transparency" final rule (finalized 2023; certified-health-IT compliance from Jan 1, 2025) — introduces Predictive Decision Support Intervention transparency (source attributes, FAVES, risk management) and updates information blocking. Ref: [ONC HTI-1](https://www.healthit.gov/topic/laws-regulation-and-policy/health-data-technology-and-interoperability-certification-program).
+
+## Predictive DSI
+Predictive Decision Support Intervention — under ONC HTI-1, a model in certified health IT that produces a prediction, classification, or recommendation; subject to transparency (source attributes), FAVES, and intervention risk-management requirements. Ref: [ONC DSI criteria](https://www.healthit.gov/topic/laws-regulation-and-policy/health-data-technology-and-interoperability-certification-program).
 
 ## EHR
 Electronic Health Record — the system of record clinicians use to manage patient records (Epic, Oracle Health/Cerner, MEDITECH). Modern EHRs expose FHIR APIs but still emit HL7v2. Ref: [HealthIT.gov — EHR](https://www.healthit.gov/faq/what-electronic-health-record-ehr).

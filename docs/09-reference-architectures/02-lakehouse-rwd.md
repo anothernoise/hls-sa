@@ -1,5 +1,7 @@
 # RWD lakehouse
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Problem & context
 
 An organization wants to run real-world-evidence studies across clinical and claims data from multiple sources, each with a different schema and vocabulary, with governed access to PHI and reproducible results acceptable to regulators.

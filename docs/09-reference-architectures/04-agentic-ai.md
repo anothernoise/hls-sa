@@ -1,5 +1,7 @@
 # Agentic AI assistant
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Problem & context
 
 A health organization wants to automate a multi-step workflow — e.g. assembling a prior-authorization packet or triaging and routing referrals — that requires gathering data from several systems (FHIR, claims, labs), reasoning over it, and drafting an output. A single LLM call cannot do this; an agent that calls tools can.

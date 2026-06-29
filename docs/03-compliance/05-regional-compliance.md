@@ -1,5 +1,7 @@
 # Regional compliance: US, Canada & Europe
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Learning objectives
 
 After this chapter you will be able to:
@@ -27,9 +29,10 @@ The US has **no single national health-privacy law** — it is a federal floor p
 - **HIPAA** (+ **HITECH**) — the federal baseline for PHI held by covered entities and business associates. See [HIPAA](./00-hipaa.md).
 - **42 CFR Part 2** — stricter protection for **substance-use-disorder** treatment records; relevant for behavioral-health systems.
 - **State laws** — **CCPA/CPRA** (California) and a growing patchwork of state privacy laws; some target health data specifically (e.g. **Washington's My Health My Data Act**, covering consumer health data outside HIPAA). State law can be stricter than HIPAA.
-- **Interoperability mandates** — CMS/ONC rules and **TEFCA** (nationwide exchange) shape how data must be made available (see [FHIR](../02-interoperability/01-fhir.md)).
+- **Interoperability mandates** — CMS/ONC rules and **TEFCA** (nationwide exchange) shape how data must be made available; **CMS-0057** adds payer FHIR + prior-auth APIs (compliance generally **Jan 1, 2027**). See [FHIR](../02-interoperability/01-fhir.md) and [Document & claims standards](../02-interoperability/09-cda-x12-claims.md).
+- **AI transparency — ONC HTI-1** — certified health IT carrying *Predictive* decision support must disclose model "source attributes" and meet FAVES (fair/appropriate/valid/effective/safe), in effect since **Jan 1, 2025**. See [MLOps & model governance](../06-ai-ml/04-mlops-governance.md).
 
-**Design implication:** HIPAA is necessary but not sufficient — check the states you operate in and whether substance-use or consumer-health data pulls in stricter rules.
+**Design implication:** HIPAA is necessary but not sufficient — check the states you operate in, whether substance-use or consumer-health data pulls in stricter rules, and (for AI in EHRs) HTI-1.
 
 ## Canada
 
@@ -47,7 +50,7 @@ Canada layers **federal** and **provincial** law, with meaningful **data-residen
 
 - **GDPR** — the dominant regime; health data is a **special category** under Article 9 needing a lawful basis *plus* an Article 9 condition. See [GDPR & data residency](./03-gdpr-residency.md).
 - **Member-state law** — GDPR lets member states add rules for health/research data; "GDPR-compliant" is necessary but check the specific country (Germany, France, etc.).
-- **European Health Data Space (EHDS)** — an EU regulation (entered into force 2025, phased application) creating a common framework for **primary use** (patients' access to and portability of their own data) and **secondary use** (research, policy, innovation) of health data across the EU, with FHIR-based exchange. A major forward-looking driver for EU HLS architecture.
+- **European Health Data Space (EHDS)** — an EU regulation (**entered into force March 2025**, phased) creating a common framework for **primary use** (patients' access to and portability of their own data) and **secondary use** (research, policy, innovation) of health data across the EU, with FHIR-based exchange. Implementing acts (incl. the EU EHR exchange format) are due by **March 2027**, and the first primary-use priority categories (patient summaries, ePrescriptions) apply from around **March 2029** — so it is a plan-now, comply-later driver. HL7 Europe's EHDS implementation guides are being built on **FHIR R4**.
 - **UK** — post-Brexit, the **UK GDPR** + Data Protection Act 2018 apply; the UK has an EU adequacy decision (subject to review).
 
 ## Side-by-side

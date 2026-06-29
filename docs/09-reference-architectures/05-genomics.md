@@ -1,5 +1,7 @@
 # Genomics pipeline
 
+> _Last reviewed: 2026-06-28 — see the [freshness policy](../appendix/maintenance.md)._
+
 ## Problem & context
 
 A diagnostics lab or research group must turn raw sequencer output into variant calls and downstream evidence — reproducibly, at scale, and (for clinical use) with the provenance a regulated report demands.

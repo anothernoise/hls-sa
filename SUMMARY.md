@@ -58,6 +58,7 @@
 - [Real-world data & evidence](docs/05-data-platforms/02-rwd-rwe.md)
 - [Governance & data contracts](docs/05-data-platforms/03-governance-contracts.md)
 - [Data strategy in an HLS/biotech company](docs/05-data-platforms/04-data-strategy.md)
+- [Data mesh in HLS](docs/05-data-platforms/05-data-mesh.md)
 
 ## Part 6 — AI/ML in health & life science
 

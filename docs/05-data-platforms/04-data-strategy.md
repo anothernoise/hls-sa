@@ -40,7 +40,7 @@ The dominant principle set in life-science data strategy is **FAIR**: data shoul
 | Style | Idea | Fits when |
 | --- | --- | --- |
 | **Lakehouse** | One governed platform, medallion layers | Most orgs; the default substrate ([lakehouse](./00-lakehouse-vs-warehouse.md)) |
-| **Data mesh** | Domain teams own **data products**; central self-serve platform + federated governance | Large orgs with strong domains (R&D, clinical, commercial) and platform maturity |
+| **Data mesh** | Domain teams own **data products**; central self-serve platform + federated governance — see [Data mesh in HLS](./05-data-mesh.md) | Large orgs with strong domains (R&D, clinical, commercial) and platform maturity |
 | **Data fabric** | Metadata/virtualization layer over many sources | Lots of legacy systems you can't consolidate yet |
 | **Data-as-a-product** | Treat each dataset as a product with an owner, SLA, contract | A discipline you can adopt within any of the above |
 

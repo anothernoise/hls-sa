@@ -15,6 +15,7 @@
 - [Well-Architected frameworks](docs/01-foundations/01-well-architected.md)
 - [C4 diagrams & ADRs](docs/01-foundations/02-c4-and-adrs.md)
 - [Trade-offs, TCO & cost](docs/01-foundations/03-tradeoffs-tco.md)
+- [The SA & SE skills matrix](docs/01-foundations/04-sa-se-skills-matrix.md)
 
 ## Part 2 — Healthcare data & interoperability
 
@@ -56,6 +57,7 @@
 - [OMOP on the cloud](docs/05-data-platforms/01-omop-on-cloud.md)
 - [Real-world data & evidence](docs/05-data-platforms/02-rwd-rwe.md)
 - [Governance & data contracts](docs/05-data-platforms/03-governance-contracts.md)
+- [Data strategy in an HLS/biotech company](docs/05-data-platforms/04-data-strategy.md)
 
 ## Part 6 — AI/ML in health & life science
 

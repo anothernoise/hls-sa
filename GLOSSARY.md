@@ -362,3 +362,18 @@ Data Use Ontology — a GA4GH standard for machine-readable encoding of a datase
 
 ## Synthea
 An open-source (MITRE, Apache-2.0) synthetic patient population simulator that generates realistic but entirely fictional lifelong health records, exported as FHIR/US Core, Bulk FHIR, C-CDA, and CSV — the standard PHI-free data source for labs and demos. Ref: [Synthea](https://synthetichealth.github.io/synthea/).
+
+## FAIR
+A set of data-stewardship principles — Findable, Accessible, Interoperable, Reusable — that is the north star for life-science data strategy and the prerequisite for AI-ready data. Ref: [GO FAIR](https://www.go-fair.org/fair-principles/).
+
+## data mesh
+A decentralized data-architecture approach where domain teams own their data as products on a shared self-serve platform, under federated governance — suited to large orgs with mature domains. Ref: [Data mesh principles](https://martinfowler.com/articles/data-mesh-principles.html).
+
+## data fabric
+An architecture that uses a metadata/virtualization layer to connect and access data across many disparate sources without first consolidating them — useful over hard-to-replace legacy systems.
+
+## data product
+A dataset treated as a product: with a clear owner, documented interface/contract, quality SLA, and consumers — the unit of a data mesh and a discipline usable in any architecture.
+
+## CDO
+Chief Data Officer — the executive who owns the organization's data vision, governance, and value strategy; the typical sponsor of an HLS/biotech data strategy.

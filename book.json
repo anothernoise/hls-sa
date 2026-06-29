@@ -8,9 +8,15 @@
     "summary": "SUMMARY.md"
   },
   "plugins": ["mermaid"],
+  "styles": {
+    "website": "styles/website.css"
+  },
   "pluginsConfig": {
     "theme-default": {
       "showLevel": true
+    },
+    "fontsettings": {
+      "theme": "night"
     }
   }
 }

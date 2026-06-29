@@ -1,0 +1,94 @@
+/*
+ * Dark theme for the Health & Life Science Solution Bootcamp.
+ *
+ * Honkit's default theme already ships a "Night" mode (body class
+ * `.color-theme-2`, toggled via the "Aa" button and set as the default in
+ * book.json). This stylesheet polishes that Night mode and styles the bits the
+ * stock theme doesn't handle well in dark — Mermaid diagrams, glossary-term
+ * links, tables, code blocks, and blockquotes. Everything is scoped to
+ * `.book.color-theme-2`, so the White and Sepia themes are untouched.
+ */
+
+.book.color-theme-2 {
+  --bg: #15181b;
+  --bg-elevated: #1d2125;
+  --text: #c9d1d9;
+  --text-strong: #e6edf3;
+  --muted: #8b949e;
+  --border: #2a3038;
+  --link: #6cb6ff;
+  --accent: #4f9cf9;
+}
+
+/* Page + sidebar surfaces */
+.book.color-theme-2 .book-body,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal {
+  color: var(--text);
+  background: var(--bg);
+}
+.book.color-theme-2 .book-summary {
+  background: #101316;
+  border-right: 1px solid var(--border);
+}
+.book.color-theme-2 .book-summary ul.summary li a {
+  color: var(--muted);
+}
+.book.color-theme-2 .book-summary ul.summary li.active > a,
+.book.color-theme-2 .book-summary ul.summary li a:hover {
+  color: var(--text-strong);
+}
+
+/* Headings + links + text */
+.book.color-theme-2 .markdown-section h1,
+.book.color-theme-2 .markdown-section h2,
+.book.color-theme-2 .markdown-section h3,
+.book.color-theme-2 .markdown-section h4,
+.book.color-theme-2 .markdown-section strong {
+  color: var(--text-strong);
+}
+.book.color-theme-2 .markdown-section a { color: var(--link); }
+.book.color-theme-2 .markdown-section a:hover { color: var(--accent); }
+.book.color-theme-2 .markdown-section hr { border-color: var(--border); }
+
+/* Inline code + code blocks */
+.book.color-theme-2 .markdown-section code,
+.book.color-theme-2 .markdown-section pre {
+  background: var(--bg-elevated);
+  color: #e6edf3;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.book.color-theme-2 .markdown-section pre code { border: 0; }
+
+/* Tables */
+.book.color-theme-2 .markdown-section table th,
+.book.color-theme-2 .markdown-section table td {
+  border: 1px solid var(--border);
+}
+.book.color-theme-2 .markdown-section table th { background: var(--bg-elevated); color: var(--text-strong); }
+.book.color-theme-2 .markdown-section table tr { background: var(--bg); border-top: 1px solid var(--border); }
+.book.color-theme-2 .markdown-section table tr:nth-child(2n) { background: #181c20; }
+
+/* Blockquotes (incl. the "Last reviewed" notes) */
+.book.color-theme-2 .markdown-section blockquote {
+  background: var(--bg-elevated);
+  border-left: 4px solid var(--accent);
+  color: var(--muted);
+}
+
+/* Auto-linked glossary terms */
+.book.color-theme-2 .markdown-section a.glossary-term {
+  color: var(--link);
+  border-bottom: 1px dashed var(--muted);
+}
+
+/* Mermaid diagrams render with a light (default) palette; place them on a light
+ * card so they stay crisp and readable against the dark page. */
+.book.color-theme-2 .mermaid {
+  background: #f6f8fa;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  overflow-x: auto;
+}
+.book.color-theme-2 .mermaid svg { max-width: 100%; height: auto; }

@@ -84,6 +84,13 @@ A common enterprise pattern: a managed FHIR service (HealthLake / AHDS / Cloud H
 2. Which two accelerators turn FHIR bundles and genomic VCFs into Delta tables, and why is landing both in one lakehouse valuable?
 3. How does Unity Catalog make a HITRUST assessment of a PHI lakehouse easier?
 
+## Reference architectures
+
+- [Databricks Lakehouse for Healthcare & Life Sciences](https://www.databricks.com/solutions/industries/healthcare-and-life-sciences).
+- [Industry Solutions — OMOP CDM on the lakehouse (GitHub)](https://github.com/databricks-industry-solutions/omop-cdm).
+- [dbignite — FHIR bundles → lakehouse/OMOP](https://www.databricks.com/solutions/accelerators/fhir).
+- [Solution Accelerators — RWE suite, disease prediction, medical imaging, NLP](https://www.databricks.com/solutions/accelerators).
+
 ## Further reading
 
 - [Databricks Lakehouse for Healthcare and Life Sciences](https://www.databricks.com/solutions/industries/healthcare-and-life-sciences)

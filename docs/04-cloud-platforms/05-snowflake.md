@@ -78,6 +78,12 @@ Many enterprises run **both**: Databricks for engineering and ML, Snowflake for 
 2. What does Cortex (and Cortex Guard) let you do that calling an external LLM API would not, in terms of PHI boundaries?
 3. You must serve one OMOP table to both analysts (de-identified) and authorized clinicians (clear text). Which Horizon feature handles this in a single table?
 
+## Reference architectures
+
+- [Snowflake Healthcare & Life Sciences (AI Data Cloud)](https://www.snowflake.com/en/solutions/industries/healthcare-and-life-sciences/) — reference architectures grounded in HL7/FHIR, OMOP, TEFCA, and GxP.
+- [Snowflake Quickstarts](https://quickstarts.snowflake.com/) — production-ready, hands-on reference builds.
+- **Native FHIR/HL7 ingestion pattern** — land FHIR JSON in `VARIANT` / Iceberg tables, ingest HL7v2 / X12 / NCPDP via connectors, and govern with Horizon.
+
 ## Further reading
 
 - [Snowflake Healthcare & Life Sciences](https://www.snowflake.com/en/solutions/industries/healthcare-and-life-sciences/)

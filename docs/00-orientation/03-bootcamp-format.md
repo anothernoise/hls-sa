@@ -57,6 +57,7 @@ flowchart LR
 
 | Lab | Domain | Starter repo (public) | Module |
 | --- | --- | --- | --- |
+| Synthetic clinical data | Data generation (Synthea) | `hls-synthea-data` | All labs (foundation) |
 | FHIR interoperability | HL7v2/FHIR + SMART | `hls-fhir-interop` | Part 2 |
 | RWD lakehouse (OMOP) | Data platform / RWE | `hls-lakehouse-rwd` | Part 5 |
 | PBM claims engine on AWS | Pharmacy claims adjudication (in-memory rules engine) | `hls-pbm-claims-aws` | Parts 5 / 8 |

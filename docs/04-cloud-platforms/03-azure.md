@@ -86,6 +86,13 @@ There is no dedicated Azure spoke repo yet. The [`hls-fhir-interop`](https://git
 2. Which Azure Health Data Services component handles continuous device telemetry, and what does it normalize the data into?
 3. In the Fabric-based architecture, where does standardized OMOP analytics happen, and what feeds it?
 
+## Reference architectures
+
+- [Microsoft for Healthcare — reference architectures (overview)](https://learn.microsoft.com/en-us/industry/healthcare/architecture/overview).
+- [End-to-end FHIR-based PHI store workload](https://learn.microsoft.com/en-us/industry/healthcare/architecture/fhir-workloads).
+- [microsoft/health-architectures (GitHub)](https://github.com/microsoft/health-architectures) — end-to-end FHIR reference implementations.
+- [Azure/ahds-reference-architecture (GitHub)](https://github.com/Azure/ahds-reference-architecture) — Azure Health Data Services integration patterns.
+
 ## Further reading
 
 - [Azure Health Data Services](https://learn.microsoft.com/en-us/azure/healthcare-apis/)

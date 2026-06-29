@@ -90,6 +90,13 @@ Codify all of this as IaC (Terraform or CDK) so the controls are uniform and pro
 2. You enable HealthLake and assume HIPAA is "handled because AWS signed a BAA." What configuration responsibilities are still yours?
 3. Why route managed-service traffic over PrivateLink/VPC endpoints rather than public endpoints for a PHI workload?
 
+## Reference architectures
+
+- [AWS Architecture Center — Healthcare & Life Sciences](https://aws.amazon.com/architecture/healthcare/) — AWS's curated, vetted reference architectures.
+- [Landing Zone Accelerator on AWS](https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/) — a compliant (HIPAA/HITRUST) multi-account foundation with a healthcare configuration.
+- **Multimodal precision-medicine pattern** — HealthLake (FHIR) + HealthImaging (DICOM) + HealthOmics (genomics) cataloged via DataZone and queried with Athena/Redshift.
+- [Data Mesh for Healthcare & Life Sciences (AWS architecture brief)](https://pages.awscloud.com/rs/112-TZM-766/images/Data%20Mesh%20Architecture%20Brief_March2023.pdf).
+
 ## Further reading
 
 - [AWS for Health](https://aws.amazon.com/health/)

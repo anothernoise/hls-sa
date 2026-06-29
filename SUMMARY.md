@@ -28,6 +28,7 @@
 - [SQL-on-FHIR](docs/02-interoperability/07-sql-on-fhir.md)
 - [AI with FHIR](docs/02-interoperability/08-ai-with-fhir.md)
 - [Document & claims standards: C-CDA, X12 & prior auth](docs/02-interoperability/09-cda-x12-claims.md)
+- [Oncology data](docs/02-interoperability/10-oncology-data.md)
 
 ## Part 3 — Compliance, security & privacy
 
@@ -71,6 +72,7 @@
 - [AWS HealthOmics](docs/07-genomics/01-healthomics.md)
 - [Variant stores & scale](docs/07-genomics/02-variant-stores.md)
 - [Variant store on AWS: design & implementation](docs/07-genomics/03-variant-store-aws.md)
+- [Genomics data standards & GA4GH](docs/07-genomics/04-genomics-data-standards.md)
 
 ## Part 8 — Integration & application patterns
 

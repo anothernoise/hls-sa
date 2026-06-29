@@ -56,6 +56,7 @@ Labs follow a two-repo model:
 
 | Lab | Starter repo (public) | Used in |
 | --- | --- | --- |
+| Synthetic clinical data (Synthea) | [`hls-synthea-data`](https://github.com/anothernoise/hls-synthea-data) | All labs (data foundation) |
 | FHIR interoperability | [`hls-fhir-interop`](https://github.com/anothernoise/hls-fhir-interop) | Part 2 |
 | RWD lakehouse (OMOP) | [`hls-lakehouse-rwd`](https://github.com/anothernoise/hls-lakehouse-rwd) | Part 5 |
 | Clinical RAG on GCP | [`RAGonGCP`](https://github.com/anothernoise/RAGonGCP) | Part 6 |

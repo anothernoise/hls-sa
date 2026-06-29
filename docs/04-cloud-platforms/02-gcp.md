@@ -74,6 +74,13 @@ For genomics, imaging AI, and large ETL: **Google Cloud Batch** schedules batch 
 2. What is the difference between MedLM and MedGemma, and when would you reach for the open MedGemma models?
 3. What does VPC Service Controls protect against that IAM alone does not?
 
+## Reference architectures
+
+- [Google Cloud Architecture Center](https://cloud.google.com/architecture) — reference architectures (filter for healthcare & life sciences).
+- **Cloud Healthcare API → BigQuery analytics** — stream FHIR/HL7v2/DICOM into BigQuery for analytics + Vertex AI; see [FHIR-to-BigQuery streaming](https://cloud.google.com/healthcare-api/docs/how-tos/fhir-bigquery-streaming).
+- [Open Health Stack](https://developers.google.com/open-health-stack) — building blocks for FHIR-native apps and pipelines.
+- [Google Cloud Healthcare & Life Sciences solutions](https://cloud.google.com/solutions/healthcare-life-sciences).
+
 ## Further reading
 
 - [Cloud Healthcare API](https://cloud.google.com/healthcare-api)

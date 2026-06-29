@@ -329,3 +329,36 @@ A storage engine based on sparse/dense multi-dimensional arrays; TileDB-VCF is p
 
 ## X12
 The ASC X12 EDI standard for US healthcare administrative/financial transactions named by HIPAA — including 837 (claim), 835 (remittance), 270/271 (eligibility), 276/277 (claim status), and 278 (prior authorization). Ref: [x12.org](https://x12.org/).
+
+## mCODE
+minimal Common Oncology Data Elements — an HL7 FHIR Implementation Guide (driven by the CodeX accelerator) standardizing core cancer data: primary/secondary cancer conditions, TNM staging, tumor markers, cancer genomics, treatments, and disease status. Ref: [mCODE IG](https://hl7.org/fhir/us/mcode/).
+
+## ICD-O-3
+International Classification of Diseases for Oncology, 3rd edition — codes cancer **topography** (site) and **morphology** (histology/behavior); used by pathology and cancer registries, distinct from ICD-10. Ref: [WHO ICD-O](https://www.who.int/standards/classifications/other-classifications/international-classification-of-diseases-for-oncology).
+
+## TNM staging
+The AJCC/UICC cancer staging system — Tumor (T), Nodes (N), Metastasis (M) combined into a stage group; has clinical and pathologic variants and is part of USCDI. Ref: [AJCC](https://www.facs.org/quality-programs/cancer-programs/american-joint-committee-on-cancer/).
+
+## NAACCR
+North American Association of Central Cancer Registries — maintains the data dictionary and transmission standard for mandated reporting to central cancer registries (annual versions). Ref: [naaccr.org](https://www.naaccr.org/).
+
+## GA4GH
+Global Alliance for Genomics and Health — the body that publishes interoperable standards for sharing genomic data (VRS, Phenopackets, htsget, Beacon, DUO, Passports). Ref: [ga4gh.org](https://www.ga4gh.org/).
+
+## VRS
+GA4GH Variation Representation Specification — a computable, normalized way to represent and identify genetic variants so the same variant gets the same identifier across systems (federated matching). Ref: [vrs.ga4gh.org](https://vrs.ga4gh.org/).
+
+## Phenopackets
+A GA4GH standard packaging an individual's phenotype, disease, and genotype in a computable form; interoperates with FHIR for precision-medicine exchange. Ref: [Phenopackets](https://www.ga4gh.org/product/phenopackets/).
+
+## Beacon
+A GA4GH discovery API (v2) that answers whether a dataset contains a given variant or query without exposing record-level data — enabling federated discovery across genomic cohorts. Ref: [Beacon v2](https://docs.genomebeacons.org/).
+
+## htsget
+A GA4GH protocol for secure HTTP streaming of sequencing reads/variants (BAM/CRAM/VCF) by genomic region, so clients fetch only the data they need. Ref: [htsget](https://samtools.github.io/hts-specs/htsget.html).
+
+## DUO
+Data Use Ontology — a GA4GH standard for machine-readable encoding of a dataset's permitted uses/consent (e.g. disease-specific research only), enabling consent-aware data access. Ref: [DUO](https://www.ga4gh.org/product/data-use-ontology-duo/).
+
+## Synthea
+An open-source (MITRE, Apache-2.0) synthetic patient population simulator that generates realistic but entirely fictional lifelong health records, exported as FHIR/US Core, Bulk FHIR, C-CDA, and CSV — the standard PHI-free data source for labs and demos. Ref: [Synthea](https://synthetichealth.github.io/synthea/).

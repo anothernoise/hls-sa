@@ -36,9 +36,20 @@ about cost or security will design something that never ships.
 | If you are… | Start at | Then |
 | --- | --- | --- |
 | An engineer new to architecture **and** healthcare | Module 0 → Part 1 | go in order |
-| An experienced architect new to healthcare | Module 0 | jump to Parts 2, 3, 7 |
-| A healthcare data person new to cloud/SA | Module 0 → Part 1 | then Part 4 |
+| An experienced architect new to healthcare | Module 0 | jump to Parts 2, 3, 7 (add Part 2's [oncology](../02-interoperability/10-oncology-data.md) and [genomics standards](../07-genomics/04-genomics-data-standards.md) chapters if you touch precision medicine) |
+| A healthcare data person new to cloud/SA | Module 0 → Part 1 | then Part 4, then [data strategy & mesh](../05-data-platforms/04-data-strategy.md) in Part 5 |
+| Working across the US, Canada, or the EU | Module 0 → Part 1 | then [regional compliance](../03-compliance/05-regional-compliance.md) before anything region-specific |
+| Deciding SA vs SE, or leveling yourself | [The SA & SE skills matrix](../01-foundations/04-sa-se-skills-matrix.md) | then follow the gaps it surfaces |
 | Here for a specific problem | the relevant Part | follow lab links |
+
+The curriculum has grown past the original ten parts — Part 2 now covers oncology and
+genomics data standards alongside FHIR/HL7v2, Part 4 covers NVIDIA and on-prem/hybrid
+alongside the clouds, and Part 5 covers data strategy and data mesh alongside the lakehouse.
+[SUMMARY](../../SUMMARY.md) is always the current, authoritative table of contents.
+
+**Time budget.** At roughly 20 minutes/chapter and 1–3 hours/lab (see [Bootcamp format](./03-bootcamp-format.md)),
+reading everything takes a long weekend; doing every lab is realistically a 10–12 week cohort
+pace. Most readers don't do everything — use the table above to pick a path.
 
 ## Set up your toolkit
 
@@ -60,6 +71,10 @@ Each chapter follows the same rhythm: **learning objectives → content → a di
 a lab → check-yourself questions → further reading.** When a chapter has a companion
 repo, the **Lab** section links to it. Skim the objectives first; they tell you what
 "done" looks like.
+
+Every acronym and term of art (HIPAA, FHIR, GxP, OMOP, HITRUST…) is **auto-linked** to the
+[Glossary](../../GLOSSARY.md) the first time it appears on a page — click it for a definition
+and a primary-source reference instead of context-switching to search.
 
 ## Check yourself
 

@@ -56,6 +56,11 @@ them, so you make explicit, defensible choices.
 | Cost | < \$X/month to run | vs. nearly everything |
 | Compliance | HITRUST-certifiable | vs. speed to market |
 | Operability | one team can run it | vs. feature breadth |
+| **Interoperability** | conforms to a named FHIR IG (e.g. US Core) | vs. schema flexibility, delivery speed |
+
+Interoperability earns its own row in HLS: it is rarely optional (regulatory mandates force
+it — see [FHIR profiles & regulation](../02-interoperability/06-fhir-profiles-us-ca.md)) and
+it trades directly against how freely you can shape your own data model.
 
 There is no free lunch. When you "improve" one attribute you usually spend another. The job
 is not to avoid trade-offs — it is to **make them on purpose and record why** (that is what an

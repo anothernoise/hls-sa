@@ -65,6 +65,20 @@ Whatever your title or level, these separate an HLS architect/engineer from a ge
 - **PHI instincts** — you reason about the BAA surface, de-identification, and data residency by reflex.
 - **Stakeholder range** — you can talk to a clinician, a CISO, and a CFO ([stakeholders](../10-sa-craft/01-stakeholders.md)).
 
+## External validation: certifications
+
+The bootcamp builds judgment; certifications are how you signal it externally. None are
+required, but they map cleanly onto the matrix above:
+
+| Certification | Validates | Maps to domain |
+| --- | --- | --- |
+| Cloud architect certs (AWS/GCP/Azure Solutions Architect) | Platform depth on one cloud | Cloud & data platforms |
+| [HL7 FHIR certification](https://www.hl7.org/certification/fhir.cfm) | Standards-level FHIR proficiency | HLS interoperability |
+| CPHIMS (HIMSS) | Broad healthcare-IT management knowledge | HLS domain breadth, delivery |
+
+Treat certifications as a checkpoint, not the goal — the [capstone](../10-sa-craft/03-capstone.md)
+tests the same judgment a certification exam can only sample.
+
 ## How to use this matrix
 
 1. **Self-assess** each domain (level × current depth) — honestly.

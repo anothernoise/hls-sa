@@ -98,7 +98,7 @@ Increasingly a design requirement in enterprise HLS. Key questions:
 
 All three frameworks are structurally identical; vocabulary differs slightly. For a multi-cloud HLS design, run through the framework of the **primary** cloud and spot-check the others for platform-specific deviations.
 
-Databricks publishes a [Well-Architected Guide](https://www.databricks.com/blog/well-architected-guide) focused on lakehouse design. Snowflake has an equivalent [Architecture Guide](https://docs.snowflake.com/en/guides-overview).
+Databricks publishes its own **Well-Architected Lakehouse framework** with seven pillars: the five above (Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization) plus two lakehouse-specific additions — **Data Governance** and **Interoperability & Usability**. Those two are worth borrowing even outside Databricks: they name concerns ([governance & data contracts](../05-data-platforms/03-governance-contracts.md), and interoperability per [FHIR profiles](../02-interoperability/06-fhir-profiles-us-ca.md)) that the cloud-provider WAFs leave implicit. Snowflake has an equivalent [Architecture Guide](https://docs.snowflake.com/en/guides-overview).
 
 ## How to use WAFs in practice
 
@@ -119,3 +119,4 @@ Databricks publishes a [Well-Architected Guide](https://www.databricks.com/blog/
 - [AWS HIPAA-eligible services reference](https://aws.amazon.com/compliance/hipaa-eligible-services-reference/)
 - [GCP Well-Architected Framework](https://cloud.google.com/architecture/framework)
 - [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)
+- [Databricks Well-Architected Lakehouse](https://docs.databricks.com/aws/en/lakehouse-architecture/well-architected)

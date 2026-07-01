@@ -377,3 +377,15 @@ A dataset treated as a product: with a clear owner, documented interface/contrac
 
 ## CDO
 Chief Data Officer — the executive who owns the organization's data vision, governance, and value strategy; the typical sponsor of an HLS/biotech data strategy.
+
+## CRO
+Contract Research Organization — a company (e.g. IQVIA, ICON, Parexel) that pharma/biotech sponsors outsource clinical-trial execution to: patient recruitment, site monitoring, data management, regulatory submissions. Over half of industry-sponsored trials now run through a CRO. Ref: [CRO overview](https://en.wikipedia.org/wiki/Contract_research_organization).
+
+## AMC
+Academic Medical Center — a hybrid provider-and-research institution (a teaching hospital tied to a university) where both HIPAA (care) and GxP/IRB (research) regulatory regimes apply within the same organization.
+
+## CPHIMS
+Certified Professional in Healthcare Information and Management Systems — a HIMSS credential validating broad healthcare-IT management knowledge. Ref: [HIMSS CPHIMS](https://www.himss.org/certification/cphims).
+
+## ASTP/ONC
+The Assistant Secretary for Technology Policy/Office of the National Coordinator for Health IT — ONC's name after a July 2024 HHS reorganization expanded its scope to technology, data, and AI policy; both "ONC" and "ASTP/ONC" appear in the wild. Ref: [ASTP/ONC](https://www.healthit.gov/).

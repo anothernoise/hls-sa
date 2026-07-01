@@ -37,11 +37,14 @@ flowchart TB
 | --- | --- | --- |
 | **Enterprise architect** | the whole organization's IT strategy | years |
 | **Solution architect** | one solution / program | a release to a year |
+| **Solution engineer** | builds, demos, and lands the design (often pre-sales/customer-facing) | a deal cycle to an implementation |
 | **Software/application architect** | the internals of one system | a sprint to a release |
 | **Infrastructure / cloud architect** | the platform it runs on | ongoing |
 
 In HLS the SA additionally carries a **domain + compliance** load that generic SAs do not:
-you must encode HIPAA/GxP as design constraints, not afterthoughts.
+you must encode HIPAA/GxP as design constraints, not afterthoughts. See
+[The SA & SE skills matrix](../01-foundations/04-sa-se-skills-matrix.md) for a full
+competency breakdown of the SA and SE roles specifically.
 
 ## The operating loop
 

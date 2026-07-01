@@ -19,17 +19,21 @@ buyers, data, and regulators at each stage.
 flowchart LR
   subgraph LifeScience["Life science (discovery → product)"]
     Biotech["Biotech / Pharma<br/>drug discovery, trials"]
+    CRO["CROs<br/>outsourced trial execution"]
     Medtech["Medtech / Devices<br/>instruments, SaMD"]
     Dx["Diagnostics / Genomics<br/>labs, sequencing"]
   end
   subgraph Healthcare["Healthcare delivery (care → payment)"]
-    Providers["Providers<br/>hospitals, clinics"]
-    Payers["Payers<br/>insurers, PBMs"]
+    Providers["Providers<br/>hospitals, clinics, AMCs"]
+    Payers["Payers<br/>insurers"]
+    PBM["PBMs<br/>pharmacy benefits"]
     DigitalHealth["Digital health<br/>apps, telehealth"]
+    PublicHealth["Public health<br/>CDC, state/provincial"]
   end
-  Biotech --> Dx --> Providers --> Payers
+  Biotech --> CRO --> Dx --> Providers --> Payers --> PBM
   Medtech --> Providers
   DigitalHealth --> Providers
+  Providers --> PublicHealth
 ```
 
 ### Life science
@@ -37,6 +41,11 @@ flowchart LR
 - **Biotech & pharma** — R&D and clinical trials. Data is experimental, longitudinal, and
   *regulated for integrity* (GxP, 21 CFR Part 11). Architectures center on data platforms,
   HPC/genomics, and trial systems. Cost of a wrong answer is measured in failed trials.
+- **CROs (Contract Research Organizations)** — sponsors (pharma/biotech) outsource most trial
+  execution to CROs (IQVIA, ICON, Parexel, LabCorp, Charles River): patient recruitment, site
+  monitoring, data management, regulatory submissions. Over half of industry-sponsored trials
+  now run through a CRO, and it's a $80B+ market — architecturally this means your trial-data
+  platform usually has to integrate with an external CRO's EDC/systems, not just your own.
 - **Medtech & devices** — physical instruments and **Software as a Medical Device (SaMD)**.
   Architectures center on edge/IoT, telemetry, and FDA-cleared software lifecycles.
 - **Diagnostics & genomics** — high-throughput labs. Architectures center on **sequencing
@@ -47,10 +56,24 @@ flowchart LR
 - **Providers** (hospitals, health systems, clinics) — run on **EHRs** (Epic, Oracle Health/
   Cerner). Architectures center on **interoperability** (HL7v2, FHIR), integration engines,
   and analytics on top of clinical data. HIPAA is the dominant regulation.
-- **Payers** (insurers, PBMs) — claims, eligibility, prior authorization, actuarial models.
-  Architectures center on large-scale data warehousing and increasingly FHIR (CMS mandates).
+  **Academic Medical Centers (AMCs)** are a hybrid worth naming separately — they are
+  providers *and* life-science research institutions at once, so both regulatory worlds
+  (HIPAA *and* GxP/IRB) apply inside the same organization.
+- **Payers** (insurers) — claims, eligibility, actuarial models. Architectures center on
+  large-scale data warehousing and increasingly FHIR (CMS mandates).
+- **PBMs (Pharmacy Benefit Managers)** — a distinct segment from general payers: they
+  administer the *drug* benefit specifically — real-time claims adjudication, formulary
+  management, and rebate negotiation. See [Document & claims standards](../02-interoperability/09-cda-x12-claims.md)
+  (NCPDP) and the [PBM claims-engine lab](https://github.com/anothernoise/hls-pbm-claims-aws).
 - **Digital health** — apps, telehealth, remote monitoring. Cloud-native, fast-moving, but
   still HIPAA-bound the moment they touch PHI.
+- **Public health agencies** (CDC, state/provincial health departments) — surveillance,
+  mandated reporting (e.g. cancer registries — see [Oncology data](../02-interoperability/10-oncology-data.md)),
+  and increasingly a **TEFCA**/FHIR exchange participant, not just a downstream report recipient.
+
+Providers, payers, and public health agencies also connect through **Health Information
+Exchanges (HIEs)** — regional or national networks that move data between organizations that
+don't share a vendor; see [EHR integration](../08-integration/00-ehr-integration.md).
 
 ## Why the center of gravity differs
 
@@ -83,5 +106,6 @@ to a pharma HPC pipeline. **Know which segment you are in before you reach for a
 
 ## Further reading
 
-- [ONC: about interoperability](https://www.healthit.gov/topic/interoperability)
+- [ASTP/ONC: about interoperability](https://www.healthit.gov/topic/interoperability) — ONC was renamed **ASTP/ONC** (Assistant Secretary for Technology Policy/ONC) in a July 2024 HHS reorganization; you'll see both names in the wild.
 - [FDA: device software functions and SaMD](https://www.fda.gov/medical-devices/digital-health-center-excellence)
+- [CRO market & role overview](https://en.wikipedia.org/wiki/Contract_research_organization)

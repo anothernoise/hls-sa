@@ -40,6 +40,7 @@ These are the line items that regularly blow cloud budgets in healthcare and lif
 | Snowflake compute | Warehouses that never auto-suspend. | Set `AUTO_SUSPEND = 60` seconds; separate development and production warehouses. |
 | Databricks DBUs | All-purpose clusters left running by data scientists. | Enforce job clusters for production; set cluster inactivity timeout; use serverless SQL warehouses. |
 | Data egress (cross-region, cross-cloud) | Moving clinical data between regions for analytics hits egress fees. | Co-locate storage and compute; use cloud-native data sharing (Snowflake secure data share, Databricks Delta Sharing) rather than bulk copy. |
+| Steady-state compute (always-on FHIR converters, standing genomics/imaging pipelines) | Teams price everything at on-demand rates and pay 2–3× more than needed. | For **predictable, long-lived** workloads use Reserved Instances / Savings Plans (AWS), Committed Use Discounts (GCP), or Reserved VM Instances (Azure) — reserve spot/on-demand for genuinely bursty or fault-tolerant work only. |
 
 ## The trade-off axes every SA navigates
 

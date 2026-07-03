@@ -83,6 +83,7 @@
 - [Variant stores & scale](docs/07-genomics/02-variant-stores.md)
 - [Variant store on AWS: design & implementation](docs/07-genomics/03-variant-store-aws.md)
 - [Genomics data standards & GA4GH](docs/07-genomics/04-genomics-data-standards.md)
+- [Genomics workflow orchestration: engines, execution & acceleration](docs/07-genomics/05-workflow-orchestration.md)
 
 ## Part 8 — Integration & application patterns
 
@@ -90,6 +91,7 @@
 - [Event-driven patterns](docs/08-integration/01-event-driven.md)
 - [API management](docs/08-integration/02-api-management.md)
 - [EHR migration & data conversion](docs/08-integration/03-ehr-migration.md)
+- [Real-time streaming clinical analytics](docs/08-integration/04-realtime-streaming-analytics.md)
 
 ## Part 9 — Reference architectures
 

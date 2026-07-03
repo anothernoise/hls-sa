@@ -202,7 +202,7 @@ Observational Medical Outcomes Partnership Common Data Model — a standardised 
 Office of the National Coordinator for Health IT (now ASTP/ONC) — the US agency regulating certified EHR technology; § 170.315(g)(10) requires a SMART on FHIR API. Ref: [healthit.gov](https://www.healthit.gov/).
 
 ## Parabricks
-NVIDIA's GPU-accelerated suite for genomics secondary analysis (GATK, DeepVariant) — a 30× genome in well under an hour versus ~30 hours on CPU. Ref: [NVIDIA Parabricks](https://www.nvidia.com/en-us/clara/genomics/).
+NVIDIA's GPU-accelerated suite for genomics secondary analysis (GATK, DeepVariant) — a 30x genome in ~10 minutes (up to 107x acceleration with multiple GPUs), free for research via NGC with a licensed NVIDIA AI Enterprise support tier; narrower functionality than DRAGEN but typically cheaper at scale. Ref: [NVIDIA Parabricks](https://www.nvidia.com/en-us/clara/genomics/).
 
 ## PBM
 Pharmacy Benefit Manager — an organisation that administers prescription-drug benefits for payers: it runs real-time claims adjudication, manages the formulary, negotiates rebates, and processes payments. Ref: [CMS — Part D](https://www.cms.gov/medicare/coverage/prescription-drug-coverage).
@@ -443,3 +443,21 @@ National Plan and Provider Enumeration System — the CMS system that assigns an
 
 ## cloud repatriation
 Moving workloads from public cloud back to private cloud or on-premises infrastructure — often motivated by cost at scale or vendor lock-in concerns; a live 2025-26 industry trend, not a niche pattern. See [On-premises & hybrid](docs/04-cloud-platforms/06-on-prem-hybrid.md) and [Cloud portability & avoiding lock-in](docs/04-cloud-platforms/08-portability-lock-in.md).
+
+## CWL
+Common Workflow Language — a vendor-neutral workflow standard with many independent implementations (Toil, Arvados, cwltool, and commercial platforms), favored where a pipeline must run unmodified across multiple institutions' infrastructure. Ref: [commonwl.org](https://www.commonwl.org/).
+
+## WDL
+Workflow Description Language — a workflow specification (not a combined engine) requiring a separate execution engine (Cromwell, miniwdl, or a vendor's interpreter); strong in the Broad Institute/Terra/GATK ecosystem. Ref: [Cromwell](https://cromwell.readthedocs.io/).
+
+## DRAGEN
+Illumina's FPGA-accelerated secondary-analysis platform — processes a 30x genome in ~25 minutes versus 15+ hours CPU-only; broader clinical functionality (single-cell, pharmacogenomic star-allele calling) than GPU alternatives, but the license typically dominates cloud run cost. Ref: [Illumina DRAGEN](https://www.illumina.com/products/by-type/informatics-products/dragen-secondary-analysis.html).
+
+## DNAnexus
+A managed, multi-cloud (AWS/GCP/Azure) genomics platform supporting WDL/CWL/Nextflow execution with its own workflow interpreter; HIPAA/GDPR/ISO 27001/SOC 2 certified and powers the UK Biobank Research Analysis Platform. Ref: [dnanexus.com](https://www.dnanexus.com/).
+
+## CRAM
+A reference-based, compressed alternative to BAM for aligned sequencing reads — typically 30-60% smaller than the equivalent BAM by storing differences from a reference genome rather than full sequences; requires the exact reference used for compression to be retained for decompression.
+
+## alert fatigue
+The clinical-safety failure mode where high false-alarm rates from monitoring/CDS systems train clinicians to routinely override or ignore alerts, reducing responsiveness to genuine deterioration; the central design constraint for real-time streaming clinical analytics. See [Real-time streaming clinical analytics](docs/08-integration/04-realtime-streaming-analytics.md).

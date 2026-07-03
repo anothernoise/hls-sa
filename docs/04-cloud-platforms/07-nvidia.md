@@ -33,7 +33,7 @@ flowchart TB
 
 | Component | Domain | What it is |
 | --- | --- | --- |
-| **Parabricks** | Genomics | GPU-accelerated secondary analysis (GATK, DeepVariant). A 30× genome that takes ~30 hours on CPU runs in well under an hour. See [Sequencing pipelines](../07-genomics/00-sequencing-pipelines.md). |
+| **Parabricks** | Genomics | GPU-accelerated secondary analysis (GATK, DeepVariant) — ~10 minutes for a 30× genome versus 15+ hours on CPU. See [Sequencing pipelines](../07-genomics/00-sequencing-pipelines.md) and [Genomics workflow orchestration](../07-genomics/05-workflow-orchestration.md) for the detailed DRAGEN-vs-Parabricks trade-off. |
 | **MONAI** | Medical imaging | Open-source PyTorch framework for medical-imaging deep learning (co-developed with King's College London); **MONAI Deploy** packages models for clinical use. See [Medical imaging AI](../06-ai-ml/01-medical-imaging.md). |
 | **BioNeMo** | Biotech / drug discovery | Generative-AI platform for biology — protein structure, molecular generation, and other biopharma models; widely adopted by life-science R&D. |
 | **Holoscan** | Medical devices | Real-time, low-latency edge AI for streaming sensor/video data (surgical video, ultrasound, endoscopy). |

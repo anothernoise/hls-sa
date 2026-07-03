@@ -42,10 +42,29 @@ flowchart LR
 | BAM / CRAM | Secondary | Reads aligned to a reference (CRAM is reference-compressed, much smaller) |
 | VCF / gVCF | Secondary out | Variant calls (gVCF retains per-position info for joint genotyping) |
 
+### The file formats in depth
+
+- **FASTQ** — plain-text (usually gzip-compressed) raw reads: a sequence identifier, the base
+  calls, and a per-base Phred quality score. The rawest, largest artifact — archive it after
+  QC rather than keeping it "hot" (see [cost levers](#execution-models) below).
+- **BAM** — the standard binary alignment format: reads mapped to reference coordinates, with
+  the full read sequence and quality stored per record.
+- **CRAM** — a reference-based, columnar-compressed alternative to BAM. Because it stores
+  *differences* from the reference rather than the full sequence, **CRAM files typically run
+  30–60% smaller than the equivalent BAM** — real, substantial storage savings at population
+  scale. The trade-off: decompression takes more compute than reading a BAM directly, and the
+  exact reference genome used for compression must be available to decompress it later — pin
+  and retain that reference alongside the CRAM.
+- **VCF / gVCF** — a text-based variant-call format; **gVCF** additionally records
+  reference-confidence at every position (not just variant sites), which is what makes
+  **joint genotyping** across a growing cohort possible without re-calling from raw reads each
+  time (see [Variant stores & scale](./02-variant-stores.md) for the population-scale
+  implications).
+
 ## Secondary analysis: tools and standards
 
 - **GATK Best Practices** (Broad Institute) is the de-facto standard germline SNV/InDel workflow: pre-process FASTQ → analysis-ready BAM → call variants → VCF.
-- **DRAGEN** (Illumina) and **NVIDIA Parabricks** are hardware-accelerated implementations — a 30× genome that takes ~30 hours on CPU can run in well under an hour on FPGA/GPU. The accuracy/throughput trade-off matters at population scale.
+- **DRAGEN** (Illumina) and **NVIDIA Parabricks** are hardware-accelerated implementations that cut this from many hours to minutes — see [Genomics workflow orchestration](./05-workflow-orchestration.md) for the detailed DRAGEN-vs-Parabricks comparison (speed, licensing cost, and functionality trade-offs).
 - Reproducibility and benchmarking against truth sets (e.g., precisionFDA / Genome in a Bottle) are part of validating a clinical pipeline.
 
 ## Workflow engines and reproducibility
@@ -55,6 +74,10 @@ Genomics pipelines are multi-step DAGs that must be **reproducible** — the sam
 - **Nextflow** + **nf-core** — a curated, community-reviewed set of portable, versioned pipelines (e.g., `nf-core/rnaseq`, `nf-core/sarek` for variant calling). The [`RNASEQ`](https://github.com/anothernoise/RNASEQ) lab uses nf-core.
 - **WDL** (+ Cromwell/miniwdl) and **CWL** — alternative standards; WDL is common in the Broad/Terra ecosystem.
 - **Snakemake** — Python-based, popular in research.
+
+See [Genomics workflow orchestration](./05-workflow-orchestration.md) for a full comparison
+of these engines, how each maps onto Slurm/HPC/cloud/containers across AWS/GCP/Azure, and
+where a multi-cloud platform like DNAnexus fits.
 
 Pin pipeline **versions** and **container images** so any result can be regenerated — this is both reproducibility and, in clinical settings, GxP evidence.
 

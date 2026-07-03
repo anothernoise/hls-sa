@@ -389,3 +389,45 @@ Certified Professional in Healthcare Information and Management Systems — a HI
 
 ## ASTP/ONC
 The Assistant Secretary for Technology Policy/Office of the National Coordinator for Health IT — ONC's name after a July 2024 HHS reorganization expanded its scope to technology, data, and AI policy; both "ONC" and "ASTP/ONC" appear in the wild. Ref: [ASTP/ONC](https://www.healthit.gov/).
+
+## EU AI Act
+The EU's cross-sector AI law. AI embedded in or acting as an MDR/IVDR-regulated medical device is automatically high-risk; obligations for such devices apply from August 2027 (a year later than standalone high-risk use cases). Ref: [EU AI Act](https://artificialintelligenceact.eu/).
+
+## HEDIS
+Healthcare Effectiveness Data and Information Set — NCQA's dominant payer quality-measurement standard, spanning effectiveness of care, access, member experience, and utilization; moving from claims+chart-abstraction "hybrid" measures toward ECDS/FHIR-based reporting. Ref: [NCQA HEDIS](https://www.ncqa.org/hedis/).
+
+## HCC
+Hierarchical Condition Category — the diagnosis-code-derived category system used to risk-adjust health-plan payment to a population's actual health risk; under-documented conditions understate HCC risk scores and payment.
+
+## risk adjustment
+The practice of pricing health-plan payment to enrollee health risk (via HCC coding), run prospectively (prior-year data), concurrently (real-time, during the encounter), or retrospectively (post-claims chart review) to correct under-coding.
+
+## Da Vinci Project
+The HL7 FHIR accelerator producing implementation guides for payer-provider data exchange and value-based care — including HRex, CRD, DTR, PAS, CDex, DEQM (Gaps in Care), Risk Adjustment, and PDex. Ref: [HL7 Da Vinci](https://www.hl7.org/about/davinci/).
+
+## CDISC
+Clinical Data Interchange Standards Consortium — maintains the standards (CDASH, SDTM, ADaM, ODM) that make clinical-trial data consistent, submittable, and analyzable across the industry. Ref: [cdisc.org](https://www.cdisc.org/standards).
+
+## CDASH
+Clinical Data Acquisition Standards Harmonization — the CDISC standard for structuring case report form (CRF) fields at data collection time, in the EDC system.
+
+## SDTM
+Study Data Tabulation Model — the CDISC standard for organizing collected trial data into standardized domains/tables for regulatory submission and review.
+
+## ADaM
+Analysis Data Model — the CDISC standard for deriving analysis-ready datasets from SDTM, used for statistical analysis and submission.
+
+## EDC
+Electronic Data Capture — the system of record where site staff enter patient data during a clinical trial (e.g. Medidata Rave, Oracle InForm, Veeva Vault EDC); distinct from a CTMS, which manages trial operations rather than data.
+
+## CTMS
+Clinical Trial Management System — manages trial operations (site selection, enrollment tracking, monitoring visits, budgets), as distinct from the EDC system that holds the trial data itself.
+
+## NHS DSPT
+The NHS Data Security and Protection Toolkit — the UK's mandatory annual self-assessment for organisations with access to NHS patient data; higher-tier organisations assess against the Cyber Assessment Framework (CAF) with mandatory independent audit. Ref: [DSPT](https://www.dsptoolkit.nhs.uk/).
+
+## PMDA
+Pharmaceuticals and Medical Devices Agency — Japan's regulator for drugs and medical devices (under MHLW), the FDA/EMA counterpart for the Japanese market. Ref: [PMDA](https://www.pmda.go.jp/english/).
+
+## TGA
+Therapeutic Goods Administration — Australia's medical device and therapeutic goods regulator, covering software/AI-based medical devices via the ARTG register.

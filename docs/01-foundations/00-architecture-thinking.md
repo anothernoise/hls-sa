@@ -62,6 +62,37 @@ Interoperability earns its own row in HLS: it is rarely optional (regulatory man
 it — see [FHIR profiles & regulation](../02-interoperability/06-fhir-profiles-us-ca.md)) and
 it trades directly against how freely you can shape your own data model.
 
+### An interoperability maturity model
+
+Because "interoperable" is not binary, HIMSS defines four levels — a useful way to state
+*how* interoperable an NFR actually requires a system to be, rather than leaving it vague:
+
+```mermaid
+flowchart LR
+  L1["1. Foundational<br/>can send/receive a payload<br/>(receiver need not understand it)"] --> L2
+  L2["2. Structural<br/>shared message format/syntax<br/>(HL7v2, FHIR resource shape)"] --> L3
+  L3["3. Semantic<br/>shared coded meaning<br/>(SNOMED/LOINC/RxNorm value sets)"] --> L4
+  L4["4. Organizational<br/>governance, consent, trust,<br/>shared workflow across orgs"]
+```
+
+- **Foundational** — you can move bytes from A to B. A PDF discharge summary emailed to another
+  system is foundational: the receiver can store and display it but not parse it.
+- **Structural** — both sides agree on message shape. An [HL7v2](../02-interoperability/00-hl7v2.md)
+  ADT feed or a bare [FHIR](../02-interoperability/01-fhir.md) resource achieves this: fields are
+  in known places, but a code might still be locally meaningful only.
+- **Semantic** — codes carry shared meaning via standard vocabularies
+  ([terminologies](../02-interoperability/03-terminologies.md)): a LOINC-coded Observation means
+  the same thing to every conformant system, not just to the sender.
+- **Organizational** — the governance layer: consent, trust agreements, and workflow integration
+  across organizational boundaries (a [TEFCA](../02-interoperability/06-fhir-profiles-us-ca.md)
+  QHIN exchange, or a health information exchange) — the hardest level, because it's mostly
+  non-technical.
+
+**Use it to write a precise NFR.** "The system must be interoperable" is not testable; "the
+system must achieve semantic interoperability for lab results via LOINC-coded FHIR
+Observations" is. Most HLS integration problems trace back to a mismatch in *level* — one side
+assumes semantic interoperability while the other has only shipped structural.
+
 There is no free lunch. When you "improve" one attribute you usually spend another. The job
 is not to avoid trade-offs — it is to **make them on purpose and record why** (that is what an
 ADR is for, covered later in this part).
@@ -116,8 +147,11 @@ flowchart LR
 2. Rewrite this NFR to be measurable: "the system should be fast and reliable."
 3. Pick two quality attributes from the table and describe a realistic situation where
    improving one degrades the other.
+4. Two systems both exchange FHIR `Observation` resources but a query across them returns
+   inconsistent results. Which HIMSS interoperability level are they missing, and why?
 
 ## Further reading
 
 - Bass, Clements, Kazman — *Software Architecture in Practice* (quality attributes).
 - [arc42 quality requirements](https://docs.arc42.org/section-10/)
+- [HIMSS: the four levels of interoperability](https://www.himss.org/resources/interoperability-healthcare)

@@ -30,6 +30,8 @@
 - [AI with FHIR](docs/02-interoperability/08-ai-with-fhir.md)
 - [Document & claims standards: C-CDA, X12 & prior auth](docs/02-interoperability/09-cda-x12-claims.md)
 - [Oncology data](docs/02-interoperability/10-oncology-data.md)
+- [Payer data & value-based care](docs/02-interoperability/11-payer-value-based-care.md)
+- [Clinical trial technology](docs/02-interoperability/12-clinical-trial-tech.md)
 
 ## Part 3 — Compliance, security & privacy
 
@@ -38,7 +40,8 @@
 - [GxP & 21 CFR Part 11](docs/03-compliance/02-gxp-part11.md)
 - [GDPR & data residency](docs/03-compliance/03-gdpr-residency.md)
 - [De-identification & consent](docs/03-compliance/04-deidentification-consent.md)
-- [Regional compliance: US, Canada & Europe](docs/03-compliance/05-regional-compliance.md)
+- [Regional compliance: US, Canada, Europe & APAC](docs/03-compliance/05-regional-compliance.md)
+- [Which compliance regime applies? A decision guide](docs/03-compliance/06-compliance-decision-guide.md)
 
 ## Part 4 — Cloud platforms for HLS
 
@@ -68,6 +71,7 @@
 - [Agentic AI](docs/06-ai-ml/03-agentic-ai.md)
 - [MLOps & model governance](docs/06-ai-ml/04-mlops-governance.md)
 - [FDA SaMD & GMLP](docs/06-ai-ml/05-fda-samd.md)
+- [EU AI Act & global AI regulation](docs/06-ai-ml/06-eu-ai-act.md)
 
 ## Part 7 — Genomics & bioinformatics architecture
 
@@ -98,6 +102,7 @@
 - [Stakeholder management](docs/10-sa-craft/01-stakeholders.md)
 - [Security review](docs/10-sa-craft/02-security-review.md)
 - [Capstone project](docs/10-sa-craft/03-capstone.md)
+- [Capstone exemplar (worked example)](docs/10-sa-craft/04-capstone-exemplar.md)
 
 ## Appendix
 

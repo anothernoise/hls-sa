@@ -53,6 +53,8 @@ Produce the SA deliverable set (the structure from [Part 9](../09-reference-arch
 
 You "graduate" by passing this review (see [Bootcamp format](../00-orientation/03-bootcamp-format.md)). There is no single right answer — there is a *defensible* one, and the defense is the point.
 
+> **Draft your own submission before reading the [capstone exemplar](./04-capstone-exemplar.md).** It's a complete worked example against this exact brief and rubric — useful for calibration, not for copying.
+
 ## Check yourself
 
 1. What is your dominant quality attribute for this brief, and what did you trade for it?

@@ -301,7 +301,7 @@ Whole Genome Sequencing — determining the complete DNA sequence of a genome; ~
 The FDA regulation governing electronic records and electronic signatures in regulated industries, requiring audit trails, validation, and access controls. Ref: [21 CFR Part 11](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11).
 
 ## 42 CFR Part 2
-US federal regulation giving stricter confidentiality protection to substance-use-disorder treatment records than HIPAA. Ref: [SAMHSA — 42 CFR Part 2](https://www.samhsa.gov/about-us/who-we-are/laws-regulations/confidentiality-regulations-faqs).
+US federal regulation protecting substance-use-disorder treatment records; a 2024 final rule (compliance required Feb 2026) substantially aligned it with HIPAA — single TPO consent, HIPAA redisclosure and breach-notification rules apply, and segmentation is no longer mandatory. Ref: [HHS — 42 CFR Part 2 Final Rule](https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/fact-sheet-42-cfr-part-2-final-rule/index.html).
 
 ## 510(k)
 The FDA premarket pathway for a device substantially equivalent to a legally-marketed predicate; the route most AI/ML devices take. Ref: [FDA — 510(k)](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k).
@@ -431,3 +431,15 @@ Pharmaceuticals and Medical Devices Agency — Japan's regulator for drugs and m
 
 ## TGA
 Therapeutic Goods Administration — Australia's medical device and therapeutic goods regulator, covering software/AI-based medical devices via the ARTG register.
+
+## MPI
+Master Patient Index (or EMPI — Enterprise MPI) — the system that reconciles patient identity across every source feeding a platform, using deterministic, probabilistic, or hybrid/AI-assisted matching to produce one golden record per patient. Ref: [ONC — patient matching](https://www.healthit.gov/topic/interoperability/patient-matching).
+
+## NPI
+National Provider Identifier — the unique identifier assigned to every US healthcare provider (individual or organization), the canonical provider identifier to use in a data model instead of local system IDs or names.
+
+## NPPES
+National Plan and Provider Enumeration System — the CMS system that assigns and publicly registers NPIs. Ref: [NPPES](https://nppes.cms.hhs.gov/).
+
+## cloud repatriation
+Moving workloads from public cloud back to private cloud or on-premises infrastructure — often motivated by cost at scale or vendor lock-in concerns; a live 2025-26 industry trend, not a niche pattern. See [On-premises & hybrid](docs/04-cloud-platforms/06-on-prem-hybrid.md) and [Cloud portability & avoiding lock-in](docs/04-cloud-platforms/08-portability-lock-in.md).

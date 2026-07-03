@@ -29,7 +29,7 @@ flowchart TB
 The US has **no single national health-privacy law** — it is a federal floor plus sectoral and state layers:
 
 - **HIPAA** (+ **HITECH**) — the federal baseline for PHI held by covered entities and business associates. See [HIPAA](./00-hipaa.md).
-- **42 CFR Part 2** — stricter protection for **substance-use-disorder** treatment records; relevant for behavioral-health systems.
+- **42 CFR Part 2** — stricter protection for **substance-use-disorder** treatment records; relevant for behavioral-health systems. See [Behavioral health data architecture](./07-behavioral-health-data.md) for the 2024 rule change that substantially aligned it with HIPAA.
 - **State laws** — **CCPA/CPRA** (California) and a growing patchwork of state privacy laws; some target health data specifically (e.g. **Washington's My Health My Data Act**, covering consumer health data outside HIPAA). State law can be stricter than HIPAA.
 - **Interoperability mandates** — CMS/ONC rules and **TEFCA** (nationwide exchange) shape how data must be made available; **CMS-0057** adds payer FHIR + prior-auth APIs (compliance generally **Jan 1, 2027**). See [FHIR](../02-interoperability/01-fhir.md) and [Document & claims standards](../02-interoperability/09-cda-x12-claims.md).
 - **AI transparency — ONC HTI-1** — certified health IT carrying *Predictive* decision support must disclose model "source attributes" and meet FAVES (fair/appropriate/valid/effective/safe), in effect since **Jan 1, 2025**. See [MLOps & model governance](../06-ai-ml/04-mlops-governance.md).

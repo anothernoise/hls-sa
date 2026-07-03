@@ -32,6 +32,7 @@
 - [Oncology data](docs/02-interoperability/10-oncology-data.md)
 - [Payer data & value-based care](docs/02-interoperability/11-payer-value-based-care.md)
 - [Clinical trial technology](docs/02-interoperability/12-clinical-trial-tech.md)
+- [Patient & provider identity matching](docs/02-interoperability/13-patient-provider-identity.md)
 
 ## Part 3 — Compliance, security & privacy
 
@@ -42,6 +43,7 @@
 - [De-identification & consent](docs/03-compliance/04-deidentification-consent.md)
 - [Regional compliance: US, Canada, Europe & APAC](docs/03-compliance/05-regional-compliance.md)
 - [Which compliance regime applies? A decision guide](docs/03-compliance/06-compliance-decision-guide.md)
+- [Behavioral health data architecture](docs/03-compliance/07-behavioral-health-data.md)
 
 ## Part 4 — Cloud platforms for HLS
 
@@ -53,6 +55,7 @@
 - [Snowflake for HLS](docs/04-cloud-platforms/05-snowflake.md)
 - [On-premises & hybrid for HLS](docs/04-cloud-platforms/06-on-prem-hybrid.md)
 - [NVIDIA for HLS](docs/04-cloud-platforms/07-nvidia.md)
+- [Cloud portability & avoiding lock-in](docs/04-cloud-platforms/08-portability-lock-in.md)
 
 ## Part 5 — Data platforms & RWD/RWE
 
@@ -86,6 +89,7 @@
 - [EHR integration](docs/08-integration/00-ehr-integration.md)
 - [Event-driven patterns](docs/08-integration/01-event-driven.md)
 - [API management](docs/08-integration/02-api-management.md)
+- [EHR migration & data conversion](docs/08-integration/03-ehr-migration.md)
 
 ## Part 9 — Reference architectures
 

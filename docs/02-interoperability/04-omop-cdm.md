@@ -122,7 +122,7 @@ Standardizing to OMOP unlocks a mature open-source toolset — the real payoff:
 - **HADES** — R packages for population-level estimation and patient-level prediction.
 - **Achilles / DQD** — data quality and characterization.
 
-These tools work on *any* OMOP CDM, which is the whole point: build the ETL once, inherit the entire ecosystem.
+These tools work on *any* OMOP CDM, which is the whole point: build the ETL once, inherit the entire ecosystem. See [OHDSI end-to-end: from cohort to calibrated evidence](../05-data-platforms/06-ohdsi-study-package.md) for how these tools chain into an actual defensible study, including cohort diagnostics and negative-control calibration.
 
 ## Lab
 

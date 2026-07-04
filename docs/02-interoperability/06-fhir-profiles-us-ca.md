@@ -43,7 +43,7 @@ Canada has **no single federal mandate** equivalent to ONC/CMS. Health delivery 
 - **PS-CA (pan-Canadian Patient Summary)** — a FHIR IG based on the **International Patient Summary (IPS)**, defining a standardized snapshot of essential health data for transitions and unplanned care.
 - **Provincial variation** — each province runs its own systems and privacy law ([PHIPA](../03-compliance/05-regional-compliance.md), etc.), so a national rollout is really a set of provincial ones.
 
-The result: less top-down forcing, more coordination; conformance targets exist (CA Baseline, PS-CA) but adoption is uneven across provinces.
+The result: less top-down forcing, more coordination; conformance targets exist (CA Baseline, PS-CA) but adoption is uneven across provinces. See [Canadian HLS architecture](./17-canadian-hls-architecture.md) for the provincial deep dive — a "Canadian" integration is really a portfolio of separate provincial ones (Alberta Netcare, Ontario Health/Connecting Ontario, BC PharmaNet/Health Gateway, Quebec), each at its own standards vintage and privacy regime.
 
 ## US vs Canada at a glance
 

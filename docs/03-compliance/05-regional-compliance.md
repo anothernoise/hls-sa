@@ -46,7 +46,7 @@ Canada layers **federal** and **provincial** law, with meaningful **data-residen
 - **Data residency** — public-sector and some health contexts have historically required data to be **stored in Canada** (e.g. BC and Nova Scotia public-sector rules); requirements have relaxed in places but residency remains a live design constraint. Confirm per province and per contract.
 - **Interoperability** — **Canada Health Infoway** drives pan-Canadian standards (increasingly FHIR-based).
 
-**Design implication:** determine the **province(s)** and whether public-sector/health-custodian rules apply; plan for **in-Canada residency** unless you have confirmed it is not required.
+**Design implication:** determine the **province(s)** and whether public-sector/health-custodian rules apply; plan for **in-Canada residency** unless you have confirmed it is not required. See [Canadian HLS architecture](../02-interoperability/17-canadian-hls-architecture.md) for the architecture-level deep dive — provincial EHR-viewer patterns (Alberta Netcare, Ontario Health, BC PharmaNet/Health Gateway) and why each province's privacy act must be mapped independently.
 
 ## European Union / EEA
 

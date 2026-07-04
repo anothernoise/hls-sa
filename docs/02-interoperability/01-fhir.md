@@ -20,7 +20,7 @@ FHIR's design principles make it accessible to any developer with REST experienc
 - Resources link to each other by reference (like hyperlinks in a document).
 - Search uses URL query parameters: `GET /Observation?subject=Patient/123&code=8302-2`.
 
-> **Which version?** Build on **R4** — it is the deployed standard everywhere and the version every US/EU mandate targets (US Core, CMS-0057, EHDS IGs all use R4). **R5** (2023) saw limited adoption; **R6** is targeting a first normative release around **2027**. For any project today, default to R4 and treat R6 as a future migration, not a starting point.
+> **Which version?** Build on **R4** — it is the deployed standard everywhere and the version every US/EU mandate targets (US Core, CMS-0057, EHDS IGs all use R4). **R5** (2023) saw limited adoption; **R6** is targeting a first normative release around **2027**. For any project today, default to R4 and treat R6 as a future migration, not a starting point. See [FHIR version migration & compatibility](./15-fhir-version-migration.md) for what actually changes between R4, R4B, and R5, and how to design a coexistence layer for partners on different versions.
 
 ## The FHIR resource model
 

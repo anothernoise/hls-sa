@@ -48,7 +48,7 @@ AI models improve with retraining — but a cleared device normally needs a new 
 2. **Modification Protocol** — how each change is implemented, validated, and verified.
 3. **Impact Assessment** — the risk analysis of the changes.
 
-PCCPs apply across 510(k), De Novo, and PMA submissions for AI-enabled devices. For an SA, a PCCP is what lets a clinical model keep learning post-deployment within a controlled, pre-agreed envelope — design the MLOps pipeline to honor it.
+PCCPs apply across 510(k), De Novo, and PMA submissions for AI-enabled devices. For an SA, a PCCP is what lets a clinical model keep learning post-deployment within a controlled, pre-agreed envelope — design the MLOps pipeline to honor it. See [Regulated AI artifacts](./07-regulated-ai-artifacts.md) for the concrete document set (intended use statement, risk file, validation plan, PCCP, post-market monitoring, change control) and how specific architecture decisions map to the evidence they produce.
 
 ## Health Canada
 

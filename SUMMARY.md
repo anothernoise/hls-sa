@@ -8,6 +8,7 @@
 - [The HLS industry map](docs/00-orientation/01-hls-industry-map.md)
 - [The SA operating model](docs/00-orientation/02-sa-operating-model.md)
 - [Bootcamp format & labs](docs/00-orientation/03-bootcamp-format.md)
+- [Health system operations, clinical workflows & care economics](docs/00-orientation/04-health-system-operations.md)
 
 ## Part 1 — Foundations of the SA role
 
@@ -34,6 +35,9 @@
 - [Clinical trial technology](docs/02-interoperability/12-clinical-trial-tech.md)
 - [Patient & provider identity matching](docs/02-interoperability/13-patient-provider-identity.md)
 - [AI agents on FHIR](docs/02-interoperability/14-ai-agents-on-fhir.md)
+- [FHIR version migration & compatibility: R4, R4B & R5](docs/02-interoperability/15-fhir-version-migration.md)
+- [USCDI, information blocking & TEFCA: operational labs](docs/02-interoperability/16-uscdi-tefca-labs.md)
+- [Canadian HLS architecture](docs/02-interoperability/17-canadian-hls-architecture.md)
 
 ## Part 3 — Compliance, security & privacy
 
@@ -45,6 +49,7 @@
 - [Regional compliance: US, Canada, Europe & APAC](docs/03-compliance/05-regional-compliance.md)
 - [Which compliance regime applies? A decision guide](docs/03-compliance/06-compliance-decision-guide.md)
 - [Behavioral health data architecture](docs/03-compliance/07-behavioral-health-data.md)
+- [HITRUST evidence pack lab](docs/03-compliance/08-hitrust-evidence-lab.md)
 
 ## Part 4 — Cloud platforms for HLS
 
@@ -66,6 +71,7 @@
 - [Governance & data contracts](docs/05-data-platforms/03-governance-contracts.md)
 - [Data strategy in an HLS/biotech company](docs/05-data-platforms/04-data-strategy.md)
 - [Data mesh in HLS](docs/05-data-platforms/05-data-mesh.md)
+- [OHDSI end-to-end: from cohort to calibrated evidence](docs/05-data-platforms/06-ohdsi-study-package.md)
 
 ## Part 6 — AI/ML in health & life science
 
@@ -76,6 +82,7 @@
 - [MLOps & model governance](docs/06-ai-ml/04-mlops-governance.md)
 - [FDA SaMD & GMLP](docs/06-ai-ml/05-fda-samd.md)
 - [EU AI Act & global AI regulation](docs/06-ai-ml/06-eu-ai-act.md)
+- [Regulated AI artifacts: the concrete evidence package](docs/06-ai-ml/07-regulated-ai-artifacts.md)
 
 ## Part 7 — Genomics & bioinformatics architecture
 

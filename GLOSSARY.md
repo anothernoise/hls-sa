@@ -90,6 +90,12 @@ A path-based expression language for navigating and extracting values from FHIR 
 ## Formulary
 A payer's or PBM's list of covered drugs, organized into tiers that determine coverage and patient cost-share; formulary rules are applied during claims adjudication. Ref: [NCPDP Formulary & Benefit standard](https://www.ncpdp.org/).
 
+## intended use statement
+The document naming a clinical AI model's target population, intended user, output form, and explicit out-of-scope uses — the anchor that every other regulated-AI artifact (risk file, validation plan, PCCP) derives its scope from. See [Regulated AI artifacts](docs/06-ai-ml/07-regulated-ai-artifacts.md).
+
+## risk file
+An ISO 14971-style hazard log (hazard, severity/probability, control measure, residual-risk acceptability) adapted for AI-specific failure modes like distribution shift, subgroup underperformance, and automation bias. Ref: [ISO 14971](https://www.iso.org/standard/72704.html). See [Regulated AI artifacts](docs/06-ai-ml/07-regulated-ai-artifacts.md).
+
 ## GAMP 5
 Good Automated Manufacturing Practice (ISPE) — the risk-based framework for validating computerized systems in regulated life science; the Second Edition (2022) embraces Agile, cloud, and the FDA's CSA approach. Ref: [ISPE GAMP 5](https://ispe.org/publications/guidance-documents/gamp-5-guide-2nd-edition).
 
@@ -122,6 +128,9 @@ Health Insurance Portability and Accountability Act — the US federal law (1996
 
 ## HITECH
 Health Information Technology for Economic and Clinical Health Act (2009) — strengthened HIPAA enforcement and breach-notification requirements and incentivized EHR adoption. Ref: [HHS — HITECH](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html).
+
+## inherited control
+A HITRUST control satisfied by a cloud provider's own certification rather than independently re-evidenced — valid only if you can point to the provider's specific certification section and have actually configured (not merely enabled the option for) anything on your side of the shared-responsibility line. See [HITRUST evidence pack lab](docs/03-compliance/08-hitrust-evidence-lab.md).
 
 ## HITRUST
 A certifiable security framework (HITRUST CSF) that harmonises HIPAA, NIST, ISO 27001, and others into one auditable control set, with tiered assessments (e1, i1, r2). Often a precondition for selling to health systems. Ref: [HITRUST](https://hitrustalliance.net/).
@@ -228,6 +237,15 @@ Predetermined Change Control Plan — an FDA-reviewed plan (final guidance Dec 2
 ## PHI
 Protected Health Information — individually identifiable health information held by a covered entity or business associate; HIPAA defines 18 identifiers whose presence makes data PHI. Ref: [HHS — PHI / de-identification](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html).
 
+## Alberta Netcare
+Alberta's province-wide clinical EHR viewer, one of the longest-running and most comprehensive in Canada — aggregates labs, pharmacy dispenses, imaging reports, and clinical documents province-wide, still substantially on HL7v2/CDA-era feeds. See [Canadian HLS architecture](docs/02-interoperability/17-canadian-hls-architecture.md).
+
+## CA Core+
+Canada Health Infoway's ongoing FHIR profile work extending CA Baseline toward broader, deeper coverage — an actively evolving area; confirm current scope directly with Infoway. See [Canadian HLS architecture](docs/02-interoperability/17-canadian-hls-architecture.md).
+
+## PharmaNet
+British Columbia's province-wide pharmacy dispense network connecting every dispensing pharmacy in the province. See [Canadian HLS architecture](docs/02-interoperability/17-canadian-hls-architecture.md).
+
 ## PHIPA
 Personal Health Information Protection Act — Ontario's health-specific privacy law governing custodians of personal health information. Ref: [Ontario IPC — PHIPA](https://www.ipc.on.ca/en/health-individuals/health-privacy-ontario).
 
@@ -284,6 +302,12 @@ An HL7 specification (SQL on FHIR v2) for defining portable, tabular projections
 
 ## TCO
 Total Cost of Ownership — the full lifetime cost of a system: build + run + opportunity cost; in HLS, run cost (managed FHIR, genomics, imaging egress) is the common surprise. Ref: [AWS — TCO](https://aws.amazon.com/tco-calculator/).
+
+## QHIN
+Qualified Health Information Network — a network accredited by TEFCA's Recognized Coordinating Entity to exchange data with other QHINs under the Common Agreement; a health system reaches TEFCA by participating in a QHIN (usually via its HIE or EHR vendor), not by connecting to TEFCA directly. See [USCDI, information blocking & TEFCA: operational labs](docs/02-interoperability/16-uscdi-tefca-labs.md).
+
+## RCE
+Recognized Coordinating Entity — the organization (currently The Sequoia Project) that administers TEFCA's Common Agreement and accredits QHINs. Ref: [RCE](https://rce.sequoiaproject.org/).
 
 ## TEFCA
 Trusted Exchange Framework and Common Agreement — the US framework (now in production via Qualified Health Information Networks) for nationwide health information exchange, increasingly FHIR-based. Ref: [TEFCA / RCE](https://rce.sequoiaproject.org/).
@@ -414,8 +438,35 @@ Healthcare Effectiveness Data and Information Set — NCQA's dominant payer qual
 ## HCC
 Hierarchical Condition Category — the diagnosis-code-derived category system used to risk-adjust health-plan payment to a population's actual health risk; under-documented conditions understate HCC risk scores and payment.
 
+## DRG
+Diagnosis-Related Group — the unit of Medicare's inpatient prospective payment system: a hospital is paid a fixed amount per admission based on the assigned DRG (diagnoses, procedures, complications/comorbidities), regardless of the actual cost of the stay — making documentation completeness a direct revenue lever. Ref: [CMS — IPPS](https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps). See [Health system operations](docs/00-orientation/04-health-system-operations.md).
+
+## RVU
+Relative Value Unit — the unit behind Medicare's RBRVS used to pay physicians for outpatient/professional-fee work; many health systems still tie physician compensation directly to RVUs produced. Ref: [CMS — RBRVS](https://www.cms.gov/medicare/payment/fee-schedules/physician). See [Health system operations](docs/00-orientation/04-health-system-operations.md).
+
+## capitation
+A payment model where a provider receives a fixed amount per member per month regardless of utilization, flipping the financial incentive from fee-for-service: fewer, better-coordinated encounters increase margin instead of more encounters increasing revenue. See [Health system operations](docs/00-orientation/04-health-system-operations.md).
+
+## SBAR
+Situation, Background, Assessment, Recommendation — the dominant structured clinical-handoff format (e.g. nursing shift change), designed to transfer clinical judgment between people, not just data between systems.
+
 ## risk adjustment
 The practice of pricing health-plan payment to enrollee health risk (via HCC coding), run prospectively (prior-year data), concurrently (real-time, during the encounter), or retrospectively (post-claims chart review) to correct under-coding.
+
+## cohort diagnostics
+An OHDSI HADES R package that validates a cohort definition before it is trusted in a study — checking incidence rate over time/across databases, index-event breakdown, and orphan concepts; run per site since the same definition can behave sanely at one site and not another. Ref: [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/). See [OHDSI end-to-end](docs/05-data-platforms/06-ohdsi-study-package.md).
+
+## HADES
+Health Analytics Data-to-Evidence Suite — the family of OHDSI R packages (CohortMethod, SelfControlledCaseSeries, PatientLevelPrediction, CaseControl) that perform observational analysis on OMOP CDM data, sharing a common target/comparator/outcome cohort framework. Ref: [OHDSI HADES](https://ohdsi.github.io/Hades/).
+
+## empirical calibration
+The OHDSI technique of running an analysis pipeline against negative control outcomes (with no plausible causal link to the exposure) to measure a method's real systematic error on a given database, then using that distribution to recalibrate the real result's p-value and confidence interval. Ref: [EmpiricalCalibration](https://ohdsi.github.io/EmpiricalCalibration/). See [OHDSI end-to-end](docs/05-data-platforms/06-ohdsi-study-package.md).
+
+## negative control
+An outcome (or exposure) with no plausible causal relationship to what's being studied, used to detect and calibrate for residual bias in an observational analysis — its estimated effect should center on the null if the method is unbiased.
+
+## Strategus
+An OHDSI convention/tool for bundling cohort definitions, an analysis specification, negative controls, and execution settings into one versioned R package that runs unchanged at any network site against its own OMOP CDM, returning only aggregate results. Ref: [OHDSI Strategus](https://ohdsi.github.io/Strategus/).
 
 ## Da Vinci Project
 The HL7 FHIR accelerator producing implementation guides for payer-provider data exchange and value-based care — including HRex, CRD, DTR, PAS, CDex, DEQM (Gaps in Care), Risk Adjustment, and PDex. Ref: [HL7 Da Vinci](https://www.hl7.org/about/davinci/).
@@ -479,6 +530,12 @@ The clinical-safety failure mode where high false-alarm rates from monitoring/CD
 
 ## MCP
 Model Context Protocol — an open protocol (Anthropic, Nov 2024; donated to the Linux Foundation's Agentic AI Foundation, Dec 2025) standardizing how AI agents discover and call external tools and data sources; the "agent-facing contract" that sits above FHIR's "system-facing contract" in an AI-agent-over-FHIR architecture. Ref: [modelcontextprotocol.io](https://modelcontextprotocol.io/). See [AI agents on FHIR](docs/02-interoperability/14-ai-agents-on-fhir.md).
+
+## R4B
+An interim, additive-only FHIR release (2022) sitting between R4 and R5 — it introduced topic-based Subscriptions and a few new resources without breaking or reshaping anything in R4. See [FHIR version migration & compatibility](docs/02-interoperability/15-fhir-version-migration.md).
+
+## CodeableReference
+A FHIR R5 data type that merges what R4 modeled as two separate elements (a `CodeableConcept` and a `Reference`, e.g. `MedicationRequest.reasonCode`/`reasonReference`) into one field that can hold either — a common source of silent breakage when migrating R4 code to R5. See [FHIR version migration & compatibility](docs/02-interoperability/15-fhir-version-migration.md).
 
 ## OAuth 2.1
 The consolidated OAuth authorization framework (folding in security best practices like mandatory PKCE) that both SMART on FHIR and the MCP Authorization specification build on — the client/authorization-server split an SA should recognize as the same pattern in both contexts.

@@ -57,6 +57,8 @@ HITRUST certification is mostly an organizational and operational effort, but th
 
 The architectural pattern that makes HITRUST tractable: **policy-as-code + IaC + centralized logging**. If your controls are codified (e.g., a Terraform module that always enforces encryption and blocks public access), you can *prove* they are applied uniformly — which is exactly what an assessor wants to see.
 
+See the [HITRUST evidence pack lab](./08-hitrust-evidence-lab.md) for the concrete mechanics — a control-mapping worksheet, how to classify inherited vs. self-evidenced controls under the cloud shared-responsibility model, and how to assemble an assessor-ready evidence pack.
+
 ## Check yourself
 
 1. A health system asks your startup for proof of security before buying. Why might HITRUST certification be more useful here than simply asserting HIPAA compliance?

@@ -154,7 +154,22 @@ International Patient Summary — an ISO/HL7 standardized minimal set of essenti
 Institutional Review Board — a committee that reviews research involving human subjects for ethics, informed consent, and privacy. Ref: [FDA — IRBs](https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/institutional-review-boards-irbs-and-protection-human-subjects-clinical-trials).
 
 ## LIMS
-Laboratory Information Management System — software for managing samples, workflows, QC, and instrument data in clinical and research labs.
+Laboratory Information Management System — the research/manufacturing counterpart to a LIS, used in pharma R&D, biotech, and QC labs; falls under GxP/21 CFR Part 11 rather than CLIA/CAP. See [LIS architecture](docs/08-integration/05-lis-architecture.md) for the LIS-vs-LIMS distinction.
+
+## LIS
+Laboratory Information System — the clinical-diagnostic-lab counterpart to a LIMS: manages order-to-result workflow for patient specimens (accessioning, instrument interfacing, result release) under CLIA/CAP regulation, with results flowing into the EHR. See [LIS architecture](docs/08-integration/05-lis-architecture.md).
+
+## CLIA
+Clinical Laboratory Improvement Amendments — the US federal regulation setting quality, personnel, and proficiency-testing requirements for any lab testing human specimens; the compliance floor for a clinical LIS. Ref: [CMS — CLIA](https://www.cms.gov/regulations-and-guidance/legislation/clia).
+
+## CAP accreditation
+College of American Pathologists accreditation — a voluntary but widely expected/required lab accreditation that audits beyond the CLIA minimum. Ref: [CAP accreditation](https://www.cap.org/laboratory-improvement/accreditation).
+
+## critical value
+A lab result (e.g. dangerously abnormal potassium or glucose) requiring immediate, acknowledged notification to a clinician — designed as a positive-acknowledgment workflow, not a fire-and-forget message, to avoid becoming another source of alert fatigue.
+
+## ASTM/CLSI LIS2-A2
+A common protocol standard at the instrument-to-LIS/middleware boundary in clinical labs, distinct from HL7v2 (which typically governs the LIS-to-EHR boundary); many analyzer vendors require a per-instrument protocol-translating driver rather than speaking HL7v2 natively.
 
 ## LOINC
 Logical Observation Identifiers Names and Codes — the standard vocabulary for lab tests, vital signs, and clinical observations; used in FHIR `Observation.code`. Ref: [loinc.org](https://loinc.org/).

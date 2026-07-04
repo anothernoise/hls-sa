@@ -93,6 +93,7 @@
 - [API management](docs/08-integration/02-api-management.md)
 - [EHR migration & data conversion](docs/08-integration/03-ehr-migration.md)
 - [Real-time streaming clinical analytics](docs/08-integration/04-realtime-streaming-analytics.md)
+- [Laboratory Information System (LIS) architecture](docs/08-integration/05-lis-architecture.md)
 
 ## Part 9 — Reference architectures
 

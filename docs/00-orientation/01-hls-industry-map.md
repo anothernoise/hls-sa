@@ -49,7 +49,7 @@ flowchart LR
 - **Medtech & devices** — physical instruments and **Software as a Medical Device (SaMD)**.
   Architectures center on edge/IoT, telemetry, and FDA-cleared software lifecycles.
 - **Diagnostics & genomics** — high-throughput labs. Architectures center on **sequencing
-  pipelines**, LIMS, and turning terabytes of reads into a clinical report.
+  pipelines**, the [LIS/LIMS](../08-integration/05-lis-architecture.md), and turning terabytes of reads into a clinical report.
 
 ### Healthcare delivery
 

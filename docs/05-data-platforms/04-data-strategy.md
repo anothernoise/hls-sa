@@ -49,7 +49,7 @@ These are not exclusive: a common HLS pattern is a **lakehouse substrate + data-
 ## Biotech-specific wrinkles
 
 - **R&D vs commercial divide.** R&D data (instruments, assays, multi-omics) and commercial/clinical data (claims, EHR, RWD) have different shapes, owners, and regulations — the strategy must bridge them, not pretend they're one.
-- **Instrument & lab data.** High-volume, heterogeneous output from sequencers, imagers, and lab instruments (via the [LIMS](../02-interoperability/03-terminologies.md)) — capture it FAIR at the source.
+- **Instrument & lab data.** High-volume, heterogeneous output from sequencers, imagers, and lab instruments (via the [LIS/LIMS](../08-integration/05-lis-architecture.md)) — capture it FAIR at the source.
 - **GxP data integrity.** R&D/manufacturing data supporting submissions must satisfy ALCOA+ and [21 CFR Part 11](../03-compliance/02-gxp-part11.md) — strategy and governance must encode it.
 - **RWD acquisition & partnerships.** Much value comes from *external* data (claims, registries) linked via [tokenization](./02-rwd-rwe.md); sourcing, contracts, and clean-room collaboration are strategy decisions.
 - **Build vs buy.** Specialist platforms (Benchling, Veeva, etc.) vs a general lakehouse — a recurring [trade-off](../01-foundations/03-tradeoffs-tco.md).

@@ -66,4 +66,4 @@ FHIR data is PHI, so the AI architecture inherits every [HIPAA](../03-compliance
 ## Further reading
 
 - [SMART/HL7 Bulk Data](https://hl7.org/fhir/uv/bulkdata/) · [SQL on FHIR](https://sql-on-fhir.org/ig/)
-- [RAG over clinical corpora](../06-ai-ml/02-rag-clinical.md) · [Agentic AI](../06-ai-ml/03-agentic-ai.md)
+- [RAG over clinical corpora](../06-ai-ml/02-rag-clinical.md) · [Agentic AI](../06-ai-ml/03-agentic-ai.md) · [AI agents on FHIR](./14-ai-agents-on-fhir.md)

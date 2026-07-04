@@ -461,3 +461,9 @@ A reference-based, compressed alternative to BAM for aligned sequencing reads �
 
 ## alert fatigue
 The clinical-safety failure mode where high false-alarm rates from monitoring/CDS systems train clinicians to routinely override or ignore alerts, reducing responsiveness to genuine deterioration; the central design constraint for real-time streaming clinical analytics. See [Real-time streaming clinical analytics](docs/08-integration/04-realtime-streaming-analytics.md).
+
+## MCP
+Model Context Protocol — an open protocol (Anthropic, Nov 2024; donated to the Linux Foundation's Agentic AI Foundation, Dec 2025) standardizing how AI agents discover and call external tools and data sources; the "agent-facing contract" that sits above FHIR's "system-facing contract" in an AI-agent-over-FHIR architecture. Ref: [modelcontextprotocol.io](https://modelcontextprotocol.io/). See [AI agents on FHIR](docs/02-interoperability/14-ai-agents-on-fhir.md).
+
+## OAuth 2.1
+The consolidated OAuth authorization framework (folding in security best practices like mandatory PKCE) that both SMART on FHIR and the MCP Authorization specification build on — the client/authorization-server split an SA should recognize as the same pattern in both contexts.

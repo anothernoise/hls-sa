@@ -33,6 +33,7 @@
 - [Payer data & value-based care](docs/02-interoperability/11-payer-value-based-care.md)
 - [Clinical trial technology](docs/02-interoperability/12-clinical-trial-tech.md)
 - [Patient & provider identity matching](docs/02-interoperability/13-patient-provider-identity.md)
+- [AI agents on FHIR](docs/02-interoperability/14-ai-agents-on-fhir.md)
 
 ## Part 3 — Compliance, security & privacy
 

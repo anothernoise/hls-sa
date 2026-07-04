@@ -65,3 +65,4 @@ Agents are powerful precisely because they *act* — which is also the risk. An 
 - [`aws-health-agents`](https://github.com/anothernoise/aws-health-agents)
 - [Amazon Bedrock Agents](https://aws.amazon.com/bedrock/agents/)
 - [SMART Backend Services](https://hl7.org/fhir/smart-app-launch/backend-services.html)
+- [AI agents on FHIR](../02-interoperability/14-ai-agents-on-fhir.md) — the MCP-based tool-calling pattern over a FHIR store

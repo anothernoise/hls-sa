@@ -89,7 +89,7 @@ RWD is messy — missing data, confounding, inconsistent capture. Regulators acc
 
 - **Fitness for use** — is the RWD relevant and reliable for the specific question? (FDA emphasises data relevance and reliability.)
 - **Transparency & reproducibility** — pre-specify the analysis; pin data and vocabulary versions; use validated tooling (OHDSI HADES) so results can be reproduced.
-- **Provenance** — auditable lineage from source to result (this is where the immutable bronze layer and [data contracts](./03-governance-contracts.md) earn their keep).
+- **Provenance** — auditable lineage from source to result (this is where the immutable bronze layer and [data contracts](./03-governance-contracts.md) earn their keep — see [Data lineage & provenance](./07-data-lineage-provenance.md) for the architecture pattern).
 
 The SA's job: build the RWD platform so that *provenance, reproducibility, and governance* are intrinsic — because that, not raw volume, is what makes RWE defensible.
 

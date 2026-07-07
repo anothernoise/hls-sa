@@ -139,7 +139,9 @@ organization. **The SA's job is to design (and frame) one system that is defensi
 four lenses at once** — e.g. embedding suggested codes in the existing workflow at the point of
 documentation (satisfies CFO) without adding a new screen or alert (satisfies CMIO/CNO) built on
 infrastructure the CIO already operates (satisfies CIO) — rather than picking the sponsor who
-shouts loudest and hoping the rest come along.
+shouts loudest and hoping the rest come along. See
+[EHR usability & clinical documentation burden](../08-integration/07-ehr-usability-documentation-burden.md)
+for a full treatment of this specific tension.
 
 ## Design guidance
 

@@ -93,4 +93,5 @@ the evidence a submission or an ongoing PCCP needs, rather than retrofitting it 
 
 - [Event-driven patterns](./01-event-driven.md) · [MLOps & model governance](../06-ai-ml/04-mlops-governance.md)
 - [FDA SaMD & GMLP](../06-ai-ml/05-fda-samd.md)
+- [EHR usability & clinical documentation burden](./07-ehr-usability-documentation-burden.md) — the same alert-fatigue discipline applied to documentation-adjacent CDS
 - [SepsisAI — minimizing false alarms in ICU sepsis prediction (PLOS Digital Health)](https://journals.plos.org/digitalhealth/article?id=10.1371%2Fjournal.pdig.0000569)

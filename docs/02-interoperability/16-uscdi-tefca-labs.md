@@ -81,7 +81,8 @@ investigated.
 ## Lab 3 — Tracing a request through TEFCA
 
 TEFCA (Trusted Exchange Framework and Common Agreement) is a **network of networks**, not a
-network you join directly. A health system connects through a **QHIN (Qualified Health
+network you join directly — it federates regional/state [HIEs](../08-integration/06-hie-architecture.md)
+and vendor networks (Carequality, CommonWell) rather than replacing them. A health system connects through a **QHIN (Qualified Health
 Information Network)** — accredited by the Recognized Coordinating Entity (RCE, currently The
 Sequoia Project) against the Common Agreement — usually via an existing HIE or EHR vendor that is
 itself a QHIN participant. (The live roster of operational QHINs changes as new ones onboard —

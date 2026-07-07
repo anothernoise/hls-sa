@@ -49,7 +49,7 @@ flowchart LR
 
 You *can* build a genomics stack from S3 + AWS Batch + your own Nextflow setup (see [Sequencing pipelines](./00-sequencing-pipelines.md)). HealthOmics earns its place by providing:
 
-- **Provenance and reproducibility out of the box** — each run records inputs, workflow version, and parameters. This is the evidence a clinical/GxP environment needs (see [GxP & 21 CFR Part 11](../03-compliance/02-gxp-part11.md)); reconstructing it yourself on Batch is real work.
+- **Provenance and reproducibility out of the box** — each run records inputs, workflow version, and parameters. This is the evidence a clinical/GxP environment needs (see [GxP & 21 CFR Part 11](../03-compliance/02-gxp-part11.md) and [Data lineage & provenance](../05-data-platforms/07-data-lineage-provenance.md)); reconstructing it yourself on Batch is real work.
 - **Purpose-built storage economics** — sequence stores are tuned for genomics access patterns and cost, versus naive S3.
 - **Less operational surface** — no Batch compute environment, queue, or scheduler to own.
 - **Integrated analytics** — variant/annotation stores query through Athena and govern through Lake Formation, fitting the rest of an AWS data architecture.

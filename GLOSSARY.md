@@ -120,6 +120,18 @@ AWS's managed FHIR R4 data store — REST API, Bulk Data export, SMART on FHIR, 
 ## HealthOmics
 AWS's managed genomics service: purpose-built sequence/reference/variant/annotation stores plus a workflow engine (Nextflow/WDL/CWL) with built-in provenance. Ref: [AWS HealthOmics](https://aws.amazon.com/healthomics/).
 
+## RLS
+Record Locator Service — the core component of a federated HIE: an index answering "which participants likely hold data on this patient" via patient matching, without the HIE storing any clinical data itself. See [HIE architecture](docs/08-integration/06-hie-architecture.md).
+
+## Carequality
+A trust framework connecting many HIEs and networks under a common set of technical and legal requirements, predating and now participating in TEFCA. Ref: [Carequality](https://carequality.org/). See [HIE architecture](docs/08-integration/06-hie-architecture.md).
+
+## CommonWell Health Alliance
+An EHR-vendor-driven health information network enabling patient lookup and record retrieval across participating vendors' installed bases. Ref: [CommonWell](https://www.commonwellalliance.org/). See [HIE architecture](docs/08-integration/06-hie-architecture.md).
+
+## DURSA
+Data Use and Reciprocal Support Agreement — the pattern of legal agreement (used by networks like eHealth Exchange) that HIE participants sign, covering permitted purpose of use, minimum-necessary access, and liability.
+
 ## HIE
 Health Information Exchange — a network that enables sharing of patient records between healthcare organisations (e.g. CommonWell, Carequality). Ref: [HealthIT.gov — HIE](https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/what-hie).
 
@@ -188,6 +200,18 @@ Markdown Architectural Decision Records — a lightweight, structured Markdown f
 
 ## MDSAP
 Medical Device Single Audit Program — one ISO 13485 quality-system audit recognized by Canada, the US, Australia, Brazil, and Japan; required for Health Canada Class II–IV device licences. Ref: [FDA — MDSAP](https://www.fda.gov/medical-devices/cdrh-international-programs/medical-device-single-audit-program-mdsap).
+
+## data lineage
+The map of transformations a dataset or column goes through across systems — answers "how was this table derived" and "what breaks if I change something upstream." Distinct from provenance, which traces a single fact's origin. See [Data lineage & provenance](docs/05-data-platforms/07-data-lineage-provenance.md).
+
+## data provenance
+The origin and chain of custody of one specific data value, back to its source. Distinct from lineage, which maps a dataset's transformation graph across systems. See [Data lineage & provenance](docs/05-data-platforms/07-data-lineage-provenance.md).
+
+## OpenLineage
+An open standard for emitting lineage events from heterogeneous pipeline tools (Airflow, Spark, dbt, and others) to a common central store, avoiding bespoke pairwise lineage integrations. Ref: [openlineage.io](https://openlineage.io/).
+
+## W3C PROV
+A W3C data model for representing provenance — the origin, derivation, and attribution of data — in a tool-agnostic, general form. Ref: [W3C PROV](https://www.w3.org/TR/prov-overview/).
 
 ## medallion
 The bronze (raw, immutable) → silver (cleaned, conformed) → gold (analytics-ready, e.g. OMOP) layering pattern for refining data in a lakehouse. Ref: [Databricks — medallion](https://www.databricks.com/glossary/medallion-architecture).
@@ -524,6 +548,12 @@ A managed, multi-cloud (AWS/GCP/Azure) genomics platform supporting WDL/CWL/Next
 
 ## CRAM
 A reference-based, compressed alternative to BAM for aligned sequencing reads — typically 30-60% smaller than the equivalent BAM by storing differences from a reference genome rather than full sequences; requires the exact reference used for compression to be retained for decompression.
+
+## pajama time
+Clinician EHR/documentation work completed outside scheduled clinical hours — a widely tracked burnout proxy metric, often surfaced natively by EHR vendor analytics (e.g. Epic Signal). See [EHR usability & clinical documentation burden](docs/08-integration/07-ehr-usability-documentation-burden.md).
+
+## ambient clinical documentation
+A category of AI tooling that captures the audio of a patient encounter and drafts a clinical note via transcription + LLM summarization, with mandatory clinician review before the note enters the legal record — an "AI scribe." See [EHR usability & clinical documentation burden](docs/08-integration/07-ehr-usability-documentation-burden.md).
 
 ## alert fatigue
 The clinical-safety failure mode where high false-alarm rates from monitoring/CDS systems train clinicians to routinely override or ignore alerts, reducing responsiveness to genuine deterioration; the central design constraint for real-time streaming clinical analytics. See [Real-time streaming clinical analytics](docs/08-integration/04-realtime-streaming-analytics.md).

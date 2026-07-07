@@ -38,7 +38,7 @@ flowchart LR
 
 Governance is the control layer over the lifecycle — who approved what, on what evidence, and is it still valid:
 
-- **Versioning & lineage** — every production model traces to its data, code, and approver.
+- **Versioning & lineage** — every production model traces to its data, code, and approver (see [Data lineage & provenance](../05-data-platforms/07-data-lineage-provenance.md) for the underlying capture architecture).
 - **Intended-use statement** — what the model is for, its population, and its limits (the boundary regulators and clinicians both care about).
 - **Subgroup & bias evaluation** — documented performance across populations.
 - **Change control** — model updates follow an approval process; for regulated devices this ties to a [PCCP](./05-fda-samd.md).

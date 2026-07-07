@@ -73,7 +73,9 @@ flowchart LR
 
 Providers, payers, and public health agencies also connect through **Health Information
 Exchanges (HIEs)** — regional or national networks that move data between organizations that
-don't share a vendor; see [EHR integration](../08-integration/00-ehr-integration.md).
+don't share a vendor; see [EHR integration](../08-integration/00-ehr-integration.md) for
+point-to-point patterns and [HIE architecture](../08-integration/06-hie-architecture.md) for the
+network-hub design HIEs use instead.
 
 ## Why the center of gravity differs
 

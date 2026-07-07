@@ -33,7 +33,7 @@ flowchart TB
 - **Access control** — least privilege via roles/attributes; deny by default. Authorized clinicians vs. analysts vs. researchers get different views.
 - **Dynamic masking & row filters** — serve one table to many trust levels: analysts see masked/de-identified values, authorized users see clear text. (Unity Catalog on [Databricks](../04-cloud-platforms/04-databricks.md); dynamic data masking on [Snowflake](../04-cloud-platforms/05-snowflake.md).)
 - **Sensitive-data classification** — tag PHI/PII columns (auto-classification) so masking and policy apply uniformly.
-- **Lineage** — trace every gold column back to its source; essential for RWE provenance and audits.
+- **Lineage** — trace every gold column back to its source; essential for RWE provenance and audits. See [Data lineage & provenance](./07-data-lineage-provenance.md) for the full architecture treatment.
 - **Audit logs** — who accessed which PHI, when (HIPAA Security Rule; retain per policy).
 - **Data quality monitoring** — freshness, completeness, validity; catch silent breakage.
 

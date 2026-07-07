@@ -72,6 +72,7 @@
 - [Data strategy in an HLS/biotech company](docs/05-data-platforms/04-data-strategy.md)
 - [Data mesh in HLS](docs/05-data-platforms/05-data-mesh.md)
 - [OHDSI end-to-end: from cohort to calibrated evidence](docs/05-data-platforms/06-ohdsi-study-package.md)
+- [Data lineage & provenance](docs/05-data-platforms/07-data-lineage-provenance.md)
 
 ## Part 6 — AI/ML in health & life science
 
@@ -101,6 +102,8 @@
 - [EHR migration & data conversion](docs/08-integration/03-ehr-migration.md)
 - [Real-time streaming clinical analytics](docs/08-integration/04-realtime-streaming-analytics.md)
 - [Laboratory Information System (LIS) architecture](docs/08-integration/05-lis-architecture.md)
+- [Health Information Exchange (HIE) architecture](docs/08-integration/06-hie-architecture.md)
+- [EHR usability & clinical documentation burden](docs/08-integration/07-ehr-usability-documentation-burden.md)
 
 ## Part 9 — Reference architectures
 

@@ -50,6 +50,10 @@ flowchart LR
 - **Authorization is per-vendor and per-health-system.** Plan for the EHR's app-onboarding and the health system's approval — these are lead-time items, not afterthoughts.
 - **Least-privilege scopes** and full audit ([HIPAA](../03-compliance/00-hipaa.md)) on every integration.
 
+This chapter covers point-to-point integration with one EHR you have a direct relationship with.
+For sharing data among many *unaffiliated* organizations at once, see
+[HIE architecture](./06-hie-architecture.md) — a different, hub-based design.
+
 ## Lab
 
 [`hls-fhir-interop`](https://github.com/anothernoise/hls-fhir-interop) covers HL7v2→FHIR ingestion and a SMART on FHIR app — the two most common EHR-integration patterns.

@@ -66,6 +66,9 @@ You often build **more than one** gold model from the same silver layer — OMOP
 
 For most modern HLS data platforms the answer is a lakehouse with a medallion layout and an OMOP (or OMOP + dimensional) gold layer.
 
+See [Building a health data lake & lakehouse](./08-building-health-lakehouse.md) for the practical
+build guide — per-modality ingestion patterns, file formats, and a concrete build sequence.
+
 ## Lab
 
 [`hls-lakehouse-rwd`](https://github.com/anothernoise/hls-lakehouse-rwd) builds exactly this: bronze → silver → OMOP gold on Databricks and Snowflake.

@@ -30,7 +30,7 @@ flowchart LR
   Gov["Governance: masking, lineage, audit"] -.-> Bronze & Silver & Gold
 ```
 
-Built from the [medallion lakehouse](../05-data-platforms/00-lakehouse-vs-warehouse.md), [OMOP on cloud](../05-data-platforms/01-omop-on-cloud.md) gold, [governance & data contracts](../05-data-platforms/03-governance-contracts.md), and [tokenized linkage](../05-data-platforms/02-rwd-rwe.md) for external sources.
+Built from the [medallion lakehouse](../05-data-platforms/00-lakehouse-vs-warehouse.md), [OMOP on cloud](../05-data-platforms/01-omop-on-cloud.md) gold, [governance & data contracts](../05-data-platforms/03-governance-contracts.md), and [tokenized linkage](../05-data-platforms/02-rwd-rwe.md) for external sources. See [Building a health data lake & lakehouse](../05-data-platforms/08-building-health-lakehouse.md) for the practical per-modality build guide this architecture assumes.
 
 ## Key decisions & trade-offs
 

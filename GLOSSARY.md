@@ -117,6 +117,9 @@ An open-source Java FHIR server and client library widely used for development, 
 ## Health Canada
 Canada's federal health regulator; among other roles it licenses medical devices (Class I–IV) and requires MDSAP certification for Class II–IV device licences. Ref: [Health Canada — Medical Devices](https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices.html).
 
+## health lake
+An ambiguous industry term meaning either (a) a managed, FHIR-normalizing PaaS service (AWS HealthLake, Azure Health Data Services, GCP Healthcare API) or (b) the broader general-purpose lakehouse that also absorbs imaging, genomics, and claims — in practice a real platform builds both, with (a) feeding (b) via Bulk `$export`. See [Building a health data lake & lakehouse](docs/05-data-platforms/08-building-health-lakehouse.md).
+
 ## HealthLake
 AWS's managed FHIR R4 data store — REST API, Bulk Data export, SMART on FHIR, and integrated analytics; HIPAA-eligible. Ref: [AWS HealthLake](https://aws.amazon.com/healthlake/).
 

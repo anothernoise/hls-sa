@@ -73,6 +73,7 @@
 - [Data mesh in HLS](docs/05-data-platforms/05-data-mesh.md)
 - [OHDSI end-to-end: from cohort to calibrated evidence](docs/05-data-platforms/06-ohdsi-study-package.md)
 - [Data lineage & provenance](docs/05-data-platforms/07-data-lineage-provenance.md)
+- [Building a health data lake & lakehouse: a practical guide](docs/05-data-platforms/08-building-health-lakehouse.md)
 
 ## Part 6 — AI/ML in health & life science
 

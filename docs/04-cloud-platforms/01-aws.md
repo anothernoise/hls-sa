@@ -20,7 +20,7 @@ AWS offers the broadest set of **purpose-built managed health services** of any 
 
 | Service | Modality | What it does |
 | --- | --- | --- |
-| **HealthLake** | FHIR | Managed FHIR R4 store: REST API, native search, Bulk `$export` to S3, SMART on FHIR. Includes a transformation capability to convert legacy records to FHIR. |
+| **HealthLake** | FHIR | Managed FHIR R4 store: REST API, native search, Bulk `$export` to S3, SMART on FHIR. Includes a transformation capability to convert legacy records to FHIR. See [Building a health data lake & lakehouse](../05-data-platforms/08-building-health-lakehouse.md) for how it fits alongside a broader lakehouse. |
 | **HealthImaging** | DICOM | Managed medical-imaging store, DICOMweb-native, petabyte-scale with tiered storage. |
 | **HealthOmics** | Genomics | Purpose-built storage + managed workflow engine (runs Nextflow/WDL/CWL pipelines) + variant/annotation stores. |
 | **Comprehend Medical** | Clinical NLP | Extracts conditions, medications, dosages, anatomy, and time references from unstructured clinical text; maps to ICD-10-CM, RxNorm, SNOMED CT. |

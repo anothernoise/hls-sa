@@ -76,6 +76,9 @@ convenience, standardize on containerized Nextflow/WDL/CWL and treat AWS Batch/H
 GCP Batch, Azure Batch, or DNAnexus as interchangeable execution backends — this is the
 genomics-specific instance of the [cloud portability](../04-cloud-platforms/08-portability-lock-in.md)
 principle: push the vendor-specific service to the edge, keep the workflow definition portable.
+When you need that portability across infrastructure you don't own — a multi-institution
+consortium or national genomics platform — [GA4GH's Cloud work stream](./04-genomics-data-standards.md)
+(WES, TES, TRS) adds a common API layer above these engines for exactly that case.
 
 ## Acceleration: DRAGEN vs Parabricks
 

@@ -426,6 +426,27 @@ A GA4GH protocol for secure HTTP streaming of sequencing reads/variants (BAM/CRA
 ## DUO
 Data Use Ontology — a GA4GH standard for machine-readable encoding of a dataset's permitted uses/consent (e.g. disease-specific research only), enabling consent-aware data access. Ref: [DUO](https://www.ga4gh.org/product/data-use-ontology-duo/).
 
+## GA4GH Driver Project
+A large genomics initiative (e.g. 1000 Genomes, Genomics England 100,000 Genomes Project, All of Us, Matchmaker Exchange) that supplies real requirements and pilots a GA4GH standard before broad adoption — the discipline that keeps GA4GH standards grounded in actual deployments. Ref: [GA4GH Driver Projects](https://www.ga4gh.org/how-we-work/driver-projects/).
+
+## RefGet
+A GA4GH standard for retrieving a reference sequence by a checksum-based identifier instead of a filename or loosely-versioned label, removing ambiguity about which exact reference build a coordinate is relative to. Ref: [RefGet](https://www.ga4gh.org/product/refget/). See [Genomics data standards & GA4GH](docs/07-genomics/04-genomics-data-standards.md).
+
+## Crypt4GH
+A GA4GH file-encryption standard for genomic files at rest and in transit, used by archives like the European Genome-phenome Archive (EGA) so an archive operator doesn't need plaintext access to be a trusted party. Ref: [Crypt4GH](https://www.ga4gh.org/product/crypt4gh/).
+
+## WES
+Workflow Execution Service — a GA4GH common REST API for submitting and monitoring a workflow run regardless of the underlying engine (Cromwell, Toil, Arvados), sitting above CWL/WDL/Nextflow. Ref: [GA4GH WES](https://www.ga4gh.org/product/workflow-execution-service-wes/). See [Genomics data standards & GA4GH](docs/07-genomics/04-genomics-data-standards.md).
+
+## TES
+Task Execution Service — a GA4GH common API for executing one containerized task on diverse compute backends, the portable layer underneath a workflow engine. Ref: [GA4GH TES](https://www.ga4gh.org/product/task-execution-service-tes/).
+
+## TRS
+Tool Registry Service — a GA4GH common API for describing and discovering versioned bioinformatics tools and workflows; Dockstore is the best-known TRS-compliant registry. Ref: [GA4GH TRS](https://www.ga4gh.org/product/tool-registry-service-trs/) · [Dockstore](https://dockstore.org/).
+
+## Matchmaker Exchange
+A real, running federated network for rare-disease diagnosis that fans a genotype/phenotype query across independently-operated nodes (PhenomeCentral, GeneMatcher, DECIPHER, and others) to find similar profiles elsewhere, without exposing each node's full patient dataset. Ref: [Matchmaker Exchange](https://www.matchmakerexchange.org/). See [Genomics data standards & GA4GH](docs/07-genomics/04-genomics-data-standards.md).
+
 ## Synthea
 An open-source (MITRE, Apache-2.0) synthetic patient population simulator that generates realistic but entirely fictional lifelong health records, exported as FHIR/US Core, Bulk FHIR, C-CDA, and CSV — the standard PHI-free data source for labs and demos. Ref: [Synthea](https://synthetichealth.github.io/synthea/).
 

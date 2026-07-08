@@ -173,3 +173,4 @@ for a full treatment of this specific tension.
 - [CMS — Resource-Based Relative Value Scale (RBRVS)](https://www.cms.gov/medicare/payment/fee-schedules/physician)
 - [CMS — Bundled Payments for Care Improvement Advanced (BPCI-A)](https://www.cms.gov/priorities/innovation/innovation-models/bpci-advanced)
 - [MGMA — physician compensation & RVU benchmarking](https://www.mgma.com/)
+- [Failure-mode case studies](../10-sa-craft/05-failure-mode-case-studies.md) — case 3 covers a real medication-safety incident rooted in unsupported clinical workflow

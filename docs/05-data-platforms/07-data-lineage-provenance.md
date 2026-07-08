@@ -118,3 +118,4 @@ single central store, instead of every pairwise integration being bespoke.
 - [OpenLineage](https://openlineage.io/) · [W3C PROV](https://www.w3.org/TR/prov-overview/)
 - [Databricks Unity Catalog — lineage](https://www.databricks.com/product/unity-catalog)
 - [Governance & data contracts](./03-governance-contracts.md) · [Real-world data & evidence](./02-rwd-rwe.md)
+- [Failure-mode case studies](../10-sa-craft/05-failure-mode-case-studies.md) — case 1 covers the Duke "Potti scandal," a landmark irreproducibility failure from missing provenance

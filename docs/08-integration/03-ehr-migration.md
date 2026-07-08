@@ -98,3 +98,4 @@ flowchart LR
 
 - [EHR integration](./00-ehr-integration.md) · [Patient & provider identity matching](../02-interoperability/13-patient-provider-identity.md)
 - [Clinical terminologies](../02-interoperability/03-terminologies.md) (code-mapping discipline)
+- [Failure-mode case studies](../10-sa-craft/05-failure-mode-case-studies.md) — case 4 covers the JAMIA parallel-run finding in more depth

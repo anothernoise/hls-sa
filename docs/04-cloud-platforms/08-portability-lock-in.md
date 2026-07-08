@@ -110,3 +110,4 @@ flowchart TB
 - [Trade-offs, TCO & cost](../01-foundations/03-tradeoffs-tco.md) · [Cloud capability map](./00-overview-capability-map.md)
 - [On-premises & hybrid for HLS](./06-on-prem-hybrid.md)
 - [Apache Iceberg](https://iceberg.apache.org/) · [OpenTofu](https://opentofu.org/)
+- [Failure-mode case studies](../10-sa-craft/05-failure-mode-case-studies.md) — case 6 covers the 2024 CrowdStrike outage and vendor-concentration risk

@@ -82,3 +82,4 @@ provider's name or a local system ID, which vary by source exactly like patient 
 - [ONC — patient matching](https://www.healthit.gov/topic/interoperability/patient-matching)
 - [NPPES — National Provider Identifier registry](https://nppes.cms.hhs.gov/)
 - [RWD/RWE tokenization](../05-data-platforms/02-rwd-rwe.md)
+- [Failure-mode case studies](../10-sa-craft/05-failure-mode-case-studies.md) — case 5 covers documented wrong-patient matching harm

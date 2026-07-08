@@ -1,5 +1,8 @@
 # Glossary
 
+## BCMA
+Barcode Medication Administration — an automated, independent check at the point of care that scans and cross-verifies a medication against the order before administration, closing the gap a human reading small print under time pressure can miss. See [Failure-mode case studies](docs/10-sa-craft/05-failure-mode-case-studies.md).
+
 ## ADR
 Architecture Decision Record — a short, versioned document capturing one significant architectural decision: its context, the options considered, the choice made, and the consequences. SAs keep ADRs in `docs/adr/` next to the code so future engineers know *why*, not just *what*. Ref: [Documenting architecture decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions).
 

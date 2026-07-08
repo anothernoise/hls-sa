@@ -121,6 +121,7 @@
 - [Security review](docs/10-sa-craft/02-security-review.md)
 - [Capstone project](docs/10-sa-craft/03-capstone.md)
 - [Capstone exemplar (worked example)](docs/10-sa-craft/04-capstone-exemplar.md)
+- [Failure-mode case studies](docs/10-sa-craft/05-failure-mode-case-studies.md)
 
 ## Appendix
 

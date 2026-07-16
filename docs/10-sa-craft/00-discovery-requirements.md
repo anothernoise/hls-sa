@@ -120,6 +120,10 @@ Produce this document before touching a diagram tool. It is the contract between
 - [ ] What is the patient volume growth forecast for the next 3 years?
 ```
 
+See [Vendor & RFP evaluation framework](./06-vendor-rfp-evaluation.md) for turning this
+requirements summary into a structured vendor selection process, when the design decision is
+which vendor to buy rather than what to build.
+
 ## Check yourself
 
 1. A clinical stakeholder says "it needs to be always on." How do you convert this to a measurable NFR, and what is the minimum information you need from them?

@@ -99,6 +99,9 @@ The document naming a clinical AI model's target population, intended user, outp
 ## risk file
 An ISO 14971-style hazard log (hazard, severity/probability, control measure, residual-risk acceptability) adapted for AI-specific failure modes like distribution shift, subgroup underperformance, and automation bias. Ref: [ISO 14971](https://www.iso.org/standard/72704.html). See [Regulated AI artifacts](docs/06-ai-ml/07-regulated-ai-artifacts.md).
 
+## DS4P
+Data Segmentation for Privacy — an HL7 implementation guide providing standard metadata tags (confidentiality/sensitivity codes, obligation/refrain policies) attached to a C-CDA or FHIR resource, so segmented data can be consistently enforced across organizations instead of each inventing its own tagging scheme. Ref: [HL7 DS4P](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=354). See [Consent management architecture](docs/03-compliance/09-consent-management-architecture.md).
+
 ## GAMP 5
 Good Automated Manufacturing Practice (ISPE) — the risk-based framework for validating computerized systems in regulated life science; the Second Edition (2022) embraces Agile, cloud, and the FDA's CSA approach. Ref: [ISPE GAMP 5](https://ispe.org/publications/guidance-documents/gamp-5-guide-2nd-edition).
 
@@ -482,6 +485,21 @@ The Assistant Secretary for Technology Policy/Office of the National Coordinator
 
 ## EU AI Act
 The EU's cross-sector AI law. AI embedded in or acting as an MDR/IVDR-regulated medical device is automatically high-risk; obligations for such devices apply from August 2027 (a year later than standalone high-risk use cases). Ref: [EU AI Act](https://artificialintelligenceact.eu/).
+
+## Gravity Project
+The HL7 FHIR accelerator that standardized Social Determinants of Health (SDOH) data — profiles on Condition/Observation/Goal/ServiceRequest, and the reason USCDI added SDOH data classes. Ref: [Gravity Project](https://www.hl7.org/about/gravity-project/). See [SDOH & health equity data](docs/02-interoperability/18-sdoh-health-equity.md).
+
+## PRAPARE
+Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences — a widely used, standardized SDOH screening instrument for primary care and community health center settings. Ref: [PRAPARE](https://prapare.org/). See [SDOH & health equity data](docs/02-interoperability/18-sdoh-health-equity.md).
+
+## AHC-HRSN
+Accountable Health Communities Health-Related Social Needs screening tool — a CMS-developed standardized SDOH screening instrument, originally built for the Accountable Health Communities model. Ref: [CMS — AHC Model](https://innovation.cms.gov/innovation-models/ahcm).
+
+## Z-codes
+The ICD-10-CM Z55–Z65 range ("persons with potential health hazards related to socioeconomic and psychosocial circumstances") — the standard diagnosis-adjacent coding for SDOH problems, historically under-coded because it hasn't directly driven reimbursement. See [SDOH & health equity data](docs/02-interoperability/18-sdoh-health-equity.md).
+
+## closed-loop referral
+A referral architecture pattern where a clinical system's identified need (e.g. via SDOH screening) is sent to a service provider and an outcome/status update flows back, closing the loop — as opposed to a one-way referral with no return data. Commercial platforms in this category include Unite Us, findhelp, and NowPow.
 
 ## HEDIS
 Healthcare Effectiveness Data and Information Set — NCQA's dominant payer quality-measurement standard, spanning effectiveness of care, access, member experience, and utilization; moving from claims+chart-abstraction "hybrid" measures toward ECDS/FHIR-based reporting. Ref: [NCQA HEDIS](https://www.ncqa.org/hedis/).

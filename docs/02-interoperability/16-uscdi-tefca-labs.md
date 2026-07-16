@@ -54,7 +54,9 @@ the Gravity Project's FHIR IG work. A typical gap-analysis finding:
 | SDOH goal | Not captured at all today | No source data | Design a new care-planning workflow field before any FHIR mapping is possible |
 | SDOH assessment score | Captured in a validated screening tool, structured, but only in a PDF scan | Data exists, not exposed | US Core profile/API work — the cheapest of the three |
 
-This table shape — not the specific SDOH content — is what you re-run every USCDI cycle.
+This table shape — not the specific SDOH content — is what you re-run every USCDI cycle. See
+[SDOH & health equity data](./18-sdoh-health-equity.md) for the full architecture treatment —
+the Gravity Project's FHIR profiles, standard screening tools, and closed-loop referral design.
 
 ## Lab 2 — Information-blocking exception scenarios
 

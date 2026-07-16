@@ -82,7 +82,7 @@ Synthetic data — artificially generated records that preserve the statistical 
 Consent is a distinct axis from de-identification — and often a better-engineered one.
 
 - **Broad vs. study-specific consent** — research consent may be broad (future unspecified research) or narrow (one study). The consent model constrains what the data platform may do.
-- **Consent must be enforceable in the architecture.** A consent flag that no system checks is theater. Model consent as data (e.g., FHIR `Consent` resource) and *enforce it at query time* — filter or deny access to records whose consent does not cover the purpose.
+- **Consent must be enforceable in the architecture.** A consent flag that no system checks is theater. Model consent as data (e.g., FHIR `Consent` resource) and *enforce it at query time* — filter or deny access to records whose consent does not cover the purpose. See [Consent management architecture](./09-consent-management-architecture.md) for the full technical treatment — granularity models, the four enforcement points, and revocation design.
 - **Withdrawal** — under GDPR, consent can be withdrawn; the system must be able to stop processing and, where required, delete. Design for this before you smear data across immutable backups and an OMOP warehouse (see [GDPR & data residency](./03-gdpr-residency.md)).
 - **IRB oversight** — research use of patient data typically requires Institutional Review Board approval; the IRB protocol defines allowed use, which your access controls should mirror.
 

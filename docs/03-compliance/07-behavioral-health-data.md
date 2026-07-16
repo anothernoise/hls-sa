@@ -71,7 +71,9 @@ trying to reduce.
 
 1. **Model consent as a first-class object**, not a boolean flag — capture what it covers
    (TPO vs. research vs. legal), not just "yes/no," and enforce it at query time (see
-   [de-identification & consent](./04-deidentification-consent.md)).
+   [de-identification & consent](./04-deidentification-consent.md) and
+   [consent management architecture](./09-consent-management-architecture.md) for the full
+   technical treatment, including this chapter's segmentation history as a worked case study).
 2. **Route Part 2 breach handling through your existing HIPAA breach-notification process**
    post-2024 — don't maintain two incident-response runbooks where one now suffices.
 3. **If you segment, make it a policy-driven access control** (row/column-level, tied to role

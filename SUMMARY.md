@@ -38,6 +38,7 @@
 - [FHIR version migration & compatibility: R4, R4B & R5](docs/02-interoperability/15-fhir-version-migration.md)
 - [USCDI, information blocking & TEFCA: operational labs](docs/02-interoperability/16-uscdi-tefca-labs.md)
 - [Canadian HLS architecture](docs/02-interoperability/17-canadian-hls-architecture.md)
+- [SDOH & health equity data](docs/02-interoperability/18-sdoh-health-equity.md)
 
 ## Part 3 — Compliance, security & privacy
 
@@ -50,6 +51,7 @@
 - [Which compliance regime applies? A decision guide](docs/03-compliance/06-compliance-decision-guide.md)
 - [Behavioral health data architecture](docs/03-compliance/07-behavioral-health-data.md)
 - [HITRUST evidence pack lab](docs/03-compliance/08-hitrust-evidence-lab.md)
+- [Consent management architecture](docs/03-compliance/09-consent-management-architecture.md)
 
 ## Part 4 — Cloud platforms for HLS
 
@@ -123,6 +125,7 @@
 - [Capstone project](docs/10-sa-craft/03-capstone.md)
 - [Capstone exemplar (worked example)](docs/10-sa-craft/04-capstone-exemplar.md)
 - [Failure-mode case studies](docs/10-sa-craft/05-failure-mode-case-studies.md)
+- [Vendor & RFP evaluation framework](docs/10-sa-craft/06-vendor-rfp-evaluation.md)
 
 ## Appendix
 

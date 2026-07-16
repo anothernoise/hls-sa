@@ -56,7 +56,9 @@ The common failure mode is **under-documentation**: a condition the clinician is
 managing never gets coded with sufficient specificity, so the risk score — and the payment —
 understates true risk. A risk-adjustment platform's job is closing that documentation gap,
 which increasingly means surfacing suggested codes **in the clinical workflow** (a
-[CDS Hooks](./00-hl7v2.md)-style pattern) rather than after the fact.
+[CDS Hooks](./00-hl7v2.md)-style pattern) rather than after the fact. The same pattern applies to
+**Z-code (SDOH) under-coding** as health-equity-adjusted risk models mature — see
+[SDOH & health equity data](./18-sdoh-health-equity.md).
 
 ## Da Vinci: FHIR for payer-provider exchange
 

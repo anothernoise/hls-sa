@@ -102,7 +102,10 @@ necessary access, and liability. **Patient consent models vary by state** — so
 opt-out model (data is exchanged unless a patient objects), others require explicit opt-in —
 verify this per jurisdiction rather than assuming one model. Many regional HIEs are non-profit,
 state-designated entities funded by participation fees or grants, which shapes their governance
-incentives differently from a for-profit vendor network.
+incentives differently from a for-profit vendor network. See
+[Consent management architecture](../03-compliance/09-consent-management-architecture.md) for how
+to actually implement and enforce a variable, per-jurisdiction consent model rather than just
+tracking it as a policy note.
 
 ## Design guidance
 

@@ -30,7 +30,7 @@ flowchart LR
 - **Versioned data & features** — pin the training dataset and feature definitions; you must be able to reproduce a model exactly (and prove what it was trained on).
 - **Experiment tracking** — record parameters, metrics, and artifacts (MLflow, Vertex, SageMaker, Azure ML).
 - **Model registry** — versioned models with stages (staging → production) and metadata (intended use, training data, metrics).
-- **Validation & approval** — evaluate against a held-out, representative set; check subgroup performance (fairness across age/sex/race — a clinical-safety issue); require human sign-off before production.
+- **Validation & approval** — evaluate against a held-out, representative set; check subgroup performance (fairness across age/sex/race — a clinical-safety issue); require human sign-off before production. See [Machine learning on clinical data](./09-clinical-predictive-modeling.md) for what "validate" concretely means for a clinical prediction model (temporal and external validation, calibration, precision at the operating threshold).
 - **Controlled deployment** — canary/shadow deploys; ability to roll back instantly.
 - **Monitoring** — track live performance and **drift** (data drift and concept drift). Clinical models decay as practice, populations, and instruments change.
 

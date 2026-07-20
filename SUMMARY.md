@@ -52,6 +52,7 @@
 - [Behavioral health data architecture](docs/03-compliance/07-behavioral-health-data.md)
 - [HITRUST evidence pack lab](docs/03-compliance/08-hitrust-evidence-lab.md)
 - [Consent management architecture](docs/03-compliance/09-consent-management-architecture.md)
+- [Ethics in health informatics & AI](docs/03-compliance/10-informatics-ethics.md)
 
 ## Part 4 — Cloud platforms for HLS
 
@@ -87,6 +88,8 @@
 - [FDA SaMD & GMLP](docs/06-ai-ml/05-fda-samd.md)
 - [EU AI Act & global AI regulation](docs/06-ai-ml/06-eu-ai-act.md)
 - [Regulated AI artifacts: the concrete evidence package](docs/06-ai-ml/07-regulated-ai-artifacts.md)
+- [AI risk & mitigation in healthcare](docs/06-ai-ml/08-ai-risk-mitigation.md)
+- [Machine learning on clinical data: predictive modeling in practice](docs/06-ai-ml/09-clinical-predictive-modeling.md)
 
 ## Part 7 — Genomics & bioinformatics architecture
 

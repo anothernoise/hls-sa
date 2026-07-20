@@ -90,7 +90,7 @@ methods are consistent across studies:
 | --- | --- | --- |
 | **CohortMethod** | New-user comparative cohort, propensity-score adjusted | "Does drug A vs drug B change the risk of outcome X?" |
 | **SelfControlledCaseSeries (SCCS)** | Within-person, self-controlled | "Does risk of X change in the period after exposure, compared to the same person's baseline?" |
-| **PatientLevelPrediction (PLP)** | Supervised prediction model | "Given this patient's history, what's their risk of X in the next year?" |
+| **PatientLevelPrediction (PLP)** | Supervised prediction model | "Given this patient's history, what's their risk of X in the next year?" — see [Machine learning on clinical data](../06-ai-ml/09-clinical-predictive-modeling.md) |
 | **CaseControl** | Case-control, matched on risk sets | "Among people with outcome X, were they more likely to have been exposed?" |
 
 ## 6. Negative controls & empirical calibration — the defensibility mechanism

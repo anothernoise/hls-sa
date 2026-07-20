@@ -108,6 +108,27 @@ Good Automated Manufacturing Practice (ISPE) — the risk-based framework for va
 ## GDPR
 General Data Protection Regulation — the EU's economy-wide data-protection law. Health data is a "special category" under Article 9, requiring both an Article 6 lawful basis and an Article 9 condition to process. Ref: [gdpr-info.eu](https://gdpr-info.eu/).
 
+## NIST AI RMF
+The NIST AI Risk Management Framework (AI 100-1) — organizes AI risk work into four functions: Govern, Map, Measure, Manage. Its Generative AI Profile (AI 600-1, July 2024) layers GenAI-specific risks (confabulation, information integrity, data privacy, harmful bias) on top. Ref: [NIST AI RMF](https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf). See [AI risk & mitigation](docs/06-ai-ml/08-ai-risk-mitigation.md).
+
+## proxy bias
+Bias introduced through the choice of target variable rather than the algorithm — the model faithfully predicts a measurable stand-in that diverges from the thing actually cared about, differently across subgroups. The landmark case (Obermeyer et al., Science 2019) used health care cost as a proxy for health need, understating illness in Black patients. See [AI risk & mitigation](docs/06-ai-ml/08-ai-risk-mitigation.md).
+
+## confabulation
+The NIST AI 600-1 term for a generative model producing fluent, confident, fabricated content — more dangerous in clinical settings than an obviously broken output because it passes casual review. Mitigated structurally by grounding and provenance citation, not by prompt instructions.
+
+## automation bias
+The failure mode where a clinician defers to a model's output even when it is wrong; mitigated by surfacing confidence and rationale, human-factors testing, and avoiding single-number outputs presented as verdicts.
+
+## calibration
+Whether a model's predicted probabilities match observed event frequencies — distinct from discrimination (AUROC, the ability to rank). A clinical risk score can discriminate well and still be dangerously miscalibrated, since clinicians act on the number itself. See [Machine learning on clinical data](docs/06-ai-ml/09-clinical-predictive-modeling.md).
+
+## label leakage
+A feature that encodes the outcome and would not be available (with that value) at actual prediction time — e.g. a discharge disposition or post-diagnosis medication order. Produces excellent development performance and useless deployment performance; the dominant silent failure in clinical ML.
+
+## TRIPOD+AI
+The reporting guideline for clinical prediction models using regression or machine learning (BMJ, April 2024), superseding TRIPOD 2015 — useful as a completeness checklist even for internal models. Ref: [TRIPOD+AI](https://www.bmj.com/content/385/bmj-2023-078378).
+
 ## GMLP
 Good Machine Learning Practice — guiding principles (FDA, Health Canada, UK MHRA) for developing safe, effective AI/ML medical devices; they map closely onto disciplined MLOps. Ref: [FDA — GMLP](https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-medical-device-development-guiding-principles).
 
@@ -179,6 +200,12 @@ A practice, prohibited under the 21st Century Cures Act, that is likely to inter
 
 ## IPS
 International Patient Summary — an ISO/HL7 standardized minimal set of essential health data for unplanned/cross-border care; the basis for national summaries like Canada's PS-CA. Ref: [HL7 IPS](https://hl7.org/fhir/uv/ips/).
+
+## AI governance committee
+The body — increasingly standard at health systems — that reviews clinical AI before deployment, typically requiring an intended use statement, validation and subgroup evidence, and a monitoring plan. Distinct from the IRB (research) and the privacy office (regulatory compliance). See [Ethics in health informatics & AI](docs/03-compliance/10-informatics-ethics.md).
+
+## accountability gap
+The problem that when a model contributes to a bad clinical outcome, responsibility is genuinely unclear between developer, deploying institution, and the clinician who accepted the recommendation — defaulting to nobody unless assigned deliberately during design. See [Ethics in health informatics & AI](docs/03-compliance/10-informatics-ethics.md).
 
 ## IRB
 Institutional Review Board — a committee that reviews research involving human subjects for ethics, informed consent, and privacy. Ref: [FDA — IRBs](https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/institutional-review-boards-irbs-and-protection-human-subjects-clinical-trials).

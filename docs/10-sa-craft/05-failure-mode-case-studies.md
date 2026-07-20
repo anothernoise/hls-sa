@@ -171,3 +171,4 @@ failing over to.
 - [The Joint Commission — Sentinel Event Alert 50: Medical device alarm safety](https://www.jointcommission.org/resources/sentinel-event/sentinel-event-alert-newsletters/sentinel-event-alert-issue-50-medical-device-alarm-safety-in-hospitals/)
 - [ECRI Institute — Partnership for Health IT Patient Safety](https://www.ecri.org/partnership-for-health-it-patient-safety)
 - [EHR migration & data conversion](../08-integration/03-ehr-migration.md) · [Data lineage & provenance](../05-data-platforms/07-data-lineage-provenance.md)
+- [AI risk & mitigation](../06-ai-ml/08-ai-risk-mitigation.md) — two further worked cases (proxy-label bias, and a sepsis model that failed external validation)

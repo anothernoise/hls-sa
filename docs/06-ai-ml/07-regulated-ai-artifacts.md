@@ -56,7 +56,8 @@ hazards:
 
 Each row needs a severity/probability estimate, the control measure, and a documented residual-risk
 acceptability judgment — the same discipline as a medical-device risk file, just with AI-specific
-rows added.
+rows added. See [AI risk & mitigation](./08-ai-risk-mitigation.md) for the full taxonomy that
+populates this file, including proxy-label bias, feedback loops, and GenAI-specific failure modes.
 
 ### 3. Validation Plan
 

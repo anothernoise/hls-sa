@@ -77,6 +77,9 @@ flowchart TD
 This is exactly the exercise the [capstone](../10-sa-craft/03-capstone.md) grades on its
 "Compliance" dimension — practice it there before you need it live.
 
+This guide answers "which rules bind us?" For the questions no regulation answers — where a design
+is permitted but still wrong — see [Ethics in health informatics & AI](./10-informatics-ethics.md).
+
 ## Check yourself
 
 1. A US pharma company runs a trial with sites in Germany. Walk the tree — which two regimes both apply, and why is it "both," not "whichever is stricter"?

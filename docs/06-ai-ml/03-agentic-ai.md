@@ -66,3 +66,4 @@ Agents are powerful precisely because they *act* — which is also the risk. An 
 - [Amazon Bedrock Agents](https://aws.amazon.com/bedrock/agents/)
 - [SMART Backend Services](https://hl7.org/fhir/smart-app-launch/backend-services.html)
 - [AI agents on FHIR](../02-interoperability/14-ai-agents-on-fhir.md) — the MCP-based tool-calling pattern over a FHIR store
+- [AI risk & mitigation](./08-ai-risk-mitigation.md) — prompt injection, over-broad tool permissions, and the other agent-specific failure modes

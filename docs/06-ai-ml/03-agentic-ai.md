@@ -67,3 +67,4 @@ Agents are powerful precisely because they *act* — which is also the risk. An 
 - [SMART Backend Services](https://hl7.org/fhir/smart-app-launch/backend-services.html)
 - [AI agents on FHIR](../02-interoperability/14-ai-agents-on-fhir.md) — the MCP-based tool-calling pattern over a FHIR store
 - [AI risk & mitigation](./08-ai-risk-mitigation.md) — prompt injection, over-broad tool permissions, and the other agent-specific failure modes
+- [Building a production GenAI application for HLS](./10-genai-app-stack.md) — the LLM gateway, guardrails, eval harness, and observability an agent needs in production

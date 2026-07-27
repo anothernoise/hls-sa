@@ -64,3 +64,4 @@ If the corpus or the question contains PHI:
 - [`RAGonGCP`](https://github.com/anothernoise/RAGonGCP)
 - [Vertex AI Search for Healthcare](https://cloud.google.com/generative-ai-app-builder/docs/about-healthcare-search)
 - [Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/)
+- [Building a production GenAI application for HLS](./10-genai-app-stack.md) — the gateway, guardrails, eval harness, and observability a deployed RAG app needs around the model

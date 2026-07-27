@@ -64,3 +64,4 @@ Patient-facing access (driven by the [CMS Patient Access rule](../02-interoperab
 
 - [SMART App Launch (scopes)](https://hl7.org/fhir/smart-app-launch/scopes-and-launch-context.html)
 - [Azure API Management for FHIR](https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/) · [Apigee](https://cloud.google.com/apigee)
+- [Building a production GenAI application for HLS](../06-ai-ml/10-genai-app-stack.md) — the LLM gateway applies these same gateway concerns (routing, rate limiting, central audit) to model traffic

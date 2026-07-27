@@ -639,5 +639,20 @@ An interim, additive-only FHIR release (2022) sitting between R4 and R5 — it i
 ## CodeableReference
 A FHIR R5 data type that merges what R4 modeled as two separate elements (a `CodeableConcept` and a `Reference`, e.g. `MedicationRequest.reasonCode`/`reasonReference`) into one field that can hold either — a common source of silent breakage when migrating R4 code to R5. See [FHIR version migration & compatibility](docs/02-interoperability/15-fhir-version-migration.md).
 
+## PKCE
+Proof Key for Code Exchange — the OAuth extension (mandatory for public clients, baked into OAuth 2.1) that lets a browser/mobile app complete the authorization-code flow without a client secret it cannot safely hold: it sends a hashed `code_challenge` and proves possession of the `code_verifier` at token exchange. See [Building a SMART on FHIR app](docs/08-integration/08-building-smart-app.md).
+
+## public client
+An OAuth/SMART client that cannot keep a secret (a browser SPA or mobile app, where an embedded secret is extractable from shipped code) and therefore authenticates via PKCE rather than a client secret — as opposed to a confidential client with a server-side secret. See [Building a SMART on FHIR app](docs/08-integration/08-building-smart-app.md).
+
+## LLM gateway
+A single mediation point every model call routes through, applying API-gateway concerns (routing, fallback, caching, rate/cost limits, central audit) to LLM traffic — and, in HLS, the enforcement point for the PHI-safe inference boundary. See [Building a production GenAI application for HLS](docs/06-ai-ml/10-genai-app-stack.md).
+
+## eval harness
+A curated test set a GenAI application is scored against on every prompt/model/config change, run as a regression gate in CI — the GenAI analogue of the validation-plan discipline, and much of the validation evidence for a regulated GenAI system. See [Building a production GenAI application for HLS](docs/06-ai-ml/10-genai-app-stack.md).
+
+## guardrails
+Boundary checks on a GenAI application's input (PHI detection, prompt-injection defense, policy) and output (grounding/faithfulness, PHI filtering, safety) — two distinct jobs, both required for clinical use. See [Building a production GenAI application for HLS](docs/06-ai-ml/10-genai-app-stack.md).
+
 ## OAuth 2.1
 The consolidated OAuth authorization framework (folding in security best practices like mandatory PKCE) that both SMART on FHIR and the MCP Authorization specification build on — the client/authorization-server split an SA should recognize as the same pattern in both contexts.

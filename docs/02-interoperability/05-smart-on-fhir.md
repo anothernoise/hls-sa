@@ -90,7 +90,7 @@ For server-to-server access with no user present (bulk analytics, automated pipe
 
 ## Lab
 
-See [`hls-fhir-interop`](https://github.com/anothernoise/hls-fhir-interop) — includes a minimal SMART on FHIR app that performs an EHR launch against a sandbox and reads patient data with scoped access. The [SMART App Launcher](https://launch.smarthealthit.org/) public sandbox lets you test launch flows without an EHR.
+See [`hls-fhir-interop`](https://github.com/anothernoise/hls-fhir-interop) — includes a minimal SMART on FHIR app that performs an EHR launch against a sandbox and reads patient data with scoped access. The [SMART App Launcher](https://launch.smarthealthit.org/) public sandbox lets you test launch flows without an EHR. For the full build walkthrough — registration, public-vs-confidential client choice, PKCE, token refresh, deployment, and the common pitfalls — see [Building a SMART on FHIR app: end-to-end](../08-integration/08-building-smart-app.md).
 
 ## Check yourself
 

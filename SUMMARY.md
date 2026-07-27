@@ -90,6 +90,7 @@
 - [Regulated AI artifacts: the concrete evidence package](docs/06-ai-ml/07-regulated-ai-artifacts.md)
 - [AI risk & mitigation in healthcare](docs/06-ai-ml/08-ai-risk-mitigation.md)
 - [Machine learning on clinical data: predictive modeling in practice](docs/06-ai-ml/09-clinical-predictive-modeling.md)
+- [Building a production GenAI application for HLS](docs/06-ai-ml/10-genai-app-stack.md)
 
 ## Part 7 — Genomics & bioinformatics architecture
 
@@ -110,6 +111,7 @@
 - [Laboratory Information System (LIS) architecture](docs/08-integration/05-lis-architecture.md)
 - [Health Information Exchange (HIE) architecture](docs/08-integration/06-hie-architecture.md)
 - [EHR usability & clinical documentation burden](docs/08-integration/07-ehr-usability-documentation-burden.md)
+- [Building a SMART on FHIR app: end-to-end](docs/08-integration/08-building-smart-app.md)
 
 ## Part 9 — Reference architectures
 

@@ -120,5 +120,6 @@ with an honest, dated remediation plan — assessors distinguish between the two
 ## Further reading
 
 - [HITRUST](./01-hitrust.md)
+- [Observability for clinical platforms](../10-sa-craft/07-observability-for-clinical-platforms.md) — treating the audit trail as a live signal, not just filed evidence
 - [AWS Artifact — compliance reports mapped to frameworks](https://aws.amazon.com/artifact/)
 - [HITRUST — assessment portfolio](https://hitrustalliance.net/hitrust-framework)

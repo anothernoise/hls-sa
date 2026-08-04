@@ -95,4 +95,5 @@ the evidence a submission or an ongoing PCCP needs, rather than retrofitting it 
 - [FDA SaMD & GMLP](../06-ai-ml/05-fda-samd.md)
 - [EHR usability & clinical documentation burden](./07-ehr-usability-documentation-burden.md) — the same alert-fatigue discipline applied to documentation-adjacent CDS
 - [Failure-mode case studies](../10-sa-craft/05-failure-mode-case-studies.md) — case 2 covers The Joint Commission's alarm-fatigue Sentinel Event Alert and resulting National Patient Safety Goal
+- [Event-driven & real-time architecture on modern infra](./09-event-streaming-modern-infra.md) — the general-purpose stream-processing infrastructure this chapter's deterioration scoring is one application of
 - [SepsisAI — minimizing false alarms in ICU sepsis prediction (PLOS Digital Health)](https://journals.plos.org/digitalhealth/article?id=10.1371%2Fjournal.pdig.0000569)

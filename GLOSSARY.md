@@ -249,6 +249,15 @@ An open standard for emitting lineage events from heterogeneous pipeline tools (
 ## W3C PROV
 A W3C data model for representing provenance — the origin, derivation, and attribution of data — in a tool-agnostic, general form. Ref: [W3C PROV](https://www.w3.org/TR/prov-overview/).
 
+## CDC
+Change Data Capture — an integration pattern that tails a source database's transaction log (the Debezium pattern is the common open-source reference) and turns every row change into an event, rather than waiting for the source system to emit one. Captures everything, including what a source's HL7v2/FHIR interface was never configured to message — but exposes the raw internal schema and requires database-level access, so it needs a transformation layer downstream and is a last resort, not a default. See [Event-driven & real-time architecture on modern infra](docs/08-integration/09-event-streaming-modern-infra.md).
+
+## schema registry
+A service (Confluent Schema Registry, AWS Glue Schema Registry) that enforces a versioned event-payload contract (Avro/Protobuf/JSON Schema) at write time, rejecting incompatible producer changes before they reach a consumer — the event-stream analogue of a data contract. See [Event-driven & real-time architecture on modern infra](docs/08-integration/09-event-streaming-modern-infra.md).
+
+## SubscriptionTopic
+A FHIR R5 (backported to R4B) resource defining a well-known category of change (e.g. "new laboratory Observations"), server-defined and tested, that a client's `Subscription` references instead of inventing its own filter criteria — the fix for R4's fragile, criteria-based subscription model. See [FHIR version migration](docs/02-interoperability/15-fhir-version-migration.md) and [Event-driven & real-time architecture on modern infra](docs/08-integration/09-event-streaming-modern-infra.md).
+
 ## medallion
 The bronze (raw, immutable) → silver (cleaned, conformed) → gold (analytics-ready, e.g. OMOP) layering pattern for refining data in a lakehouse. Ref: [Databricks — medallion](https://www.databricks.com/glossary/medallion-architecture).
 
@@ -329,6 +338,12 @@ Quebec's modernized private-sector privacy law, introducing GDPR-like obligation
 
 ## RAG
 Retrieval-Augmented Generation — grounding an LLM by retrieving relevant passages from a trusted corpus and adding them to the prompt, so answers are sourced and citable; the dominant safe pattern for clinical LLM use. Ref: [SMART Health IT](https://smarthealthit.org/).
+
+## OpenTelemetry
+The vendor-neutral instrumentation SDK/API for traces, metrics, and logs — instrument once, export to any observability backend, avoiding re-instrumentation when switching vendors. Ref: [OpenTelemetry](https://opentelemetry.io/). See [Observability for clinical platforms](docs/10-sa-craft/07-observability-for-clinical-platforms.md).
+
+## SLO
+Service Level Objective — a target for a service level indicator (e.g. latency, availability), calibrated to how much a given code path matters; paired with an error budget that, once exhausted, pauses feature work for reliability work. See [Observability for clinical platforms](docs/10-sa-craft/07-observability-for-clinical-platforms.md).
 
 ## RPO
 Recovery Point Objective — the maximum acceptable data loss measured in time; drives backup frequency. Ref: [AWS — RPO/RTO](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html).

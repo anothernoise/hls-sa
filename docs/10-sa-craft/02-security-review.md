@@ -36,7 +36,7 @@ Pay special attention to the **edges**: ingress auth, egress (APIs, exports, **l
 - **Secrets** — managed secret store, rotation, no secrets in code or env files.
 - **Data lifecycle** — retention, secure deletion, de-identification where data leaves the trust boundary.
 - **Backups & DR** — encrypted, tested restore, RTO/RPO defined.
-- **Logging hygiene** — no PHI in application logs sent to un-covered tooling.
+- **Logging hygiene** — no PHI in application logs sent to un-covered tooling. See [Observability for clinical platforms](./07-observability-for-clinical-platforms.md) for the full PHI-safe telemetry architecture.
 - **Incident response** — a tested runbook and breach-notification path.
 
 ## Make it evidence, not opinion

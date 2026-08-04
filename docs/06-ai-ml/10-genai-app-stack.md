@@ -156,3 +156,4 @@ A clinical GenAI app is a production system and needs the operational surface of
 - [RAG over clinical corpora](./02-rag-clinical.md) · [Agentic AI](./03-agentic-ai.md) · [AI risk & mitigation](./08-ai-risk-mitigation.md)
 - [Regulated AI artifacts](./07-regulated-ai-artifacts.md) · [MLOps & model governance](./04-mlops-governance.md)
 - [NVIDIA NIM (self-hosted inference)](https://www.nvidia.com/en-us/ai/) · [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
+- [Observability for clinical platforms](../10-sa-craft/07-observability-for-clinical-platforms.md) — the general PHI-safe telemetry architecture this chapter's tracing/audit points draw on

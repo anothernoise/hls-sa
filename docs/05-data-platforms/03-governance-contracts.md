@@ -57,7 +57,7 @@ flowchart LR
   CI["CI checks contract on every change"] -.-> Producer
 ```
 
-Enforce contracts in CI: validate schema and quality expectations on every pipeline change, so a breaking change fails the build rather than the study.
+Enforce contracts in CI: validate schema and quality expectations on every pipeline change, so a breaking change fails the build rather than the study. The same discipline applies to event streams via a schema registry — see [Event-driven & real-time architecture on modern infra](../08-integration/09-event-streaming-modern-infra.md).
 
 ## Mapping controls to compliance
 

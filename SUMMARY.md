@@ -112,6 +112,7 @@
 - [Health Information Exchange (HIE) architecture](docs/08-integration/06-hie-architecture.md)
 - [EHR usability & clinical documentation burden](docs/08-integration/07-ehr-usability-documentation-burden.md)
 - [Building a SMART on FHIR app: end-to-end](docs/08-integration/08-building-smart-app.md)
+- [Event-driven & real-time architecture on modern infra](docs/08-integration/09-event-streaming-modern-infra.md)
 
 ## Part 9 — Reference architectures
 
@@ -131,6 +132,7 @@
 - [Capstone exemplar (worked example)](docs/10-sa-craft/04-capstone-exemplar.md)
 - [Failure-mode case studies](docs/10-sa-craft/05-failure-mode-case-studies.md)
 - [Vendor & RFP evaluation framework](docs/10-sa-craft/06-vendor-rfp-evaluation.md)
+- [Observability for clinical platforms](docs/10-sa-craft/07-observability-for-clinical-platforms.md)
 
 ## Appendix
 

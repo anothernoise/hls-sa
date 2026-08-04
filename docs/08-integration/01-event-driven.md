@@ -67,3 +67,4 @@ The [`hls-fhir-interop`](https://github.com/anothernoise/hls-fhir-interop) patte
 
 - [FHIR Subscriptions](https://hl7.org/fhir/subscriptions.html)
 - [AWS messaging (SQS/SNS)](https://aws.amazon.com/messaging/) · [GCP Pub/Sub](https://cloud.google.com/pubsub)
+- [Event-driven & real-time architecture on modern infra](./09-event-streaming-modern-infra.md) — the concrete build-out: topic-based FHIR Subscriptions, Kafka/Kinesis/Event Hubs wiring, CDC, schema registry, stream processing

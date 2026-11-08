@@ -140,3 +140,4 @@ Beyond the table above, LLM-based clinical systems add failure modes with no cla
 - [Obermeyer et al. — Dissecting racial bias in an algorithm used to manage the health of populations (Science, 2019)](https://www.science.org/doi/10.1126/science.aax2342)
 - [Wong et al. — External validation of a widely implemented proprietary sepsis prediction model (JAMA Intern Med, 2021)](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307)
 - [Regulated AI artifacts](./07-regulated-ai-artifacts.md) · [Ethics in health informatics & AI](../03-compliance/10-informatics-ethics.md)
+- [AI security foundations: threat-modeling clinical AI](./11-ai-security-threat-modeling.md) — the adversarial counterpart to this chapter: what a deliberate attacker can make these systems do

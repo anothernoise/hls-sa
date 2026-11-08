@@ -102,3 +102,4 @@ See [OMOP Common Data Model](./04-omop-cdm.md) for how this mapping plays out in
 - [UMLS Metathesaurus](https://www.nlm.nih.gov/research/umls/index.html)
 - [Value Set Authority Center (VSAC)](https://vsac.nlm.nih.gov/)
 - [US Core terminology bindings](https://hl7.org/fhir/us/core/)
+- [Building knowledge graphs & ontologies for HLS](../05-data-platforms/09-knowledge-graphs-ontologies.md) — when terminologies need to become ontologies with inference

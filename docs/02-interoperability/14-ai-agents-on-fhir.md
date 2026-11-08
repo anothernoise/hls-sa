@@ -111,3 +111,4 @@ controls above directly rather than waiting for a formal profile to standardize 
 
 - [AI with FHIR](./08-ai-with-fhir.md) · [Agentic AI](../06-ai-ml/03-agentic-ai.md) · [SMART on FHIR](./05-smart-on-fhir.md)
 - [Model Context Protocol](https://modelcontextprotocol.io/) · [MCP Authorization specification](https://modelcontextprotocol.io/specification/draft/basic/authorization)
+- [AI security foundations: threat-modeling clinical AI](../06-ai-ml/11-ai-security-threat-modeling.md) — confused deputy, excessive agency, and per-call authorization as the end user

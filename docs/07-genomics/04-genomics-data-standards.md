@@ -185,3 +185,4 @@ single institution has enough cases) that federation makes newly solvable.
 - [WES](https://www.ga4gh.org/product/workflow-execution-service-wes/) · [TES](https://www.ga4gh.org/product/task-execution-service-tes/) · [TRS](https://www.ga4gh.org/product/tool-registry-service-trs/) · [Dockstore](https://dockstore.org/)
 - [Crypt4GH](https://www.ga4gh.org/product/crypt4gh/) · [Matchmaker Exchange](https://www.matchmakerexchange.org/)
 - [T2T-CHM13 reference](https://github.com/marbl/CHM13)
+- [Building knowledge graphs & ontologies for HLS](../05-data-platforms/09-knowledge-graphs-ontologies.md) — HPO, Gene Ontology, and DUO as members of the wider biomedical ontology ecosystem

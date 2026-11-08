@@ -77,6 +77,7 @@
 - [OHDSI end-to-end: from cohort to calibrated evidence](docs/05-data-platforms/06-ohdsi-study-package.md)
 - [Data lineage & provenance](docs/05-data-platforms/07-data-lineage-provenance.md)
 - [Building a health data lake & lakehouse: a practical guide](docs/05-data-platforms/08-building-health-lakehouse.md)
+- [Building knowledge graphs & ontologies for HLS](docs/05-data-platforms/09-knowledge-graphs-ontologies.md)
 
 ## Part 6 — AI/ML in health & life science
 
@@ -91,6 +92,7 @@
 - [AI risk & mitigation in healthcare](docs/06-ai-ml/08-ai-risk-mitigation.md)
 - [Machine learning on clinical data: predictive modeling in practice](docs/06-ai-ml/09-clinical-predictive-modeling.md)
 - [Building a production GenAI application for HLS](docs/06-ai-ml/10-genai-app-stack.md)
+- [AI security foundations: threat-modeling clinical AI](docs/06-ai-ml/11-ai-security-threat-modeling.md)
 
 ## Part 7 — Genomics & bioinformatics architecture
 

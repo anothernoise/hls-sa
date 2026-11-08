@@ -53,4 +53,5 @@ The strongest review posture is **policy-as-code + IaC**: if encryption, private
 
 - [Architecting HIPAA on AWS (whitepaper)](https://docs.aws.amazon.com/whitepapers/latest/architecting-hipaa-security-and-compliance-on-amazon-web-services/welcome.html)
 - [STRIDE threat modeling](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats)
+- [AI security foundations: threat-modeling clinical AI](../06-ai-ml/11-ai-security-threat-modeling.md) — extending this STRIDE pass with ML-specific assets, trust boundaries, and lifecycle attack surface
 - [NIST SP 800-66r2 (HIPAA Security)](https://csrc.nist.gov/publications/detail/sp/800-66/rev-2/final)

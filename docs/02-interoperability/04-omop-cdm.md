@@ -140,3 +140,4 @@ See [`hls-lakehouse-rwd`](https://github.com/anothernoise/hls-lakehouse-rwd) —
 - [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)
 - [Athena — OMOP vocabularies](https://athena.ohdsi.org/)
 - [OHDSI tools (ATLAS, HADES, Achilles)](https://www.ohdsi.org/software-tools/)
+- [Building knowledge graphs & ontologies for HLS](../05-data-platforms/09-knowledge-graphs-ontologies.md) — when `concept_ancestor` is enough, and when a graph is warranted

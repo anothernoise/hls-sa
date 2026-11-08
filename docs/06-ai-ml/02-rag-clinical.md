@@ -65,3 +65,5 @@ If the corpus or the question contains PHI:
 - [Vertex AI Search for Healthcare](https://cloud.google.com/generative-ai-app-builder/docs/about-healthcare-search)
 - [Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/)
 - [Building a production GenAI application for HLS](./10-genai-app-stack.md) — the gateway, guardrails, eval harness, and observability a deployed RAG app needs around the model
+- [Building knowledge graphs & ontologies for HLS](../05-data-platforms/09-knowledge-graphs-ontologies.md) — graph-grounded retrieval for multi-hop, relationship-heavy questions
+- [AI security foundations: threat-modeling clinical AI](./11-ai-security-threat-modeling.md) — indirect prompt injection and retrieval-bypass threats for exactly this architecture

@@ -129,6 +129,30 @@ A feature that encodes the outcome and would not be available (with that value) 
 ## TRIPOD+AI
 The reporting guideline for clinical prediction models using regression or machine learning (BMJ, April 2024), superseding TRIPOD 2015 — useful as a completeness checklist even for internal models. Ref: [TRIPOD+AI](https://www.bmj.com/content/385/bmj-2023-078378).
 
+## threat modeling
+A structured method for finding how a system can be attacked: define assets, draw a data-flow diagram with trust boundaries, enumerate threats (e.g. with STRIDE), rate them, choose mitigations, and re-run on change. For clinical AI it adds ML-specific assets (training data, weights, prompts, tool permissions), boundaries, and a patient-harm impact axis. See [AI security foundations](docs/06-ai-ml/11-ai-security-threat-modeling.md).
+
+## trust boundary
+A line in a data-flow diagram where data crosses between components with different levels of trust. The AI-specific one is where untrusted content (a referral letter, a retrieved document) meets a component that interprets it — the basis of indirect prompt injection. See [AI security foundations](docs/06-ai-ml/11-ai-security-threat-modeling.md).
+
+## indirect prompt injection
+An attack where malicious instructions are embedded in content a model later reads — a scanned referral letter, a clinical note, a web page — rather than typed by the user. Mitigated architecturally (treat retrieved content as data; authorize tool calls as the end user), not by prompt wording alone. See [AI security foundations](docs/06-ai-ml/11-ai-security-threat-modeling.md).
+
+## evasion attack
+An adversarial-ML attack that perturbs an input (an image, signal, or text) at inference time so a model misclassifies it, without altering the model. One of the three predictive-AI attack classes in NIST AI 100-2, alongside poisoning and privacy attacks.
+
+## data poisoning
+An attack that corrupts training or retrieval data so a model learns or returns attacker-chosen behavior, including hidden backdoors. Provenance and an immutable raw data layer are core controls. See [AI security foundations](docs/06-ai-ml/11-ai-security-threat-modeling.md).
+
+## OWASP Top 10 for LLM Applications
+OWASP's ranked list of the most critical LLM-application risks (2025 edition): prompt injection, sensitive information disclosure, supply chain, data and model poisoning, improper output handling, excessive agency, system prompt leakage, vector and embedding weaknesses, misinformation, and unbounded consumption. Ref: [OWASP GenAI](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/).
+
+## NIST AI 100-2
+NIST's adversarial machine learning taxonomy and terminology of attacks and mitigations (2025 edition), classifying attacks by system type, lifecycle stage, attacker goal, capability, and knowledge. Ref: [NIST AI 100-2e2025](https://csrc.nist.gov/news/2025/nist-ai-100-2-adversarial-machine-learning-taxonom).
+
+## MITRE ATLAS
+MITRE's ATT&CK-style knowledge base of adversary tactics, techniques, and real-world case studies for AI systems. Unrelated to the OHDSI "ATLAS" cohort tool used elsewhere in this book — always written "MITRE ATLAS" in full. Ref: [MITRE ATLAS](https://atlas.mitre.org/pdf-files/MITRE_ATLAS_Fact_Sheet.pdf).
+
 ## GMLP
 Good Machine Learning Practice — guiding principles (FDA, Health Canada, UK MHRA) for developing safe, effective AI/ML medical devices; they map closely onto disciplined MLOps. Ref: [FDA — GMLP](https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-medical-device-development-guiding-principles).
 
@@ -257,6 +281,36 @@ A service (Confluent Schema Registry, AWS Glue Schema Registry) that enforces a 
 
 ## SubscriptionTopic
 A FHIR R5 (backported to R4B) resource defining a well-known category of change (e.g. "new laboratory Observations"), server-defined and tested, that a client's `Subscription` references instead of inventing its own filter criteria — the fix for R4's fragile, criteria-based subscription model. See [FHIR version migration](docs/02-interoperability/15-fhir-version-migration.md) and [Event-driven & real-time architecture on modern infra](docs/08-integration/09-event-streaming-modern-infra.md).
+
+## ontology
+A formal, machine-interpretable definition of classes and the relations between them, with logic that supports inference (e.g. SNOMED CT, Human Phenotype Ontology, Gene Ontology, DUO) — distinct from a terminology (codes and labels), a knowledge graph (populated instances), and a data model (storage/exchange schema). See [Building knowledge graphs & ontologies](docs/05-data-platforms/09-knowledge-graphs-ontologies.md).
+
+## knowledge graph
+A populated graph of entities and relationships organized by an ontology or schema, enabling multi-hop queries, inference, and provenance across heterogeneous sources. The ontology is the meaning; the knowledge graph is the data that uses it. See [Building knowledge graphs & ontologies](docs/05-data-platforms/09-knowledge-graphs-ontologies.md).
+
+## RDF
+Resource Description Framework — the W3C data model expressing facts as subject–predicate–object triples identified by IRIs; the basis of OWL ontologies and SPARQL. FHIR defines a Turtle (RDF) serialization. Ref: [W3C RDF](https://www.w3.org/RDF/).
+
+## OWL
+Web Ontology Language — the W3C language for authoring ontologies with formal, description-logic-based semantics that support automated reasoning (subsumption, consistency). Ref: [W3C OWL 2](https://www.w3.org/TR/owl2-overview/).
+
+## SPARQL
+The W3C query language for RDF graphs. Ref: [SPARQL 1.1](https://www.w3.org/TR/sparql11-overview/).
+
+## SHACL
+Shapes Constraint Language — a W3C standard for validating RDF graphs against declared "shapes", the graph equivalent of a data contract. FHIR itself defines its RDF shapes in ShEx instead. Ref: [W3C SHACL](https://www.w3.org/TR/shacl/).
+
+## property graph
+A graph model whose nodes and edges carry their own key–value properties, queried with languages such as openCypher, Gremlin, and the ISO standard GQL (ISO/IEC 39075:2024); contrasts with RDF's triple model. See [Building knowledge graphs & ontologies](docs/05-data-platforms/09-knowledge-graphs-ontologies.md).
+
+## OBO Foundry
+A community that publishes interoperable biomedical ontologies to shared principles (open licensing, common formats, stable identifiers) — home of ontologies such as Gene Ontology, ChEBI, MONDO, and Uberon. Ref: [OBO Foundry](https://obofoundry.org/).
+
+## UMLS
+Unified Medical Language System — the NLM Metathesaurus that maps many biomedical vocabularies onto shared concepts, the practical crosswalk when sources use different code systems. Ref: [UMLS](https://www.nlm.nih.gov/research/umls/index.html).
+
+## GraphRAG
+A retrieval-augmented generation pattern that retrieves from a knowledge graph (multi-hop traversal returning structured, attributable facts) instead of, or alongside, text-similarity search. Improves grounding for relationship-heavy questions; does not eliminate confabulation. See [Building knowledge graphs & ontologies](docs/05-data-platforms/09-knowledge-graphs-ontologies.md).
 
 ## medallion
 The bronze (raw, immutable) → silver (cleaned, conformed) → gold (analytics-ready, e.g. OMOP) layering pattern for refining data in a lakehouse. Ref: [Databricks — medallion](https://www.databricks.com/glossary/medallion-architecture).

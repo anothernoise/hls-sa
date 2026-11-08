@@ -110,3 +110,4 @@ governance data rather than two parallel paper trails.
 - [EU AI Act (official text)](https://artificialintelligenceact.eu/)
 - [EU AI Act and medical devices — high-risk compliance](https://www.reedsmith.com/our-insights/blogs/viewpoints/102kq35/the-eu-ai-act-and-medical-devices-navigating-high-risk-compliance/)
 - [FDA SaMD & GMLP](./05-fda-samd.md) · [MLOps & model governance](./04-mlops-governance.md) (ONC HTI-1)
+- [AI security foundations: threat-modeling clinical AI](./11-ai-security-threat-modeling.md) — the threat model behind Article 15's accuracy, robustness, and cybersecurity requirements
